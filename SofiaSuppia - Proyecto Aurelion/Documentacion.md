@@ -304,102 +304,181 @@ def calcular_costo_por_categoria(precio_unitario, categoria):
     return precio_unitario * margenes.get(categoria, margenes['Default'])
 ```
 
-### 🔧 **Implementación en Python**
+### 🔧 **Pseudocódigo de Implementación**
 
-```python
-def simular_costo_unitario(df_detalle, df_productos, metodo='fijo'):
-    """
-    Simula el costo unitario para cada producto en el detalle de ventas
+```pseudocode
+ALGORITMO calcular_costo_y_ganancia_bruta
+ENTRADA: tabla_detalle_ventas, tabla_productos
+SALIDA: tabla_con_costos_y_ganancias
+
+INICIO
+    // Paso 1: Unir tablas para obtener información completa
+    tabla_completa = UNIR tabla_detalle_ventas CON tabla_productos POR ID_Producto
     
-    Args:
-        df_detalle (DataFrame): Tabla detalle_ventas
-        df_productos (DataFrame): Tabla productos (para obtener categorías)
-        metodo (str): 'fijo' para margen del 30%, 'variable' para márgenes por categoría
+    // Paso 2: Convertir datos a arrays para cálculos eficientes
+    array_precios = CONVERTIR_A_ARRAY(tabla_completa.Precio_Unitario)
+    array_cantidad = CONVERTIR_A_ARRAY(tabla_completa.Cantidad)
+    array_importe = CONVERTIR_A_ARRAY(tabla_completa.Importe)
     
-    Returns:
-        DataFrame: detalle_ventas con columna costo_unitario simulada
-    """
+    // Paso 3: Calcular Costo Unitario con margen bruto del 30%
+    array_costo_unitario = array_precios DIVIDIDO_POR 1.30
     
-    # Hacer join con productos para obtener categorías
-    df_resultado = df_detalle.merge(df_productos, on='ID_Producto', how='left')
+    // Paso 4: Calcular Ganancia Bruta
+    array_costo_total = array_costo_unitario MULTIPLICADO_POR array_cantidad
+    array_ganancia_bruta = array_importe MENOS array_costo_total
     
-    if metodo == 'fijo':
-        # Margen fijo del 30% (costo = 70% del precio)
-        df_resultado['Costo_Unitario'] = df_resultado['Precio_Unitario'] * 0.70
-        
-    elif metodo == 'variable':
-        # Márgenes variables por categoría
-        margenes_categoria = {
-            'Electrónicos': 0.65,
-            'Ropa': 0.75,
-            'Hogar': 0.70,
-            'Deportes': 0.72,
-            'Libros': 0.80
-        }
-        
-        # Aplicar margen según categoría
-        df_resultado['Costo_Unitario'] = df_resultado.apply(
-            lambda row: row['Precio_Unitario'] * margenes_categoria.get(
-                row['Categoria'], 0.70  # 30% margen por defecto
-            ), axis=1
-        )
+    // Paso 5: Calcular métricas adicionales
+    array_margen_porcentaje = (array_ganancia_bruta DIVIDIDO_POR array_importe) POR 100
     
-    # Calcular margen de ganancia y porcentaje
-    df_resultado['Margen_Unitario'] = (df_resultado['Precio_Unitario'] - 
-                                      df_resultado['Costo_Unitario'])
+    // Paso 6: Agregar columnas calculadas a la tabla
+    tabla_completa.Costo_Unitario = array_costo_unitario
+    tabla_completa.Costo_Total = array_costo_total
+    tabla_completa.Ganancia_Bruta = array_ganancia_bruta
+    tabla_completa.Margen_Bruto_Porcentaje = array_margen_porcentaje
     
-    df_resultado['Porcentaje_Margen'] = (
-        df_resultado['Margen_Unitario'] / df_resultado['Precio_Unitario'] * 100
-    )
+    RETORNAR tabla_completa
+FIN
+
+ALGORITMO identificar_productos_menos_rentables
+ENTRADA: tabla_con_ganancias, numero_productos
+SALIDA: productos_menos_rentables
+
+INICIO
+    // Paso 1: Agrupar por producto y sumar ganancias
+    ganancia_por_producto = AGRUPAR tabla_con_ganancias POR (ID_Producto, Nombre_Producto)
+    SUMAR: Ganancia_Bruta, Cantidad, Importe, Costo_Total
+    OBTENER_PRIMERO: Categoria
     
-    return df_resultado[['ID_Venta', 'ID_Producto', 'Cantidad', 
-                        'Precio_Unitario', 'Costo_Unitario', 'Importe',
-                        'Margen_Unitario', 'Porcentaje_Margen']]
+    // Paso 2: Calcular ganancia promedio por unidad
+    array_ganancia = CONVERTIR_A_ARRAY(ganancia_por_producto.Ganancia_Bruta)
+    array_cantidad = CONVERTIR_A_ARRAY(ganancia_por_producto.Cantidad)
+    ganancia_por_producto.Ganancia_Promedio_Por_Unidad = array_ganancia DIVIDIDO_POR array_cantidad
+    
+    // Paso 3: Ordenar por ganancia bruta (ascendente = menos rentables primero)
+    productos_menos_rentables = ORDENAR ganancia_por_producto POR Ganancia_Bruta ASCENDENTE
+    productos_menos_rentables = TOMAR_PRIMEROS numero_productos
+    
+    RETORNAR productos_menos_rentables
+FIN
+
+ALGORITMO analizar_rentabilidad_principal
+ENTRADA: tabla_detalle, tabla_productos
+SALIDA: tabla_con_ganancias, productos_menos_rentables
+
+INICIO
+    // Paso 1: Mostrar mensaje de inicio
+    MOSTRAR "🚀 INICIANDO ANÁLISIS DE RENTABILIDAD CON NUMPY"
+    
+    // Paso 2: Calcular costos y ganancias
+    tabla_con_ganancias = calcular_costo_y_ganancia_bruta(tabla_detalle, tabla_productos)
+    
+    // Paso 3: Calcular estadísticas generales
+    ganancia_total = SUMAR(tabla_con_ganancias.Ganancia_Bruta)
+    ganancia_promedio = PROMEDIO(tabla_con_ganancias.Ganancia_Bruta)
+    ganancia_mediana = MEDIANA(tabla_con_ganancias.Ganancia_Bruta)
+    desviacion_estandar = DESVIACION_ESTANDAR(tabla_con_ganancias.Ganancia_Bruta)
+    
+    // Paso 4: Mostrar estadísticas
+    MOSTRAR "💰 Ganancia Bruta Total: $", ganancia_total
+    MOSTRAR "📊 Ganancia Promedio por Venta: $", ganancia_promedio
+    MOSTRAR "📈 Ganancia Mediana: $", ganancia_mediana
+    MOSTRAR "📉 Desviación Estándar: $", desviacion_estandar
+    
+    // Paso 5: Identificar productos menos rentables
+    productos_menos_rentables = identificar_productos_menos_rentables(tabla_con_ganancias, 10)
+    
+    // Paso 6: Mostrar resultados
+    MOSTRAR "🔻 TOP 10 PRODUCTOS MENOS RENTABLES:"
+    PARA CADA producto EN productos_menos_rentables:
+        MOSTRAR posicion, producto.Nombre_Producto, producto.Ganancia_Bruta, producto.Categoria
+    FIN_PARA
+    
+    RETORNAR tabla_con_ganancias, productos_menos_rentables
+FIN
 ```
 
-### 📊 **Validación del Cálculo**
+### 📊 **Pseudocódigo de Validación**
 
-```python
-# Ejemplo de validación
-def validar_costos_simulados(df_con_costos):
-    """
-    Valida que los costos simulados sean lógicos
-    """
-    print("📊 VALIDACIÓN DE COSTOS SIMULADOS")
-    print("=" * 50)
+```pseudocode
+ALGORITMO validar_calculos_rentabilidad
+ENTRADA: tabla_con_ganancias
+SALIDA: validacion_exitosa (booleano)
+
+INICIO
+    MOSTRAR "📊 VALIDACIÓN DE CÁLCULOS DE RENTABILIDAD"
     
-    # 1. Verificar que todos los costos sean positivos
-    costos_negativos = df_con_costos[df_con_costos['Costo_Unitario'] < 0]
-    print(f"❌ Costos negativos: {len(costos_negativos)} registros")
+    // Paso 1: Convertir datos a arrays para validaciones eficientes
+    array_costos = CONVERTIR_A_ARRAY(tabla_con_ganancias.Costo_Unitario)
+    array_precios = CONVERTIR_A_ARRAY(tabla_con_ganancias.Precio_Unitario)
+    array_ganancias = CONVERTIR_A_ARRAY(tabla_con_ganancias.Ganancia_Bruta)
+    array_margenes = CONVERTIR_A_ARRAY(tabla_con_ganancias.Margen_Bruto_Porcentaje)
     
-    # 2. Verificar que el costo sea menor al precio
-    costos_mayores = df_con_costos[
-        df_con_costos['Costo_Unitario'] >= df_con_costos['Precio_Unitario']
-    ]
-    print(f"❌ Costos >= Precio: {len(costos_mayores)} registros")
+    // Paso 2: Verificar costos positivos
+    costos_negativos = CONTAR(array_costos < 0)
+    MOSTRAR "❌ Costos negativos:", costos_negativos, "registros"
     
-    # 3. Estadísticas de márgenes
-    margen_promedio = df_con_costos['Porcentaje_Margen'].mean()
-    margen_min = df_con_costos['Porcentaje_Margen'].min()
-    margen_max = df_con_costos['Porcentaje_Margen'].max()
+    // Paso 3: Verificar que costo < precio
+    costos_mayores = CONTAR(array_costos >= array_precios)
+    MOSTRAR "❌ Costos >= Precio:", costos_mayores, "registros"
     
-    print(f"✅ Margen promedio: {margen_promedio:.2f}%")
-    print(f"✅ Margen mínimo: {margen_min:.2f}%")
-    print(f"✅ Margen máximo: {margen_max:.2f}%")
+    // Paso 4: Verificar margen esperado (23.08% aproximadamente)
+    margen_esperado = 23.08
+    diferencias = VALOR_ABSOLUTO(array_margenes - margen_esperado)
+    margenes_incorrectos = CONTAR(diferencias > 5)  // Tolerancia 5%
+    MOSTRAR "⚠️ Márgenes fuera de rango:", margenes_incorrectos, "registros"
     
-    return len(costos_negativos) == 0 and len(costos_mayores) == 0
+    // Paso 5: Calcular estadísticas de márgenes
+    margen_promedio = PROMEDIO(array_margenes)
+    margen_minimo = MINIMO(array_margenes)
+    margen_maximo = MAXIMO(array_margenes)
+    margen_desviacion = DESVIACION_ESTANDAR(array_margenes)
+    
+    MOSTRAR "✅ Margen bruto promedio:", margen_promedio, "%"
+    MOSTRAR "✅ Margen bruto mínimo:", margen_minimo, "%"
+    MOSTRAR "✅ Margen bruto máximo:", margen_maximo, "%"
+    MOSTRAR "✅ Desviación estándar:", margen_desviacion, "%"
+    
+    // Paso 6: Verificar ganancias negativas
+    ganancias_negativas = CONTAR(array_ganancias < 0)
+    MOSTRAR "🔴 Productos con ganancia negativa:", ganancias_negativas, "registros"
+    
+    // Paso 7: Determinar validación exitosa
+    total_registros = LONGITUD(tabla_con_ganancias)
+    limite_errores = total_registros * 0.05  // Máximo 5% de errores
+    
+    SI (costos_negativos = 0) Y (costos_mayores = 0) Y (margenes_incorrectos < limite_errores) ENTONCES
+        validacion_exitosa = VERDADERO
+        MOSTRAR "✅ VALIDACIÓN EXITOSA"
+    SINO
+        validacion_exitosa = FALSO
+        MOSTRAR "❌ VALIDACIÓN FALLIDA"
+    FIN_SI
+    
+    RETORNAR validacion_exitosa
+FIN
+
+ALGORITMO mostrar_reporte_productos_menos_rentables
+ENTRADA: productos_menos_rentables
+SALIDA: ninguna
+
+INICIO
+    MOSTRAR "📊 ANÁLISIS DETALLADO - PRODUCTOS MENOS RENTABLES"
+    MOSTRAR "Rank | Producto | Ganancia Total | Unidades | Ganancia/Unidad | Categoría"
+    
+    posicion = 1
+    PARA CADA producto EN productos_menos_rentables:
+        MOSTRAR posicion, producto.Nombre_Producto, producto.Ganancia_Bruta, 
+                producto.Cantidad, producto.Ganancia_Promedio_Por_Unidad, producto.Categoria
+        posicion = posicion + 1
+    FIN_PARA
+FIN
 ```
 
 ### 🎯 **Justificación de Márgenes**
 
 | 🏷️ **Categoría** | 💰 **Margen Sugerido** | 📋 **Justificación** |
 |:-----------------|:----------------------|:----------------------|
-| **Electrónicos** | 35% | Alta competencia, rotación rápida |
-| **Ropa** | 25% | Estacionalidad, moda cambiante |
-| **Hogar** | 30% | Productos duraderos, margen estándar |
-| **Deportes** | 28% | Nicho específico, demanda estacional |
-| **Libros** | 20% | Producto commodity, bajo margen |
-| **Default** | 30% | Margen estándar para categorías nuevas |
+| **Default** | 30% | Margen estándar para cada categorías |
 
 ### 📊 Métricas de Éxito
 
