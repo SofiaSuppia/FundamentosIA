@@ -116,88 +116,6 @@ erDiagram
 
 ---
 
-## ⚙️ Planificación del Desarrollo
-
-### 📁 Archivos de Entrada Requeridos
-
-El sistema necesita los siguientes archivos para su correcto funcionamiento:
-
-| 📄 **Archivo** | 🔧 **Campos Requeridos** | 📋 **Descripción** |
-|:---------------|:--------------------------|:--------------------|
-| `Clientes.xlsx` | ID_Cliente, Nombre, Ciudad, Fecha_Registro | Base de datos de clientes registrados |
-| `Productos.xlsx` | ID_Producto, Nombre_Producto, Categoría | Catálogo completo de productos |
-| `Ventas.xlsx` | ID_Venta, ID_Cliente, Fecha_Venta, Medio_Pago, Monto_Total | Registro de transacciones |
-| `Detalle_ventas.xlsx` | ID_Venta, ID_Producto, Cantidad, Precio_Unitario, Costo_Unitario | Detalle línea por línea de cada venta |
-
-### 🔄 Flujo de Procesamiento
-
-1. **📥 Carga y Preparación**
-   - Lectura de archivos Excel con Pandas
-   - Validación de integridad de datos
-   - Conversión de tipos de datos (fechas, números)
-   - Simulación de `costo_unitario` (margen del 30%)
-
-2. **🔗 Integración de Datos**
-   - Joins entre tablas relacionales
-   - Creación del DataFrame maestro
-   - Validación de integridad referencial
-
-3. **📊 Análisis y Resultados**
-   - Implementación de análisis Pareto
-   - Cálculos estadísticos por categoría
-   - Generación de reportes automáticos
-
----
-
-## 🔧 Implementación Técnica
-
-### 🐍 Stack Tecnológico
-
-| 🛠️ **Herramienta** | 📝 **Propósito** | 📋 **Funcionalidades** |
-|:-------------------|:------------------|:------------------------|
-| **Python 3.8+** | Lenguaje principal | Procesamiento y lógica de negocio |
-| **Pandas** | Manipulación de datos | DataFrames, joins, agrupaciones |
-| **NumPy** | Cálculos numéricos | Operaciones matemáticas eficientes |
-| **Openpyxl** | Lectura de Excel | Importación de archivos .xlsx |
-
-### 📋 Algoritmo Principal: Análisis Pareto de Clientes
-
-```python
-def analisis_pareto_clientes(df_maestro):
-    """
-    Identifica el 20% de clientes que generan el 80% de los ingresos
-    
-    Args:
-        df_maestro (DataFrame): Dataset unificado de ventas
-        
-    Returns:
-        DataFrame: Clientes ordenados por valor con análisis Pareto
-    """
-    
-    # 1️⃣ Calcular ingresos totales por cliente
-    ingresos_cliente = (df_maestro
-                       .groupby(['ID_Cliente', 'Nombre'])
-                       .agg({'Importe': 'sum'})
-                       .reset_index()
-                       .sort_values('Importe', ascending=False))
-    
-    # 2️⃣ Calcular porcentajes acumulados
-    total_ingresos = ingresos_cliente['Importe'].sum()
-    ingresos_cliente['Ingreso_Acumulado'] = ingresos_cliente['Importe'].cumsum()
-    ingresos_cliente['Porcentaje_Acumulado'] = (
-        ingresos_cliente['Ingreso_Acumulado'] / total_ingresos * 100
-    )
-    
-    # 3️⃣ Identificar clientes Pareto (80% de ingresos)
-    clientes_pareto = ingresos_cliente[
-        ingresos_cliente['Porcentaje_Acumulado'] <= 80
-    ]
-    
-    return clientes_pareto
-```
-
----
-
 ## ❓ Preguntas Estratégicas Completas
 
 ### 📊 **Categoría: Análisis de Clientes**
@@ -218,9 +136,9 @@ def analisis_pareto_clientes(df_maestro):
 - **Metodología:** Análisis temporal y de productos por cliente
 
 #### 📋 **P4: Listado de Top Clientes**
-- **Enunciado:** Hacer lista de los 10 productos menos vendidos
-- **Datos clave:** Detalle de ventas + productos
-- **Metodología:** Agrupación por producto, suma de cantidades, ordenamiento ascendente
+- **Enunciado:** ¿Cuál es el cliente que más compra?
+- **Datos clave:** Ventas + detalle de ventas
+- **Metodología:** Agrupación por cliente, suma de importes, ordenamiento descendente
 
 ### 📦 **Categoría: Análisis de Productos**
 
@@ -230,53 +148,67 @@ def analisis_pareto_clientes(df_maestro):
 - **Metodología:** Agrupación por categoría, suma de cantidades
 
 #### 🔍 **P6: Productos Menos Vendidos**
-- **Enunciado:** Identificar los medios de pago que usan los clientes para evitar...
-- **Datos clave:** Ventas
-- **Metodología:** Análisis de frecuencia de medios de pago
+- **Enunciado:** Hacer lista de los 10 productos menos vendidos
+- **Datos clave:** Detalle de ventas + productos
+- **Metodología:** Agrupación por producto, suma de cantidades, ordenamiento ascendente
 
-#### 💎 **P7: Productos Estrella por Ciudad**
-- **Enunciado:** ¿Cuál es el mes o trimestre con más ingresos?
-- **Datos clave:** Ventas (hacer cálculos con fecha)
-- **Metodología:** Agrupación temporal, suma de montos
+#### 💎 **P7: Productos Más Frecuentes en Primeras Compras**
+- **Enunciado:** ¿Cuáles son los productos más frecuentemente consumidos en el primer pedido?
+- **Datos clave:** Detalle de ventas
+- **Metodología:** Identificación de primeras compras, análisis de frecuencia
 
-#### 🏙️ **P8: Distribución Geográfica**
+### 🏙️ **Categoría: Análisis Geográfico**
+
+#### 🌍 **P8: Distribución Geográfica de Ingresos**
 - **Enunciado:** ¿Cómo se distribuyen los ingresos entre las ciudades? ¿Hay alguna ciudad que genere más ingresos?
 - **Datos clave:** Ventas + clientes
 - **Metodología:** Join de tablas, agrupación por ciudad
 
+#### 📍 **P9: Volumen de Ventas por Ciudad**
+- **Enunciado:** ¿Cuál es el volumen de ventas promedio de los clientes en los primeros 30 días para cada ciudad?
+- **Datos clave:** Clientes, ventas, detalle de ventas
+- **Metodología:** Análisis temporal por ciudad, filtros de fecha
+
 ### 💳 **Categoría: Análisis de Medios de Pago**
 
-#### 📊 **P9: Análisis de Medios de Pago**
-- **Enunciado:** ¿Cuál es el porcentaje de ventas por medio de pago y su efectivo, y varía este porcentaje según la ciudad?
+#### 📊 **P10: Análisis de Medios de Pago**
+- **Enunciado:** ¿Cuál es el porcentaje de ventas por medio de pago y varía este porcentaje según la ciudad?
 - **Datos clave:** Ventas
 - **Metodología:** Cálculo de porcentajes, análisis por ciudad
 
-#### 💰 **P10: Monto Promedio por Medio de Pago**
-- **Enunciado:** ¿Cuál es el monto de compra promedio por los clientes que utilizan un segmento dentro de los primeros 30 días después de registrarse?
-- **Datos clave:** Ventas + clientes
-- **Metodología:** Filtro temporal, cálculo de promedios
+#### 💰 **P11: Monto Promedio por Medio de Pago**
+- **Enunciado:** Identificar los medios de pago que usan los clientes para evitar...
+- **Datos clave:** Ventas
+- **Metodología:** Análisis de frecuencia de medios de pago
 
 ### 📈 **Categoría: Análisis Temporal y Tendencias**
 
-#### 📅 **P11: Estacionalidad de Ventas**
-- **Enunciado:** ¿Cuál es el volumen de ventas promedio de los clientes en los primeros 30 días?
+#### 📅 **P12: Estacionalidad de Ventas**
+- **Enunciado:** ¿Cuál es el mes o trimestre con más ingresos?
+- **Datos clave:** Ventas (cálculos con fecha)
+- **Metodología:** Agrupación temporal, suma de montos
+
+#### ⏱️ **P13: Análisis de Nuevos Clientes (30 días)**
+- **Enunciado:** ¿Cuál es el monto de compra promedio por los clientes en los primeros 30 días después de registrarse?
+- **Datos clave:** Ventas + clientes
+- **Metodología:** Filtro temporal, cálculo de promedios
+
+#### 📊 **P14: Análisis de Nuevos Clientes (60 días)**
+- **Enunciado:** ¿Cuál es la media de la venta promedio de los clientes que realizan un pedido en los primeros 60 días después de registrarse?
 - **Datos clave:** Clientes, ventas, detalle de ventas
-- **Metodología:** Análisis de cohortes, filtros temporales
+- **Metodología:** Análisis temporal extendido, cálculo de promedios
 
-#### ⏱️ **P12: Análisis de Nuevos Clientes**
-- **Enunciado:** ¿Cuáles son los productos más frecuentemente son consumidos en el primer pedido?
-- **Datos clave:** Detalle de ventas
-- **Metodología:** Identificación de primeras compras, análisis de frecuencia
+### 💲 **Categoría: Análisis de Precios y Costos**
 
-#### 💲 **P13: Análisis de Precios**
+#### 🏷️ **P15: Análisis de Precios por Categoría**
 - **Enunciado:** ¿Cuál es el precio unitario promedio de los productos por categoría?
 - **Datos clave:** Detalle de ventas + productos
 - **Metodología:** Agrupación por categoría, promedio de precios
 
-#### 🎪 **P14: Rentabilidad por Producto**
-- **Enunciado:** ¿Cuál es la media de la venta promedio de los clientes que realizan un pedido de los primeros 60 días después de registrarse?
-- **Datos clave:** Clientes, ventas, detalle de ventas
-- **Metodología:** Análisis temporal, cálculo de promedios
+#### 📈 **P16: Rentabilidad por Producto**
+- **Enunciado:** ¿Cuál es el monto de compra promedio comparado con el precio unitario promedio (diferenciadas valor y volumen)?
+- **Datos clave:** Detalle de ventas + productos
+- **Metodología:** Análisis de márgenes y rentabilidad
 
 ---
 
@@ -360,7 +292,6 @@ def simular_costo_unitario(df_detalle, df_productos, metodo='fijo'):
 ### 📊 **Validación del Cálculo**
 
 ```python
-# Ejemplo de validación
 def validar_costos_simulados(df_con_costos):
     """
     Valida que los costos simulados sean lógicos
@@ -401,6 +332,88 @@ def validar_costos_simulados(df_con_costos):
 | **Libros** | 20% | Producto commodity, bajo margen |
 | **Default** | 30% | Margen estándar para categorías nuevas |
 
+---
+
+## ⚙️ Planificación del Desarrollo
+
+### 📁 Archivos de Entrada Requeridos
+
+El sistema necesita los siguientes archivos para su correcto funcionamiento:
+
+| 📄 **Archivo** | 🔧 **Campos Requeridos** | 📋 **Descripción** |
+|:---------------|:--------------------------|:--------------------|
+| `Clientes.xlsx` | ID_Cliente, Nombre, Ciudad, Fecha_Registro | Base de datos de clientes registrados |
+| `Productos.xlsx` | ID_Producto, Nombre_Producto, Categoría | Catálogo completo de productos |
+| `Ventas.xlsx` | ID_Venta, ID_Cliente, Fecha_Venta, Medio_Pago, Monto_Total | Registro de transacciones |
+| `Detalle_ventas.xlsx` | ID_Venta, ID_Producto, Cantidad, Precio_Unitario, Costo_Unitario | Detalle línea por línea de cada venta |
+
+### 🔄 Flujo de Procesamiento
+
+1. **📥 Carga y Preparación**
+   - Lectura de archivos Excel con Pandas
+   - Validación de integridad de datos
+   - Conversión de tipos de datos (fechas, números)
+   - Simulación de `costo_unitario` (margen del 30%)
+
+2. **🔗 Integración de Datos**
+   - Joins entre tablas relacionales
+   - Creación del DataFrame maestro
+   - Validación de integridad referencial
+
+3. **📊 Análisis y Resultados**
+   - Implementación de análisis Pareto
+   - Cálculos estadísticos por categoría
+   - Generación de reportes automáticos
+
+---
+
+## 🔧 Implementación Técnica
+
+### 🐍 Stack Tecnológico
+
+| 🛠️ **Herramienta** | 📝 **Propósito** | 📋 **Funcionalidades** |
+|:-------------------|:------------------|:------------------------|
+| **Python 3.8+** | Lenguaje principal | Procesamiento y lógica de negocio |
+| **Pandas** | Manipulación de datos | DataFrames, joins, agrupaciones |
+| **NumPy** | Cálculos numéricos | Operaciones matemáticas eficientes |
+| **Openpyxl** | Lectura de Excel | Importación de archivos .xlsx |
+
+### 📋 Algoritmo Principal: Análisis Pareto de Clientes
+
+```python
+def analisis_pareto_clientes(df_maestro):
+    """
+    Identifica el 20% de clientes que generan el 80% de los ingresos
+    
+    Args:
+        df_maestro (DataFrame): Dataset unificado de ventas
+        
+    Returns:
+        DataFrame: Clientes ordenados por valor con análisis Pareto
+    """
+    
+    # 1️⃣ Calcular ingresos totales por cliente
+    ingresos_cliente = (df_maestro
+                       .groupby(['ID_Cliente', 'Nombre'])
+                       .agg({'Importe': 'sum'})
+                       .reset_index()
+                       .sort_values('Importe', ascending=False))
+    
+    # 2️⃣ Calcular porcentajes acumulados
+    total_ingresos = ingresos_cliente['Importe'].sum()
+    ingresos_cliente['Ingreso_Acumulado'] = ingresos_cliente['Importe'].cumsum()
+    ingresos_cliente['Porcentaje_Acumulado'] = (
+        ingresos_cliente['Ingreso_Acumulado'] / total_ingresos * 100
+    )
+    
+    # 3️⃣ Identificar clientes Pareto (80% de ingresos)
+    clientes_pareto = ingresos_cliente[
+        ingresos_cliente['Porcentaje_Acumulado'] <= 80
+    ]
+    
+    return clientes_pareto
+```
+
 ### 📊 Métricas de Éxito
 
 - **⚡ Rendimiento:** Procesamiento de +20K registros en <5 segundos
@@ -420,42 +433,3 @@ def validar_costos_simulados(df_con_costos):
 
 ---
 
-*Documentación generada para el proyecto de Fundamentos de IA - Universidad*
-
-### 1. Información de Entrada
-El programa requiere la siguiente información (archivos) para su ejecución y análisis:
-
-* **`clientes.csv`** (Requiere columna `Ciudad` y `Fecha_Registro`).
-* **`productos.csv`** (Requiere columna `Categoría`).
-* **`ventas.csv`** (Requiere columna `Fecha_Venta` y `Medio_Pago`).
-* **`detalle_ventas.csv`** (Requiere columna **`costo_unitario`** simulada).
-
-### 2. Pasos Detallados del Programa
-
-1.  **Carga y Transformación:** Leer los cuatro archivos CSV en DataFrames de Pandas. **Simular el `costo_unitario`** en la tabla `Detalle_Ventas` (usando un margen simulado del 30%) y garantizar que las columnas de **fecha** estén en formato `datetime`.
-2.  **Preparación de Datos:** Realizar operaciones de **Merge (Joins)** para unir las cuatro tablas, creando un único DataFrame maestro de transacciones que contenga toda la información necesaria (Cliente, Producto, Venta, Detalle).
-3.  **Análisis por Pregunta:** Iterar sobre cada pregunta estratégica, aplicando filtros, agrupaciones (`groupby`), y cálculos estadísticos (suma, promedio, conteo) sobre el DataFrame maestro.
-4.  **Resultados y Salida:** Imprimir en consola o guardar los resultados de cada análisis (p. ej., lista de top 10 clientes, 10 productos menos rentables) para su uso.
-
-### 3. Pseudocódigo (Segmento de Análisis)
-
-```pseudocode
-# PROCESO PRINCIPAL: CÁLCULO DE CLIENTES VALIOSOS (Pregunta Pareto - 80% de ingresos)
-
-INICIO
-    DF_VENTAS_MAESTRO = UNIR(Clientes, Ventas, Detalle_Ventas)
-
-    # 1. Calcular Ingreso Total por Cliente
-    DF_INGRESOS = AGRUPAR DF_VENTAS_MAESTRO POR ID_Cliente
-                  CALCULAR SUMA(Importe) COMO 'Ingreso_Total'
-    
-    # 2. Ordenar y Calcular Porcentaje Acumulado
-    ORDENAR DF_INGRESOS DESCENDENTE por 'Ingreso_Total'
-    CALCULAR 'Ingreso_Acumulado'
-    CALCULAR 'Porcentaje_Acumulado' = 'Ingreso_Acumulado' / SUMA_TOTAL(Ingreso)
-
-    # 3. Identificar Clientes Pareto
-    FILTRAR DF_INGRESOS DONDE 'Porcentaje_Acumulado' <= 0.80
-
-    IMPRIMIR CLIENTES_PARETO
-FIN
