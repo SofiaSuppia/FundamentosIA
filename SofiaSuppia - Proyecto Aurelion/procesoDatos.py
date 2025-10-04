@@ -10,35 +10,87 @@ ARCHIVOS = {
     'detalle': 'Detalle_ventas.xlsx',
 }
 
+# Posibles ubicaciones donde buscar los archivos
+RUTAS_POSIBLES = [
+    '.',  # Directorio actual
+    './BaseDatos',  # Subdirectorio BaseDatos
+    '../BaseDatos',  # BaseDatos en directorio padre
+    './SofiaSuppia - Proyecto Aurelion/BaseDatos',  # Ruta relativa completa
+]
+
+def buscar_archivos():
+    """Busca los archivos en diferentes ubicaciones posibles."""
+    for ruta_base in RUTAS_POSIBLES:
+        if os.path.exists(ruta_base):
+            archivos_encontrados = {}
+            todos_encontrados = True
+            
+            for key, archivo in ARCHIVOS.items():
+                ruta_completa = os.path.join(ruta_base, archivo)
+                if os.path.exists(ruta_completa):
+                    archivos_encontrados[key] = ruta_completa
+                else:
+                    todos_encontrados = False
+                    break
+            
+            if todos_encontrados:
+                print(f"✅ Archivos encontrados en: {os.path.abspath(ruta_base)}")
+                return archivos_encontrados
+    
+    return None
+
 def verificar_archivos():
     """Verifica que todos los archivos necesarios estén disponibles."""
     directorio_actual = os.getcwd()
     print(f"📁 Directorio actual: {directorio_actual}")
-    print(f"📋 Archivos en el directorio:")
     
-    archivos_en_directorio = [f for f in os.listdir('.') if f.endswith(('.xlsx', '.csv'))]
-    for archivo in archivos_en_directorio:
-        print(f"   ✅ {archivo}")
+    # Buscar archivos en ubicaciones posibles
+    archivos_encontrados = buscar_archivos()
     
-    archivos_faltantes = []
-    for key, archivo in ARCHIVOS.items():
-        if not os.path.exists(archivo):
-            archivos_faltantes.append(archivo)
-            print(f"   ❌ FALTA: {archivo}")
+    if archivos_encontrados:
+        print(f"📋 Archivos encontrados:")
+        for key, ruta in archivos_encontrados.items():
+            print(f"   ✅ {key}: {ruta}")
+        return archivos_encontrados
+    
+    # Si no se encontraron, mostrar diagnóstico
+    print(f"📋 Archivos en el directorio actual:")
+    try:
+        archivos_en_directorio = [f for f in os.listdir('.') if f.endswith(('.xlsx', '.csv'))]
+        if archivos_en_directorio:
+            for archivo in archivos_en_directorio:
+                print(f"   ✅ {archivo}")
         else:
-            print(f"   ✅ ENCONTRADO: {archivo}")
+            print(f"   ❌ No hay archivos .xlsx o .csv en este directorio")
+    except Exception as e:
+        print(f"   ❌ Error al listar directorio: {e}")
     
-    if archivos_faltantes:
-        print(f"\n🚨 SOLUCIÓN PARA TU COMPAÑERA:")
-        print(f"   1. Asegúrate de que estos archivos estén en la misma carpeta que main.py:")
-        for archivo in archivos_faltantes:
-            print(f"      - {archivo}")
-        print(f"   2. O cambia el directorio de trabajo en la terminal:")
-        print(f"      cd \"ruta/a/la/carpeta/con/los/archivos\"")
-        return False
+    # Verificar subdirectorios
+    print(f"\n📂 Buscando en subdirectorios...")
+    for ruta in RUTAS_POSIBLES[1:]:  # Excluir directorio actual
+        if os.path.exists(ruta):
+            try:
+                archivos_subdir = [f for f in os.listdir(ruta) if f.endswith(('.xlsx', '.csv'))]
+                if archivos_subdir:
+                    print(f"   📁 {ruta}:")
+                    for archivo in archivos_subdir:
+                        print(f"      ✅ {archivo}")
+                else:
+                    print(f"   📁 {ruta}: (vacío)")
+            except Exception as e:
+                print(f"   📁 {ruta}: Error - {e}")
+        else:
+            print(f"   📁 {ruta}: (no existe)")
     
-    print(f"✅ Todos los archivos están disponibles.")
-    return True
+    print(f"\n🚨 SOLUCIÓN:")
+    print(f"   1. Copia estos archivos al directorio actual ({directorio_actual}):")
+    for archivo in ARCHIVOS.values():
+        print(f"      - {archivo}")
+    print(f"   2. O crea una carpeta 'BaseDatos' y ponlos ahí")
+    print(f"   3. O navega al directorio donde están los archivos:")
+    print(f"      cd \"ruta/donde/están/los/archivos\"")
+    
+    return None
 MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 
 # --------------------------------------------------------------------
@@ -49,19 +101,20 @@ def cargar_datos():
     dfs = {}
     print("Iniciando carga y limpieza inicial de datos...")
     
-    # Verificar archivos antes de intentar cargarlos
-    if not verificar_archivos():
+    # Verificar y buscar archivos en diferentes ubicaciones
+    archivos_encontrados = verificar_archivos()
+    if not archivos_encontrados:
         raise FileNotFoundError("No se pueden encontrar todos los archivos necesarios. Ver detalles arriba.")
     
     try:
-        for key, ruta in ARCHIVOS.items():
-            print(f"📖 Cargando {ruta}...")
+        for key, ruta_completa in archivos_encontrados.items():
+            print(f"📖 Cargando {ruta_completa}...")
             # Leer archivos Excel
-            df = pd.read_excel(ruta)
+            df = pd.read_excel(ruta_completa)
             
             # Estandarizar nombres de columnas a minúsculas
             df.columns = df.columns.str.lower()
-            print(f"   ✅ {ruta} cargado exitosamente ({len(df)} filas, {len(df.columns)} columnas)")
+            print(f"   ✅ {os.path.basename(ruta_completa)} cargado exitosamente ({len(df)} filas, {len(df.columns)} columnas)")
             dfs[key] = df
         
         # Corrección de nombres específicos para los Joins
@@ -78,7 +131,8 @@ def cargar_datos():
         print(f"   Directorio actual: {os.getcwd()}")
         print(f"\n💡 SOLUCIONES:")
         print(f"   1. Copia todos los archivos .xlsx a la misma carpeta que main.py")
-        print(f"   2. O navega al directorio correcto antes de ejecutar:")
+        print(f"   2. O crea una carpeta 'BaseDatos' y ponlos ahí")
+        print(f"   3. O navega al directorio correcto antes de ejecutar:")
         print(f"      cd \"ruta/donde/están/los/archivos\"")
         raise FileNotFoundError(f"Error al cargar archivo: {e}. Revisa las rutas en procesoDatos.py.")
     except Exception as e:

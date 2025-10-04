@@ -1,53 +1,273 @@
-# 📋 Instrucciones para Ejecutar el Análisis de Ventas
+# 📋 Instrucciones de Ejecución - Proyecto Aurelion
 
-## 🚨 Problema Común: "No such file or directory"
+> **Sistema de Análisis de Ventas con Python**  
+> **Autor:** Sofia Suppia  
+> **Fecha:** Octubre 2025
 
-Si te aparece el error:
+---
+
+## 🎯 Descripción del Proyecto
+
+Este sistema analiza datos de ventas para identificar:
+- 🏆 Clientes más valiosos (Análisis Pareto 80/20)
+- 📉 Productos menos rentables
+- 🌍 Distribución geográfica de ingresos
+- 💰 Cálculo de ganancia bruta con margen del 30%
+
+---
+
+## 📋 Requisitos Previos
+
+### **1. Python Instalado**
+```bash
+python --version
 ```
-¡ERROR! El programa no encuentra los archivos. Revisa que estén en la misma carpeta que main.py.
+*Debe mostrar Python 3.8 o superior*
+
+### **2. Librerías Requeridas**
+```bash
+pip install pandas numpy openpyxl
 ```
 
-## ✅ Soluciones:
+### **3. Archivos de Datos (Excel)**
+- `Clientes.xlsx`
+- `Productos.xlsx` 
+- `Ventas.xlsx`
+- `Detalle_ventas.xlsx`
 
-### **Opción 1: Copiar Archivos (Recomendado)**
-1. Asegúrate de tener estos 4 archivos en la **misma carpeta** que `main.py`:
-   ```
-   📁 Tu Carpeta del Proyecto/
-   ├── main.py
-   ├── procesoDatos.py
-   ├── analisisDatos.py
-   ├── Clientes.xlsx          ← NECESARIO
-   ├── Productos.xlsx         ← NECESARIO
-   ├── Ventas.xlsx            ← NECESARIO
-   └── Detalle_ventas.xlsx    ← NECESARIO
-   ```
+---
 
-### **Opción 2: Navegar al Directorio Correcto**
-1. Abre PowerShell o Terminal
-2. Navega a la carpeta donde están los archivos Excel:
+## 🗂️ Estructura de Archivos del Proyecto
+
+```
+📁 SofiaSuppia - Proyecto Aurelion/
+├── 📄 main.py                     ← Archivo principal para ejecutar
+├── 📄 procesoDatos.py             ← Procesamiento y limpieza de datos
+├── 📄 analisisDatos.py            ← Funciones de análisis
+├── 📄 INSTRUCCIONES_EJECUCION.md  ← Este archivo
+├── 📁 BaseDatos/                  ← Carpeta recomendada para datos
+│   ├── Clientes.xlsx
+│   ├── Productos.xlsx
+│   ├── Ventas.xlsx
+│   └── Detalle_ventas.xlsx
+└── 📁 __pycache__/               ← Archivos temporales de Python
+```
+
+---
+
+## 🚀 Ejecución del Programa
+
+### **Opción 1: Ejecución Directa (Recomendada)**
+
+1. **Abrir PowerShell o Terminal**
+2. **Navegar al directorio del proyecto:**
    ```powershell
-   cd "C:\ruta\a\tu\carpeta\con\archivos"
+   cd "C:\ruta\a\tu\proyecto\SofiaSuppia - Proyecto Aurelion"
    ```
-3. Ejecuta el programa:
+3. **Ejecutar el programa:**
    ```powershell
    python main.py
    ```
 
-## 🔧 Verificación Paso a Paso:
-
-### **1. Verificar que Python esté instalado:**
+### **Opción 2: Con Ruta Completa de Python**
 ```powershell
-python --version
+"C:/Users/TuUsuario/AppData/Local/Programs/Python/Python313/python.exe" main.py
 ```
-Debería mostrar algo como: `Python 3.x.x`
 
-### **2. Verificar que las librerías estén instaladas:**
+---
+
+## 📁 Configuración de Base de Datos
+
+### **🔧 Cambiar Ruta de Acceso a la Base de Datos**
+
+El programa busca automáticamente los archivos Excel en estas ubicaciones **en orden de prioridad**:
+
+1. **Directorio actual** (donde está `main.py`)
+2. **Carpeta `./BaseDatos`** 
+3. **Carpeta `../BaseDatos`**
+4. **Carpeta `./SofiaSuppia - Proyecto Aurelion/BaseDatos`**
+
+### **Método 1: Editar el Código (Avanzado)**
+
+Si necesitas cambiar las rutas, edita el archivo `procesoDatos.py`:
+
+```python
+# Líneas 12-18 en procesoDatos.py
+RUTAS_POSIBLES = [
+    '.',  # Directorio actual
+    './BaseDatos',  # Subdirectorio BaseDatos
+    '../BaseDatos',  # BaseDatos en directorio padre
+    './MiCarpetaPersonalizada',  # ← AGREGA TU RUTA AQUÍ
+    'C:/MiRutaCompleta/Datos',   # ← O UNA RUTA ABSOLUTA
+]
+```
+
+### **Método 2: Organización de Archivos (Recomendado)**
+
+**Opción A - Misma Carpeta:**
+```
+📁 Tu Proyecto/
+├── main.py
+├── procesoDatos.py
+├── analisisDatos.py
+├── Clientes.xlsx      ← Archivos Excel aquí
+├── Productos.xlsx
+├── Ventas.xlsx
+└── Detalle_ventas.xlsx
+```
+
+**Opción B - Carpeta BaseDatos:**
+```
+📁 Tu Proyecto/
+├── main.py
+├── procesoDatos.py
+├── analisisDatos.py
+└── 📁 BaseDatos/
+    ├── Clientes.xlsx
+    ├── Productos.xlsx
+    ├── Ventas.xlsx
+    └── Detalle_ventas.xlsx
+```
+
+---
+
+## ✅ Verificación de Funcionamiento
+
+### **Resultado Esperado:**
+```
+--- INICIO DEL ANÁLISIS DE VENTAS ---
+Iniciando carga y limpieza inicial de datos...
+📁 Directorio actual: C:\tu\ruta\proyecto
+✅ Archivos encontrados en: ./BaseDatos
+📋 Archivos encontrados:
+   ✅ clientes: ./BaseDatos\Clientes.xlsx
+   ✅ productos: ./BaseDatos\Productos.xlsx
+   ✅ ventas: ./BaseDatos\Ventas.xlsx
+   ✅ detalle: ./BaseDatos\Detalle_ventas.xlsx
+📖 Cargando ./BaseDatos\Clientes.xlsx...
+   ✅ Clientes.xlsx cargado exitosamente (100 filas, 5 columnas)
+...
+=======================================================
+               RESULTADOS DEL ANÁLISIS
+=======================================================
+
+--- 1. Clientes Pareto (Top 80% de Ingresos) ---
+--- 2. 10 Productos Menos Rentables (Ganancia Bruta) ---
+--- 3. Distribución de Ingresos por Ciudad ---
+
+--- ANÁLISIS COMPLETADO EXITOSAMENTE ---
+```
+
+---
+
+## 🚨 Solución de Problemas Comunes
+
+### **Error: "No such file or directory"**
+
+**Síntomas:**
+```
+¡ERROR! El programa no encuentra los archivos.
+FileNotFoundError: [Errno 2] No such file or directory: 'Clientes.xlsx'
+```
+
+**Soluciones:**
+
+1. **Verificar ubicación de archivos:**
+   - Los 4 archivos Excel deben estar en la misma carpeta que `main.py`
+   - O en una subcarpeta llamada `BaseDatos`
+
+2. **Verificar directorio actual:**
+   ```powershell
+   pwd  # En PowerShell
+   dir  # Para ver archivos en el directorio
+   ```
+
+3. **Copiar archivos al directorio correcto:**
+   - Localiza tus archivos Excel
+   - Cópialos a la carpeta del proyecto
+
+### **Error: "ModuleNotFoundError"**
+
+**Síntomas:**
+```
+ModuleNotFoundError: No module named 'pandas'
+```
+
+**Solución:**
 ```powershell
 pip install pandas numpy openpyxl
 ```
 
-### **3. Verificar que estés en el directorio correcto:**
-```powershell
+### **Error: "ImportError"**
+
+**Síntomas:**
+```
+ImportError: cannot import name 'analizar_clientes_pareto'
+```
+
+**Solución:**
+- Asegúrate de que todos los archivos Python estén en la misma carpeta
+- Verifica que no haya errores de sintaxis en los archivos
+
+---
+
+## 📊 Descripción de los Resultados
+
+### **1. Análisis Pareto de Clientes**
+- Identifica el 20% de clientes que generan el 80% de los ingresos
+- Muestra nombre del cliente, monto total y porcentaje acumulado
+
+### **2. Productos Menos Rentables**
+- Lista los 10 productos con menor ganancia bruta
+- Incluye categoría, ganancia total y unidades vendidas
+- Usa la fórmula: `Ganancia = Importe - (Costo_Unitario × Cantidad)`
+
+### **3. Distribución por Ciudad**
+- Ranking de ciudades por ingresos totales
+- Porcentaje de participación de cada ciudad
+
+---
+
+## 🔧 Metodología Implementada
+
+### **Cálculo de Costo Unitario**
+```
+Costo_Unitario = Precio_Unitario / 1.30
+```
+*Asume un margen de ganancia bruta del 30%*
+
+### **Cálculo de Ganancia Bruta**
+```
+Ganancia_Bruta = Importe - (Costo_Unitario × Cantidad)
+```
+
+### **Tecnologías Utilizadas**
+- **Python 3.8+**: Lenguaje de programación
+- **Pandas**: Manipulación de datos y análisis
+- **NumPy**: Operaciones numéricas eficientes
+- **OpenPyXL**: Lectura de archivos Excel
+
+---
+
+## 📞 Soporte Adicional
+
+### **Para Desarrolladores:**
+- Revisa `Documentacion_Completa.md` para detalles técnicos
+- Consulta `pseudocodigo.md` para la lógica de algoritmos
+
+### **Para Usuarios:**
+- Asegúrate de tener los 4 archivos Excel correctos
+- Verifica que Python y las librerías estén instalados
+- Sigue las instrucciones paso a paso
+
+### **Contacto:**
+- **Autor:** Sofia Suppia
+- **Proyecto:** Fundamentos de Inteligencia Artificial
+- **Año:** 2025
+
+---
+
+*¡El análisis de ventas nunca fue tan fácil! 🚀*
 dir
 ```
 Deberías ver todos los archivos .xlsx listados.
