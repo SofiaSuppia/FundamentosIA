@@ -5,6 +5,10 @@ import numpy as np
 # FUNCIONES DE ANÁLISIS CONTROLAR
 # --------------------------------------------------------------------
 
+# --------------------------------------------------------------------
+# FUNCIONES DE ANÁLISIS CONTROLAR
+# --------------------------------------------------------------------
+
 def analizar_clientes_pareto(df_maestro):
     """
     Responde: ¿Quiénes son los clientes que generan el 80% de los ingresos?
@@ -53,6 +57,10 @@ def analizar_productos_menos_rentables(df_maestro):
 
     return df_menos_rentables[['nombre_producto_detalle', 'categoria', 'Ganancia_Total', 'Unidades_Vendidas']]
 
+# --------------------------------------------------------------------
+#  Responde: ¿Cuáles son los 10 productos menos rentables por volumen y cuál es su categoría? (Usa la ganancia bruta simulada).
+# --------------------------------------------------------------------
+
 def analizar_ventas_por_ciudad_ingreso(df_maestro):
     """
     Responde: ¿Cuál es la ciudad que genera más ingresos? ¿Cómo se distribuyen los ingresos?
@@ -71,5 +79,9 @@ def analizar_ventas_por_ciudad_ingreso(df_maestro):
     df_ingresos_ciudad.sort_values(by='monto_total', ascending=False, inplace=True)
     
     return df_ingresos_ciudad.round(2)
+
+# --------------------------------------------------------------------
+# FUNCIONES DE ANÁLISIS CONTROLAR
+# --------------------------------------------------------------------
 
 # ... (Aquí irían el resto de las funciones de análisis para el resto de preguntas) ...
