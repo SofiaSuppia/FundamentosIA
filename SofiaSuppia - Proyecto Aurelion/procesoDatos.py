@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 
 # --- CONFIGURACIÓN DE ARCHIVOS Y PARÁMETROS ---
 ARCHIVOS = {
@@ -8,6 +9,36 @@ ARCHIVOS = {
     'ventas': 'Ventas.xlsx',
     'detalle': 'Detalle_ventas.xlsx',
 }
+
+def verificar_archivos():
+    """Verifica que todos los archivos necesarios estén disponibles."""
+    directorio_actual = os.getcwd()
+    print(f"📁 Directorio actual: {directorio_actual}")
+    print(f"📋 Archivos en el directorio:")
+    
+    archivos_en_directorio = [f for f in os.listdir('.') if f.endswith(('.xlsx', '.csv'))]
+    for archivo in archivos_en_directorio:
+        print(f"   ✅ {archivo}")
+    
+    archivos_faltantes = []
+    for key, archivo in ARCHIVOS.items():
+        if not os.path.exists(archivo):
+            archivos_faltantes.append(archivo)
+            print(f"   ❌ FALTA: {archivo}")
+        else:
+            print(f"   ✅ ENCONTRADO: {archivo}")
+    
+    if archivos_faltantes:
+        print(f"\n🚨 SOLUCIÓN PARA TU COMPAÑERA:")
+        print(f"   1. Asegúrate de que estos archivos estén en la misma carpeta que main.py:")
+        for archivo in archivos_faltantes:
+            print(f"      - {archivo}")
+        print(f"   2. O cambia el directorio de trabajo en la terminal:")
+        print(f"      cd \"ruta/a/la/carpeta/con/los/archivos\"")
+        return False
+    
+    print(f"✅ Todos los archivos están disponibles.")
+    return True
 MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 
 # --------------------------------------------------------------------
@@ -17,13 +48,20 @@ MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 def cargar_datos():
     dfs = {}
     print("Iniciando carga y limpieza inicial de datos...")
+    
+    # Verificar archivos antes de intentar cargarlos
+    if not verificar_archivos():
+        raise FileNotFoundError("No se pueden encontrar todos los archivos necesarios. Ver detalles arriba.")
+    
     try:
         for key, ruta in ARCHIVOS.items():
+            print(f"📖 Cargando {ruta}...")
             # Leer archivos Excel
             df = pd.read_excel(ruta)
             
             # Estandarizar nombres de columnas a minúsculas
             df.columns = df.columns.str.lower()
+            print(f"   ✅ {ruta} cargado exitosamente ({len(df)} filas, {len(df.columns)} columnas)")
             dfs[key] = df
         
         # Corrección de nombres específicos para los Joins
@@ -32,10 +70,20 @@ def cargar_datos():
         if 'fecha_alta' in dfs['clientes'].columns:
             dfs['clientes'].rename(columns={'fecha_alta': 'fecha_registro'}, inplace=True)
         
+        print("✅ Todos los archivos cargados correctamente.")
         return dfs
     except FileNotFoundError as e:
+        print(f"\n🚨 ERROR DE ARCHIVO:")
+        print(f"   No se pudo encontrar: {e.filename}")
+        print(f"   Directorio actual: {os.getcwd()}")
+        print(f"\n💡 SOLUCIONES:")
+        print(f"   1. Copia todos los archivos .xlsx a la misma carpeta que main.py")
+        print(f"   2. O navega al directorio correcto antes de ejecutar:")
+        print(f"      cd \"ruta/donde/están/los/archivos\"")
         raise FileNotFoundError(f"Error al cargar archivo: {e}. Revisa las rutas en procesoDatos.py.")
     except Exception as e:
+        print(f"\n🚨 ERROR INESPERADO:")
+        print(f"   {type(e).__name__}: {e}")
         raise Exception(f"Error al procesar archivos Excel: {e}")
 
 def generar_campos_calculados(dfs):
