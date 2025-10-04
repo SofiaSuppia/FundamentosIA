@@ -41,6 +41,21 @@ def main():
     print("\n--- 3. Distribución de Ingresos por Ciudad ---")
     print(resultado_ciudad)
     
+    # Pregunta 10: Análisis de Medios de Pago (Porcentaje)
+    df_porcentaje_global = analizar_medios_de_pago(df_maestro)
+    print("\n--- 10. Distribución de Medios de pago ---")
+    print(df_porcentaje_global)
+
+    # Pregunta 10.2: Análisis de medios de pago por Ciudad
+    df_resultado_porcentaje = analizar_ventas_por_ciudad_pago(df_maestro)
+    print("\n--- 10.2. Porcentaje de Medios de pago por Ciudad ---")
+    print(df_resultado_porcentaje)
+    
+    # Pregunta 11: Promedio de Medios de pago por Venta
+    df_promedio = promedio_de_medio_de_pago(df_promedio)
+    print("\n--- 11. Monto Promedio de Venta por Medio de Pago ---")
+    print(df_promedio)
+
     # ... (Llamadas a las demás funciones de análisis) ...
 
     print("\n--- ANÁLISIS COMPLETADO EXITOSAMENTE ---")

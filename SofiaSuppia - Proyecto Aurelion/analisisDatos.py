@@ -75,3 +75,70 @@ def analizar_ventas_por_ciudad_ingreso(df_maestro):
 # --------------------------------------------------------------------
 
 # ... (Aquí irían el resto de las funciones de análisis para el resto de preguntas) ...
+
+
+#----Fio---
+# --------------------------------------------------------------------
+# Responde a : ¿Cuál es el porcentaje de ventas por medio de pago ? ¿Varía este porcentaje según la ciudad?
+# --------------------------------------------------------------------
+
+def analizar_medios_de_pago(df_maestro):
+    # Conteo de ventas por medio de pago (frecuencia)
+    conteo_gral = df_maestro['medio_pago'].value_counts()
+    
+    # Cálculo el porcentaje general
+    porcentaje_gral = (conteo_gral / conteo_gral.sum()) * 100
+
+    # Combinamos los resultados 
+    df_porcentaje_global = pd.df_maestro ({
+        'Total ventas (N)': conteo_gral,
+        'Porcentaje (%)' : porcentaje_gral.round(2)
+    }).sort_values(by='Porcentaje (%)', ascendig =False)
+
+    return df_porcentaje_global
+
+def analizar_ventas_por_ciudad_pago(df_maestro):
+    # Contamos el nro de filas para 'ciudad' y 'medio_pago'
+    conteo_doble = df_maestro.groupby(['ciudad', 'medio_pago']).size().reset_index(name='conteo_ventas')
+    
+    # Calculamos el total de ventas por Ciudad
+    total_por_ciudad = conteo_doble.groupby('ciudad')['conteo_ventas'].sum().reset_index(name ='total_ventas_ciudad')
+
+    # Aplico merge para el conteo total de cada ciudad 
+    df_resultado_porcentaje = conteo_doble.merge(total_por_ciudad, on ='ciudad', how='left')
+
+    # Calculamos/ creamos columna 'Porcentaje ciudad'
+    df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje('conteo_ventas')/ df_resultado_porcentaje('total_ventas_ciudad')
+
+    df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje['Porcentaje ciudad'].round(2)
+    df_resultado_porcentaje = df_resultado_porcentaje[['ciudad', 'medio_pago', 'Porcentaje ciudad']]
+
+    return df_resultado_porcentaje
+
+# --------------------------------------------------------------------
+# Responde a : ¿Cuál es el promedio de ventas por Medio de pago?
+# --------------------------------------------------------------------
+def promedio_de_medio_de_pago(df_maestro):
+    # Sumamos el importe total de Ventas y agrupamos por transacción
+    df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
+    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}), inplace= True
+
+    # Unimos el Monto total con el Medio de pago, haciendo una copia del original
+    df_pago_por_venta = df_maestro[['id_venta', 'medio_pago']].drop_duplicates()
+
+    # Unimos el monto total con SU medio de pago
+    df_analisis = df_monto_total_venta.merge(df_pago_por_venta, on='id_venta', how='left')
+
+    # Agrupamos por medio de pago y Calculamos el promedio
+    df_promedio = df_analisis.groupby('medio_pago')['monto_total_venta'].mean().reset_index()
+
+    # Renombro la columna anterior
+    df_promedio.rename(columns={'monto_total_venta': 'Monto Promedio de Venta'}, inplace=True)
+
+    # Formateo el resultado
+    df_promedio['Monto Promedio de Venta'] = df.promedio['Monto promedio de Venta'].round(2)
+    df_promedio.sort_values(by= 'Monto Promedioi de Venta', ascendig=False, inplace= True)
+
+    return df_promedio
+
+#-------

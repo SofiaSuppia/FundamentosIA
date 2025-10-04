@@ -97,6 +97,43 @@ FUNCION ANALIZAR_VENTAS_POR_CIUDAD(DF_MAESTRO):
 
 # ... (Se añadirían FUNCIONES para el resto de las preguntas estratégicas) ...
 
+FUNCION ANALIZAR_MEDIOS_DE_PAGO(DF_MAESTRO):
+
+    # 1. CUENTA LA FRECUENCIA  DE VENTAS POR MEDIO DE PAGO
+    Dentro de DF_MAESTRO se cuentan los valores de la columna 'medio_pago'
+
+    # 2. Calcula el PORCENTAJE GLOBAL de CADA MEDIO de pago
+   Valores de columna 'medio_pago' en porcentaje %
+
+    # 3. Crea los Resultados en TABLA
+    Col. 1 El conteo de transacciones
+    Col. 2 El porcentaje redondeado a 2 decimales
+
+FUNCION ANALIZAR_VENTAS_POR_CIUDAD(DF_MAESTRO)
+
+     # 1.  CONTAR VENTAS POR COMBINANCION ('ciudad' y 'medio_pago')
+     CONTEO_DOBLE = AGRUPAR por DF_MAESTRO .CONTAR_FILAS() Reiniciar indice (nombre = 'conteo_ventas' )
+
+    # 2. CALCULAR EL TOTAL DE VENTAS POR CADA CIUDAD
+       TOTAL_POR_CIUDAD = AGRUPAR POR (conteo_doble,'ciudad')
+       SUMAR('conteo_ventas')
+       Reiniciar indice (nombre = total_ventas_ciudad)
+
+    # 3. UNIR EL CONTEO ESPECIFICO CON EL TOTAL DE LA CIUDAD
+    DF_RESULTADO = conteo_doble UNION 'total_ventas_ciudad'
+
+    # 4. CALCULAR EL PORCENTAJE POR CIUDAD
+     CREA columna Porcentaje ciudad = con 'conteo_ventas / Total_ventas_ciudad' 
+
+    # 5. FORMATEAR Y DEVOLVER EL RESULTADO
+    -REDONDEA el resultado
+    -DEVUELVE las COLUMNAS 'ciudad', medio_pago' y 'porcentaje ciudad'
+
+
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 # main.py
