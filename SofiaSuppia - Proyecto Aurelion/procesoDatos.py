@@ -2,14 +2,11 @@ import pandas as pd
 import numpy as np
 
 # --- CONFIGURACIÓN DE ARCHIVOS Y PARÁMETROS ---
-# NOTA: Usamos los nombres de los archivos CSV que el sistema generó
-# a partir de tus archivos Excel. Si tienes los XLSX originales, podrías
-# cambiar las rutas a "Clientes.xlsx", etc., y usar la hoja (sheet) si fuera necesario.
 ARCHIVOS = {
-    'clientes': 'Clientes - clientes.csv.csv',
-    'productos': 'Copia de Productos - productos.csv.csv',
-    'ventas': 'Ventas - ventas.csv.csv',
-    'detalle': 'Detalle_ventas - detalle_ventas.csv.csv',
+    'clientes': 'Clientes.xlsx',
+    'productos': 'Productos.xlsx',
+    'ventas': 'Ventas.xlsx',
+    'detalle': 'Detalle_ventas.xlsx',
 }
 MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 
@@ -18,27 +15,28 @@ MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 # --------------------------------------------------------------------
 
 def cargar_datos():
-    
     dfs = {}
     print("Iniciando carga y limpieza inicial de datos...")
     try:
         for key, ruta in ARCHIVOS.items():
-            # Si los archivos fueran XLSX puros, la línea sería:
-            # df = pd.read_excel(ruta, sheet_name='Hoja1') 
-            
-            df = pd.read_csv(ruta)
+            # Leer archivos Excel
+            df = pd.read_excel(ruta)
             
             # Estandarizar nombres de columnas a minúsculas
             df.columns = df.columns.str.lower()
             dfs[key] = df
         
         # Corrección de nombres específicos para los Joins
-        dfs['ventas'].rename(columns={'fecha': 'fecha_venta'}, inplace=True)
-        dfs['clientes'].rename(columns={'fecha_alta': 'fecha_registro'}, inplace=True)
+        if 'fecha' in dfs['ventas'].columns:
+            dfs['ventas'].rename(columns={'fecha': 'fecha_venta'}, inplace=True)
+        if 'fecha_alta' in dfs['clientes'].columns:
+            dfs['clientes'].rename(columns={'fecha_alta': 'fecha_registro'}, inplace=True)
         
         return dfs
     except FileNotFoundError as e:
-        raise FileNotFoundError(f"Error al cargar archivo: {e}. Revisa las rutas en data_processor.py.")
+        raise FileNotFoundError(f"Error al cargar archivo: {e}. Revisa las rutas en procesoDatos.py.")
+    except Exception as e:
+        raise Exception(f"Error al procesar archivos Excel: {e}")
 
 def generar_campos_calculados(dfs):
     """Aplica formato y genera las columnas calculadas cruciales: costo_unitario y Monto_Total."""
@@ -82,13 +80,19 @@ def crear_df_maestro(dfs):
     df_maestro = pd.merge(dfs['detalle'], dfs['ventas'], on='id_venta', how='left', suffixes=('_detalle', '_venta'))
     
     # Merge 2: Maestro + Clientes (Necesitamos ciudad, fecha_registro, y nombre del cliente)
-    df_maestro = pd.merge(df_maestro, dfs['clientes'][['id_cliente', 'ciudad', 'fecha_registro', 'nombre_cliente']], on='id_cliente', how='left', suffixes=('_venta', '_cliente'))
+    df_maestro = pd.merge(df_maestro, dfs['clientes'], on='id_cliente', how='left', suffixes=('_venta', '_cliente'))
     
     # Merge 3: Maestro + Productos (Necesitamos categoría)
-    df_maestro = pd.merge(df_maestro, dfs['productos'][['id_producto', 'categoria']], on='id_producto', how='left')
+    df_maestro = pd.merge(df_maestro, dfs['productos'], on='id_producto', how='left', suffixes=('_detalle', '_productos'))
     
-    # Corrección de nombres de columnas duplicadas
-    df_maestro.rename(columns={'nombre_producto_detalle': 'nombre_producto'}, inplace=True)
+    # Limpiar nombres de columnas duplicadas y confusas
+    df_maestro.rename(columns={
+        'nombre_cliente_cliente': 'nombre_cliente',
+        'nombre_producto_x': 'nombre_producto_detalle',
+        'nombre_producto_y': 'nombre_producto',
+        'precio_unitario_x': 'precio_unitario',
+        'precio_unitario_y': 'precio_unitario_catalogo'
+    }, inplace=True)
     
     print("DataFrame Maestro listo para el análisis.")
     return df_maestro
