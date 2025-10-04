@@ -29,6 +29,15 @@ def analizar_clientes_pareto(df_maestro):
 
     return df_resultado[['nombre_cliente', 'monto_total', 'pct_acumulado']].head(10)
 
+#--------------------------------------------------------------------
+# Responde: ¿Cuál es el valor promedio de compra de nuestros clientes?
+#--------------------------------------------------------------------
+def analizar_valor_promedio_compra(df_maestro):
+    # Usamos el Monto_Total por venta para evitar sumar detalles
+    ventas_unicas = df_maestro[['id_venta', 'monto_total']].drop_duplicates()
+    valor_promedio = ventas_unicas['monto_total'].mean()
+    return round(valor_promedio, 2)
+
 # --------------------------------------------------------------------
 # Responde: ¿Cuáles son los 10 productos menos rentables por volumen y cuál es su categoría? (Usa la ganancia bruta simulada).
 # --------------------------------------------------------------------
