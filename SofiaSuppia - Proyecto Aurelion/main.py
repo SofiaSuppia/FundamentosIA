@@ -1,5 +1,6 @@
-from procesoDatos import cargar_datos, generar_campos_calculados, crear_df_maestro
-from analisisDatos import analizar_clientes_pareto, analizar_productos_menos_rentables, analizar_ventas_por_ciudad_ingreso
+# Importaciones de módulos con alias
+import procesoDatos as pd
+import analisisDatos as ad
 
 def main():
     print("--- INICIO DEL ANÁLISIS DE VENTAS ---")
@@ -7,10 +8,10 @@ def main():
     # 1. EXTRACCIÓN Y PREPARACIÓN
     try:
         # Carga los archivos y aplica limpieza inicial
-        dfs = cargar_datos()
+        dfs = pd.cargar_datos()
         
         # Genera los campos calculados (Costo Unitario y Monto Total)
-        dfs = generar_campos_calculados(dfs)
+        dfs = pd.generar_campos_calculados(dfs)
     except FileNotFoundError as e:
         print(f"\n¡ERROR! El programa no encuentra los archivos. Revisa que estén en la misma carpeta que main.py. Detalle: {e}")
         return
@@ -19,7 +20,7 @@ def main():
         return
 
     # 2. CREACIÓN DEL DATAFRAME MAESTRO
-    df_maestro = crear_df_maestro(dfs)
+    df_maestro = pd.crear_df_maestro(dfs)
 
     # 3. EJECUCIÓN DEL ANÁLISIS ESTRATÉGICO
     print("\n\n=======================================================")
@@ -27,32 +28,32 @@ def main():
     print("=======================================================")
 
     # Pregunta 1: Clientes Pareto (Top 80% de Ingresos)
-    resultado_pareto = analizar_clientes_pareto(df_maestro)
+    resultado_pareto = ad.analizar_clientes_pareto(df_maestro)
     print("\n--- 1. Clientes Pareto (Top 80% de Ingresos) ---")
     print(resultado_pareto)
 
     # Pregunta 2: Productos Menos Rentables
-    resultado_rentabilidad = analizar_productos_menos_rentables(df_maestro)
+    resultado_rentabilidad = ad.analizar_productos_menos_rentables(df_maestro)
     print("\n--- 2. 10 Productos Menos Rentables (Ganancia Bruta) ---")
     print(resultado_rentabilidad)
     
     # Pregunta 3: Ingresos por Ciudad
-    resultado_ciudad = analizar_ventas_por_ciudad_ingreso(df_maestro)
+    resultado_ciudad = ad.analizar_ventas_por_ciudad_ingreso(df_maestro)
     print("\n--- 3. Distribución de Ingresos por Ciudad ---")
     print(resultado_ciudad)
     
     # Pregunta 10: Análisis de Medios de Pago (Porcentaje)
-    df_porcentaje_global = analizar_medios_de_pago(df_maestro)
+    df_porcentaje_global = ad.analizar_medios_de_pago(df_maestro)
     print("\n--- 10. Distribución de Medios de pago ---")
     print(df_porcentaje_global)
 
     # Pregunta 10.2: Análisis de medios de pago por Ciudad
-    df_resultado_porcentaje = analizar_ventas_por_ciudad_pago(df_maestro)
+    df_resultado_porcentaje = ad.analizar_ventas_por_ciudad_pago(df_maestro)
     print("\n--- 10.2. Porcentaje de Medios de pago por Ciudad ---")
     print(df_resultado_porcentaje)
     
     # Pregunta 11: Promedio de Medios de pago por Venta
-    df_promedio = promedio_de_medio_de_pago(df_promedio)
+    df_promedio = ad.promedio_de_medio_de_pago(df_maestro)
     print("\n--- 11. Monto Promedio de Venta por Medio de Pago ---")
     print(df_promedio)
 
