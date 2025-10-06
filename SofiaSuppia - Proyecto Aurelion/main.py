@@ -31,15 +31,20 @@ def main():
     resultado_pareto = ad.analizar_clientes_pareto(df_maestro)
     print("\n--- 1. Clientes Pareto (Top 80% de Ingresos) ---")
     print(resultado_pareto)
+    
+    # Pregunta 2: Promedio, Mínimo y Máximo de Compra
+    resultado_valor_compra = ad.analizar_valor_promedio_compra(df_maestro)
+    print("\n--- 2. Promedio, Mínimo y Máximo de Compra ---")
+    print(resultado_valor_compra)
 
-    # Pregunta 2: Productos Menos Rentables
+    # Pregunta 6: Productos Menos Rentables
     resultado_rentabilidad = ad.analizar_productos_menos_rentables(df_maestro)
-    print("\n--- 2. 10 Productos Menos Rentables (Ganancia Bruta) ---")
+    print("\n--- 6. 10 Productos Menos Rentables (Ganancia Bruta) ---")
     print(resultado_rentabilidad)
     
-    # Pregunta 3: Ingresos por Ciudad
+    # Pregunta 8: Ingresos por Ciudad
     resultado_ciudad = ad.analizar_ventas_por_ciudad_ingreso(df_maestro)
-    print("\n--- 3. Distribución de Ingresos por Ciudad ---")
+    print("\n--- 8. Distribución de Ingresos por Ciudad ---")
     print(resultado_ciudad)
     
     # Pregunta 10: Análisis de Medios de Pago (Porcentaje)

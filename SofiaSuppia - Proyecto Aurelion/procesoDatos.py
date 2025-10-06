@@ -34,7 +34,6 @@ def buscar_archivos():
                     break
             
             if todos_encontrados:
-                print(f"✅ Archivos encontrados en: {os.path.abspath(ruta_base)}")
                 return archivos_encontrados
     
     return None
@@ -42,15 +41,11 @@ def buscar_archivos():
 def verificar_archivos():
     """Verifica que todos los archivos necesarios estén disponibles."""
     directorio_actual = os.getcwd()
-    print(f"📁 Directorio actual: {directorio_actual}")
     
     # Buscar archivos en ubicaciones posibles
     archivos_encontrados = buscar_archivos()
     
     if archivos_encontrados:
-        print(f"📋 Archivos encontrados:")
-        for key, ruta in archivos_encontrados.items():
-            print(f"   ✅ {key}: {ruta}")
         return archivos_encontrados
     
     # Si no se encontraron, mostrar diagnóstico
@@ -99,7 +94,6 @@ MARGEN_GANANCIA_SIMULADO = 0.30 # 30% para calcular el Costo Unitario
 
 def cargar_datos():
     dfs = {}
-    print("Iniciando carga y limpieza inicial de datos...")
     
     # Verificar y buscar archivos en diferentes ubicaciones
     archivos_encontrados = verificar_archivos()
@@ -108,13 +102,11 @@ def cargar_datos():
     
     try:
         for key, ruta_completa in archivos_encontrados.items():
-            print(f"📖 Cargando {ruta_completa}...")
             # Leer archivos Excel
             df = pd.read_excel(ruta_completa)
             
             # Estandarizar nombres de columnas a minúsculas
             df.columns = df.columns.str.lower()
-            print(f"   ✅ {os.path.basename(ruta_completa)} cargado exitosamente ({len(df)} filas, {len(df.columns)} columnas)")
             dfs[key] = df
         
         # Corrección de nombres específicos para los Joins
@@ -123,7 +115,6 @@ def cargar_datos():
         if 'fecha_alta' in dfs['clientes'].columns:
             dfs['clientes'].rename(columns={'fecha_alta': 'fecha_registro'}, inplace=True)
         
-        print("✅ Todos los archivos cargados correctamente.")
         return dfs
     except FileNotFoundError as e:
         print(f"\n🚨 ERROR DE ARCHIVO:")
@@ -176,8 +167,6 @@ def generar_campos_calculados(dfs):
 def crear_df_maestro(dfs):
     """Realiza los Joins para crear el DataFrame único de análisis."""
     
-    print("Creando DataFrame Maestro (Joins)...")
-    
     # Merge 1: Detalle + Ventas
     df_maestro = pd.merge(dfs['detalle'], dfs['ventas'], on='id_venta', how='left', suffixes=('_detalle', '_venta'))
     
@@ -196,5 +185,4 @@ def crear_df_maestro(dfs):
         'precio_unitario_y': 'precio_unitario_catalogo'
     }, inplace=True)
     
-    print("DataFrame Maestro listo para el análisis.")
     return df_maestro

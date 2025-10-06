@@ -125,8 +125,8 @@ erDiagram
 - **Datos clave:** Clientes + ventas + detalle de ventas
 - **Metodología:** Análisis Pareto, cálculo de ingresos acumulados y porcentajes
 
-#### 💰 **P2: Valor Promedio de Compra por Cliente**
-- **Enunciado:** ¿Cuál es el valor promedio de compra de nuestros clientes?
+#### 💰 **P2: Valor Promedio de minimo y maximo de Compra de nuestros clientes Cliente**
+- **Enunciado:** ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes?
 - **Datos clave:** Ventas + detalle de ventas
 - **Metodología:** Promedio de monto total por transacción
 

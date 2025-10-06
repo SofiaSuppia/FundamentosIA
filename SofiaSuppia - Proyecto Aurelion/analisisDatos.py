@@ -30,6 +30,28 @@ def analizar_clientes_pareto(df_maestro):
     return df_resultado[['nombre_cliente', 'monto_total', 'pct_acumulado']].head(10)
 
 # --------------------------------------------------------------------
+# Responde: ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes?
+# --------------------------------------------------------------------
+def analizar_valor_promedio_compra(df_maestro):
+    # Agrupar por cliente y sumar el Monto_Total (usamos drop_duplicates ya que Monto_Total se repite por detalle)
+    df_ventas_cliente = df_maestro[['id_venta', 'id_cliente', 'monto_total']].drop_duplicates()
+    df_ingresos = df_ventas_cliente.groupby('id_cliente')['monto_total'].sum().reset_index()
+    
+    # Calcular promedio, mínimo y máximo
+    promedio_compra = df_ingresos['monto_total'].mean()
+    minimo_compra = df_ingresos['monto_total'].min()
+    maximo_compra = df_ingresos['monto_total'].max()
+    
+    # Crear un DataFrame para el resultado
+    df_resultado = pd.DataFrame({
+        'Promedio de Compra': [promedio_compra],
+        'Mínimo de Compra': [minimo_compra],
+        'Máximo de Compra': [maximo_compra]
+    })
+    
+    return df_resultado.round(2)
+
+# --------------------------------------------------------------------
 # Responde: ¿Cuáles son los 10 productos menos rentables por volumen y cuál es su categoría? (Usa la ganancia bruta simulada).
 # --------------------------------------------------------------------
 def analizar_productos_menos_rentables(df_maestro):
@@ -90,10 +112,10 @@ def analizar_medios_de_pago(df_maestro):
     porcentaje_gral = (conteo_gral / conteo_gral.sum()) * 100
 
     # Combinamos los resultados 
-    df_porcentaje_global = pd.df_maestro ({
+    df_porcentaje_global = pd.DataFrame({
         'Total ventas (N)': conteo_gral,
         'Porcentaje (%)' : porcentaje_gral.round(2)
-    }).sort_values(by='Porcentaje (%)', ascendig =False)
+    }).sort_values(by='Porcentaje (%)', ascending=False)
 
     return df_porcentaje_global
 
@@ -108,7 +130,7 @@ def analizar_ventas_por_ciudad_pago(df_maestro):
     df_resultado_porcentaje = conteo_doble.merge(total_por_ciudad, on ='ciudad', how='left')
 
     # Calculamos/ creamos columna 'Porcentaje ciudad'
-    df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje('conteo_ventas')/ df_resultado_porcentaje('total_ventas_ciudad')
+    df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje['conteo_ventas'] / df_resultado_porcentaje['total_ventas_ciudad']
 
     df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje['Porcentaje ciudad'].round(2)
     df_resultado_porcentaje = df_resultado_porcentaje[['ciudad', 'medio_pago', 'Porcentaje ciudad']]
@@ -121,7 +143,7 @@ def analizar_ventas_por_ciudad_pago(df_maestro):
 def promedio_de_medio_de_pago(df_maestro):
     # Sumamos el importe total de Ventas y agrupamos por transacción
     df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
-    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}), inplace= True
+    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}, inplace=True)
 
     # Unimos el Monto total con el Medio de pago, haciendo una copia del original
     df_pago_por_venta = df_maestro[['id_venta', 'medio_pago']].drop_duplicates()
@@ -136,8 +158,8 @@ def promedio_de_medio_de_pago(df_maestro):
     df_promedio.rename(columns={'monto_total_venta': 'Monto Promedio de Venta'}, inplace=True)
 
     # Formateo el resultado
-    df_promedio['Monto Promedio de Venta'] = df.promedio['Monto promedio de Venta'].round(2)
-    df_promedio.sort_values(by= 'Monto Promedioi de Venta', ascendig=False, inplace= True)
+    df_promedio['Monto Promedio de Venta'] = df_promedio['Monto Promedio de Venta'].round(2)
+    df_promedio.sort_values(by='Monto Promedio de Venta', ascending=False, inplace=True)
 
     return df_promedio
 
