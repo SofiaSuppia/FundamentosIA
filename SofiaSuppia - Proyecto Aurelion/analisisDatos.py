@@ -157,10 +157,36 @@ def promedio_de_medio_de_pago(df_maestro):
     # Renombro la columna anterior
     df_promedio.rename(columns={'monto_total_venta': 'Monto Promedio de Venta'}, inplace=True)
 
-    # Formateo el resultado
+    # Formateo resultado
     df_promedio['Monto Promedio de Venta'] = df_promedio['Monto Promedio de Venta'].round(2)
     df_promedio.sort_values(by='Monto Promedio de Venta', ascending=False, inplace=True)
 
     return df_promedio
 
-#-------fio avance 2-----
+# --------------------------------------------------------------------
+# Responde a : ¿Cuál es el mes o trimestre con más ingresos?
+# --------------------------------------------------------------------
+def analisis_temporal_mayor_ingreso(df_maestro):
+    # Importe de ventas por 'id_venta' transaccion
+    df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
+    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}, inplace= True)
+
+    # Unimos el Monto Total con la Fecha, evitando duplicados
+    df_fechas_venta =df_maestro[['id_venta', 'fecha_venta']].drop_duplicates()
+    df_analisis_temporal = df_monto_total_venta.merge(df_fechas_venta, on='id_venta' ,how='left')
+
+    # Columna temporal de nombre de mes 
+    df_analisis_temporal['mes_nombre'] = df_analisis_temporal['fecha_venta'].dt.month_name()
+    df_analisis_temporal['trimestre'] = df_analisis_temporal['fecha_venta'].dt.quarter
+
+    # Analisis por mes
+    df_importe_por_mes = df_analisis_temporal.groupby('mes_nombre')['monto_total_venta'].sum().reset_index()
+
+    # Analisis por trimestre
+    df_importe_por_trimestre = df_analisis_temporal.groupby('trimestre')['monto_total_venta'].sum().reset_index()
+
+    # Formateo resultado
+    df_importe_por_mes = df_importe_por_mes.sort_values(by='monto_total_venta', ascending=False)
+    df_importe_por_trimestre = df_importe_por_trimestre.sort_values(by='monto_total_venta', ascending=False)
+
+    return df_importe_por_mes, df_importe_por_trimestre

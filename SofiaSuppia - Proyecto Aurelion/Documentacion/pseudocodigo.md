@@ -120,7 +120,7 @@ FUNCION ANALIZAR_VENTAS_POR_CIUDAD(DF_MAESTRO)
        Reiniciar indice (nombre = total_ventas_ciudad)
 
     # 3. UNIR EL CONTEO ESPECIFICO CON EL TOTAL DE LA CIUDAD
-    DF_RESULTADO = conteo_doble UNION 'total_ventas_ciudad'
+        DF_RESULTADO = conteo_doble UNION 'total_ventas_ciudad'
 
     # 4. CALCULAR EL PORCENTAJE POR CIUDAD
      CREA columna Porcentaje ciudad = con 'conteo_ventas / Total_ventas_ciudad' 
@@ -130,6 +130,27 @@ FUNCION ANALIZAR_VENTAS_POR_CIUDAD(DF_MAESTRO)
     -DEVUELVE las COLUMNAS 'ciudad', medio_pago' y 'porcentaje ciudad'
 
 
+FUNCION ANALISIS_TEMPORAL_MAYOR_INGRESO(DF_MAESTRO):
+    # 1. AGRUPAR por ''id_venta' y SUMAR 'importe'
+    CREA columna 'monto_total_venta' con suma total
+
+    # 2.  LIMPIA datos
+    EXTRAER 'id_venta' y 'fecha_venta' sin duplicados
+    UNIR 'monto_total_venta' con 'fecha_venta' usando 'id_venta'
+
+    # 3.  Columnas temporales 
+    df_analisis_temporal =
+        CREA columna 'mes_nombre' a partir de 'fecha_venta'
+        CREA columna 'trimestre' a partir de  'fecha_venta'
+
+    # 4. ANALISIS POR MES
+        df_importe_por_mes = AGRUPA POR MES Y SUMA 'monto_total_venta'
+
+    # 5.ANALISIS POR TRIMESTRE
+        df_importe_por_trimestre = AGRUPA POR TRIMESTRE Y SUMA 'monto_total_venta'
+
+    # 6. FORMATEA Y DEVUELVE 
+    Resultados por monto descendente
 
 
 

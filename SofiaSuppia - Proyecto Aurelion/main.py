@@ -1,6 +1,7 @@
 # Importaciones de módulos con alias
 import procesoDatos as pd
 import analisisDatos as ad
+import calendar
 
 def main():
     print("--- INICIO DEL ANÁLISIS DE VENTAS ---")
@@ -62,7 +63,17 @@ def main():
     print("\n--- 11. Monto Promedio de Venta por Medio de Pago ---")
     print(df_promedio)
 
-    # Pregunta 12: ¿Cuál es el mes o trimestre con más ingresos?
+    # Pregunta 12: Mes y trimestre con más ingresos
+    df_importe_por_mes, df_importe_por_trimestre = ad.analisis_temporal_mayor_ingreso(df_maestro)
+
+    print("\n--- 12. Importe Total de Ventas por Mes ---")
+    print(df_importe_por_mes)
+
+    print("\n--- 12.2 Importe Total de Ventas por Trimestre ---")
+    print(df_importe_por_trimestre)
+
+    # Pregunta 13: 
+
 
     # ... (Llamadas a las demás funciones de análisis) ...
 
