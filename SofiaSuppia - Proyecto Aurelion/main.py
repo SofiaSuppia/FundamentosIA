@@ -62,6 +62,8 @@ def main():
     print("\n--- 11. Monto Promedio de Venta por Medio de Pago ---")
     print(df_promedio)
 
+    # Pregunta 12: ¿Cuál es el mes o trimestre con más ingresos?
+
     # ... (Llamadas a las demás funciones de análisis) ...
 
     print("\n--- ANÁLISIS COMPLETADO EXITOSAMENTE ---")

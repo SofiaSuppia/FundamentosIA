@@ -163,4 +163,4 @@ def promedio_de_medio_de_pago(df_maestro):
 
     return df_promedio
 
-#-------
+#-------fio avance 2-----
