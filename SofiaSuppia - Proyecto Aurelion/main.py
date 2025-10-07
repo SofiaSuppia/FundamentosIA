@@ -72,8 +72,15 @@ def main():
     print("\n--- 12.2 Importe Total de Ventas por Trimestre ---")
     print(df_importe_por_trimestre)
 
-    # Pregunta 13: 
+    # Pregunta 13: Categoria con mayor ingreso
 
+    print("\n--- 13.1 Categoria con mayor ingreso total ---")
+    df_categoria_mayor_ingreso = ad.analisis_categoria_mayor_ingreso(df_maestro)
+    print(df_categoria_mayor_ingreso)
+
+    print("\n--- 13.2 Categoria con mayor cantidad de unidades vendidas ---")
+    df_categoria_mayor_cantidades_vendidas = ad.analisis_categoria_mayor_cantidad_de_ventas(df_maestro)
+    print(df_categoria_mayor_cantidades_vendidas)
 
     # ... (Llamadas a las demás funciones de análisis) ...
 
