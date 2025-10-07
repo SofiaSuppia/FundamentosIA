@@ -190,3 +190,28 @@ def analisis_temporal_mayor_ingreso(df_maestro):
     df_importe_por_trimestre = df_importe_por_trimestre.sort_values(by='monto_total_venta', ascending=False)
 
     return df_importe_por_mes, df_importe_por_trimestre
+
+# --------------------------------------------------------------------
+# Responde a : ¿Cuál es el monto de compra promedio por los clientes en los primeros 30 días después de registrarse?
+# --------------------------------------------------------------------
+
+def comportamiento_temprano_cliente(df_maestro):
+
+    # Importe de ventas por transaccion
+    df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
+    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}, inplace= True)
+
+    # Extraer columnas relevantes por venta (sin duplicados)
+    df_info_venta = df_maestro[['id_venta', 'id_cliente', 'fecha', 'fecha_alta']].drop_duplicates()
+
+    # Unir Monto total con info de venta
+    df_ventas_completas = df_monto_total_venta.merge(df_info_venta, on='id_venta', how='left')
+
+    # Resta fechas y aplica filtro de 30D
+    df_ventas_completas ['primeros _30d'] = df_ventas_completas ['fecha'] - df_ventas_completas ['fecha_alta'].dt.days
+    df_filtrado_30d = df_ventas_completas [df_ventas_completas ['primeros _30d']<= 30]
+
+    # Calculo de promedio de Monto Total
+    df_promedio_monto_30d = df_filtrado_30d['monto_total'].mean().round(2)
+
+    return df_promedio_monto_30d

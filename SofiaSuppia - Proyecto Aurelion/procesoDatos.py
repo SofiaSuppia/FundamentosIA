@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import calendar
 
 # --- CONFIGURACIÓN DE ARCHIVOS Y PARÁMETROS ---
 ARCHIVOS = {

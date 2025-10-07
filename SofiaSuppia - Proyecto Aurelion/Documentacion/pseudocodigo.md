@@ -152,6 +152,25 @@ FUNCION ANALISIS_TEMPORAL_MAYOR_INGRESO(DF_MAESTRO):
     # 6. FORMATEA Y DEVUELVE 
     Resultados por monto descendente
 
+FUNCION COMPORTAMIENTO TEMPRANO DEL CLIENTE
+
+    # 1. IMPORTE DE VENTAS POR TRANSACCION
+     df_monto_total_venta = AGRUPA por 'id_venta'.SUMA 'importe' y CONVIERTE indice
+     df_monto_total_venta = RENOMBRA la columna 'importe' a 'monto_total_venta'
+
+    # 2. EXTRAER COLUMNAS RELEVANTES POR VENTA
+    df_info_venta = df_maestro COLUMNAS ''id_venta', 'id_cliente', 'fecha', 'fecha_alta' SIN DUPLICADOS
+
+    # 3. UNIR MONTO TOTAL CON INFO DE VENTA
+    df_ventas_completas = df_ monto_total_venta (ex 'importe') UNIR con df_info_venta a IZQUIERDA
+
+    # 4. RESTA FECHAS Y APLICA FILTRO DE 30D
+    CREA COLUMNA 'primeros_30d' = 'fecha' - ''fecha_alta' en FORMATO DIAS
+    FILTRO <=30 DIAS
+
+    # 5. CALCULO PROMEDIO DE MONTO TOTAL
+    df_promedio_monto_30d = df_filtrado_30d en COLUMNA 'monto_total' PROMEDIO y REDONDEO
+
 
 
 
