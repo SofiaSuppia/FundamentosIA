@@ -27,7 +27,7 @@ def analizar_clientes_pareto(df_maestro):
     # Unir con el nombre del cliente para el resultado
     df_resultado = pd.merge(df_pareto, df_maestro[['id_cliente', 'nombre_cliente']].drop_duplicates(), on='id_cliente', how='left')
 
-    return df_resultado[['nombre_cliente', 'monto_total', 'pct_acumulado']].head(10)
+    return df_resultado[['nombre_cliente', 'monto_total', 'pct_acumulado']].head(10).reset_index(drop=True)
 
 # --------------------------------------------------------------------
 # Responde: ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes?
@@ -49,7 +49,104 @@ def analizar_valor_promedio_compra(df_maestro):
         'Máximo de Compra': [maximo_compra]
     })
     
-    return df_resultado.round(2)
+    return df_resultado.round(2).reset_index(drop=True)
+
+# --------------------------------------------------------------------
+# Responde: ¿Qué tan frecuentes y qué productos compran los clientes más fieles?
+# --------------------------------------------------------------------
+def analizar_frecuencia_productos_clientes_fieles(df_maestro):
+    # Definir un umbral para considerar a un cliente como "fiel"
+    umbral_fidelidad = 10  # Por ejemplo, 10 compras
+
+    # Contar la cantidad de compras por cliente
+    df_compras_cliente = df_maestro['id_cliente'].value_counts().reset_index()
+    df_compras_cliente.columns = ['id_cliente', 'cantidad_compras']
+
+    # Filtrar clientes fieles
+    df_fieles = df_compras_cliente[df_compras_cliente['cantidad_compras'] >= umbral_fidelidad]
+    
+    # Agregar nombres de clientes fieles
+    df_fieles_con_nombres = df_fieles.merge(
+        df_maestro[['id_cliente', 'nombre_cliente']].drop_duplicates(), 
+        on='id_cliente', 
+        how='left'
+    )
+    
+    # Ordenar por cantidad de compras (descendente)
+    df_fieles_con_nombres = df_fieles_con_nombres.sort_values('cantidad_compras', ascending=False)
+
+    # Obtener los productos comprados por estos clientes fieles
+    df_productos_fieles = df_maestro[df_maestro['id_cliente'].isin(df_fieles['id_cliente'])]
+
+    # Contar la cantidad de veces que se compra cada producto
+    df_productos_frecuencia = df_productos_fieles['id_producto'].value_counts().reset_index()
+    df_productos_frecuencia.columns = ['id_producto', 'frecuencia_compra']
+    
+    # Agregar nombres de productos y categorías
+    df_productos_con_nombres = df_productos_frecuencia.merge(
+        df_maestro[['id_producto', 'nombre_producto_detalle', 'categoria']].drop_duplicates(),
+        on='id_producto',
+        how='left'
+    )
+    
+    # Calcular también la cantidad total vendida de cada producto a clientes fieles
+    df_cantidad_productos = df_productos_fieles.groupby(['id_producto', 'nombre_producto_detalle', 'categoria']).agg(
+        cantidad_total_vendida=('cantidad', 'sum'),
+        frecuencia_compra=('id_producto', 'count')
+    ).reset_index()
+    
+    # Ordenar por frecuencia de compra (descendente)
+    df_cantidad_productos = df_cantidad_productos.sort_values('frecuencia_compra', ascending=False)
+
+    return df_fieles_con_nombres[['nombre_cliente', 'cantidad_compras']].reset_index(drop=True), df_cantidad_productos[['nombre_producto_detalle', 'categoria', 'frecuencia_compra', 'cantidad_total_vendida']].head(10).reset_index(drop=True)
+
+# --------------------------------------------------------------------
+# Responde: ¿Cuál es el cliente que más compra?
+# --------------------------------------------------------------------
+def analizar_cliente_mas_comprador(df_maestro):
+    # Contar la cantidad de compras por cliente
+    df_compras_cliente = df_maestro['id_cliente'].value_counts().reset_index()
+    df_compras_cliente.columns = ['id_cliente', 'cantidad_compras']
+
+    # Obtener el cliente con más compras
+    df_cliente_mas_comprador = df_compras_cliente[df_compras_cliente['cantidad_compras'] == df_compras_cliente['cantidad_compras'].max()]
+    
+    # Agregar el nombre del cliente
+    df_resultado = df_cliente_mas_comprador.merge(
+        df_maestro[['id_cliente', 'nombre_cliente']].drop_duplicates(), 
+        on='id_cliente', 
+        how='left'
+    )
+
+    return df_resultado[['nombre_cliente', 'id_cliente', 'cantidad_compras']].reset_index(drop=True)
+
+# --------------------------------------------------------------------
+# Responde: ¿Cuál es la categoría de productos que tiene la mayor cantidad de productos vendidos?
+# ¿Me podes decir los ingresos de cada categoría?
+# --------------------------------------------------------------------
+def analizar_categoria_mas_vendida(df_maestro):
+    # Agrupar por categoría y calcular tanto cantidad vendida como ingresos
+    df_categoria_analisis = df_maestro.groupby('categoria').agg({
+        'cantidad': 'sum',
+        'ganancia_bruta': 'sum',
+        'importe': 'sum'
+    }).reset_index()
+    
+    # Renombrar columnas para mayor claridad
+    df_categoria_analisis.columns = ['categoria', 'cantidad_total_vendida', 'ganancia_total', 'ingresos_totales']
+    
+    # Ordenar por cantidad vendida (descendente) para ver todas las categorías
+    df_categoria_analisis = df_categoria_analisis.sort_values('cantidad_total_vendida', ascending=False)
+    
+    # Obtener la categoría con más ventas (primera fila después del ordenamiento)
+    df_categoria_mas_vendida = df_categoria_analisis.head(1)
+    
+    # Formatear números para mejor presentación
+    df_categoria_analisis = df_categoria_analisis.round(2)
+    df_categoria_mas_vendida = df_categoria_mas_vendida.round(2)
+
+    return df_categoria_mas_vendida.reset_index(drop=True), df_categoria_analisis.reset_index(drop=True)
+
 
 # --------------------------------------------------------------------
 # Responde: ¿Cuáles son los 10 productos menos rentables por volumen y cuál es su categoría? (Usa la ganancia bruta simulada).
@@ -71,7 +168,7 @@ def analizar_productos_menos_rentables(df_maestro):
         ascending=[True, True]
     ).head(10)
 
-    return df_menos_rentables[['nombre_producto_detalle', 'categoria', 'Ganancia_Total', 'Unidades_Vendidas']]
+    return df_menos_rentables[['nombre_producto_detalle', 'categoria', 'Ganancia_Total', 'Unidades_Vendidas']].reset_index(drop=True)
 
 # --------------------------------------------------------------------
 #  Responde: ¿Cuál es la ciudad que genera más ingresos? ¿Cómo se distribuyen los ingresos?
@@ -90,7 +187,7 @@ def analizar_ventas_por_ciudad_ingreso(df_maestro):
     
     df_ingresos_ciudad.sort_values(by='monto_total', ascending=False, inplace=True)
     
-    return df_ingresos_ciudad.round(2)
+    return df_ingresos_ciudad.round(2).reset_index(drop=True)
 
 # --------------------------------------------------------------------
 # FUNCIONES DE ANÁLISIS CONTROLAR
@@ -135,7 +232,7 @@ def analizar_ventas_por_ciudad_pago(df_maestro):
     df_resultado_porcentaje['Porcentaje ciudad'] = df_resultado_porcentaje['Porcentaje ciudad'].round(2)
     df_resultado_porcentaje = df_resultado_porcentaje[['ciudad', 'medio_pago', 'Porcentaje ciudad']]
 
-    return df_resultado_porcentaje
+    return df_resultado_porcentaje.reset_index(drop=True)
 
 # --------------------------------------------------------------------
 # Responde a : ¿Cuál es el promedio de ventas por Medio de pago?
@@ -161,7 +258,7 @@ def promedio_de_medio_de_pago(df_maestro):
     df_promedio['Monto Promedio de Venta'] = df_promedio['Monto Promedio de Venta'].round(2)
     df_promedio.sort_values(by='Monto Promedio de Venta', ascending=False, inplace=True)
 
-    return df_promedio
+    return df_promedio.reset_index(drop=True)
 
 # --------------------------------------------------------------------
 # Responde a : ¿Cuál es el mes o trimestre con más ingresos?
@@ -189,7 +286,7 @@ def analisis_temporal_mayor_ingreso(df_maestro):
     df_importe_por_mes = df_importe_por_mes.sort_values(by='monto_total_venta', ascending=False)
     df_importe_por_trimestre = df_importe_por_trimestre.sort_values(by='monto_total_venta', ascending=False)
 
-    return df_importe_por_mes, df_importe_por_trimestre
+    return df_importe_por_mes.reset_index(drop=True), df_importe_por_trimestre.reset_index(drop=True)
 
 # --------------------------------------------------------------------------------------
 # Responde a : ¿Cuàl es la categoria de producto que genera el mayor ingreso total?
@@ -205,7 +302,7 @@ def analisis_categoria_mayor_ingreso(df_maestro: pd.DataFrame):
         ascending=[False]
     ).head(1)
 
-    return df_mayor_ingreso[['categoria', 'Ganancia_Total']]
+    return df_mayor_ingreso[['categoria', 'Ganancia_Total']].reset_index(drop=True)
 
 # ------------------------------------------------------------------------------------------------
 # Responde a : ¿Cuàl es la categoria de producto que tiene mayor cantidad de unidades vendidas?
@@ -222,28 +319,4 @@ def analisis_categoria_mayor_cantidad_de_ventas(df_maestro: pd.DataFrame):
     ).head(1)
 
     return df_mayor_cantidad_de_unidades[['categoria', 'Unidades_Vendidas']]
-
-# --------------------------------------------------------------------
-# Responde a : ¿Cuál es el monto de compra promedio por los clientes en los primeros 30 días después de registrarse?
-# --------------------------------------------------------------------
-
-def comportamiento_temprano_cliente(df_maestro):
-
-    # Importe de ventas por transaccion
-    df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
-    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}, inplace= True)
-
-    # Extraer columnas relevantes por venta (sin duplicados)
-    df_info_venta = df_maestro[['id_venta', 'id_cliente', 'fecha', 'fecha_alta']].drop_duplicates()
-
-    # Unir Monto total con info de venta
-    df_ventas_completas = df_monto_total_venta.merge(df_info_venta, on='id_venta', how='left')
-
-    # Resta fechas y aplica filtro de 30D
-    df_ventas_completas ['primeros _30d'] = df_ventas_completas ['fecha'] - df_ventas_completas ['fecha_alta'].dt.days
-    df_filtrado_30d = df_ventas_completas [df_ventas_completas ['primeros _30d']<= 30]
-
-    # Calculo de promedio de Monto Total
-    df_promedio_monto_30d = df_filtrado_30d['monto_total'].mean().round(2)
-
-    return df_promedio_monto_30d
+    return df_mayor_cantidad_de_unidades[['categoria', 'Unidades_Vendidas']].reset_index(drop=True)

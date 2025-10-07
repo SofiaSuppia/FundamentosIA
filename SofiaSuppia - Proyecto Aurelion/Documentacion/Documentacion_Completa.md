@@ -143,7 +143,7 @@ erDiagram
 ### 📦 **Categoría: Análisis de Productos**
 
 #### 🎯 **P5: Categorías con Mayor Rentabilidad**
-- **Enunciado:** ¿Cuál es la categoría de productos que tiene la mayor cantidad de productos vendidos?
+- **Enunciado:** ¿Cuál es la categoría de productos que tiene la mayor cantidad de productos vendidos? ¿Me podes decir los ingresos de cada categoría?
 - **Datos clave:** Detalle de ventas + productos
 - **Metodología:** Agrupación por categoría, suma de cantidades
 
