@@ -288,35 +288,66 @@ def analisis_temporal_mayor_ingreso(df_maestro):
 
     return df_importe_por_mes.reset_index(drop=True), df_importe_por_trimestre.reset_index(drop=True)
 
-# --------------------------------------------------------------------------------------
-# Responde a : ¿Cuàl es la categoria de producto que genera el mayor ingreso total?
-# --------------------------------------------------------------------------------------
+# --------------------------------------------------------------------
+# Responde a: ¿Cuál es el comportamiento de compra de los clientes por períodos después de registrarse?
+# Analiza: 30 días, 90 días, 6 meses, 1 año
+# --------------------------------------------------------------------
+def comportamiento_temprano_cliente(df_maestro):
 
-def analisis_categoria_mayor_ingreso(df_maestro: pd.DataFrame):
-    df_categorias = df_maestro.groupby(['categoria']).agg(
-        Ganancia_Total=('ganancia_bruta', 'sum')
-    ).reset_index()
+    # Importe de ventas por transaccion
+    df_monto_total_venta = df_maestro.groupby('id_venta')['importe'].sum().reset_index()
+    df_monto_total_venta.rename(columns={'importe': 'monto_total_venta'}, inplace=True)
 
-    df_mayor_ingreso = df_categorias.sort_values(
-        by=['Ganancia_Total'],
-        ascending=[False]
-    ).head(1)
+    # Extraer columnas relevantes por venta (sin duplicados)
+    # Usar los nombres técnicos correctos que existen en el DataFrame
+    df_info_venta = df_maestro[['id_venta', 'id_cliente', 'fecha_venta', 'fecha_registro']].drop_duplicates()
 
-    return df_mayor_ingreso[['categoria', 'Ganancia_Total']].reset_index(drop=True)
+    # Unir Monto total con info de venta
+    df_ventas_completas = df_monto_total_venta.merge(df_info_venta, on='id_venta', how='left')
 
-# ------------------------------------------------------------------------------------------------
-# Responde a : ¿Cuàl es la categoria de producto que tiene mayor cantidad de unidades vendidas?
-# ------------------------------------------------------------------------------------------------
+    # Calcular diferencia de días entre fecha de venta y fecha de registro
+    df_ventas_completas['dias_desde_registro'] = (df_ventas_completas['fecha_venta'] - df_ventas_completas['fecha_registro']).dt.days
+    
+    # Definir períodos para análisis
+    periodos = {
+        '30 días': 30,
+        '90 días': 90,
+        '6 meses': 180,
+        '1 año': 365
+    }
+    
+    resultados = []
+    
+    for nombre_periodo, dias in periodos.items():
+        df_filtrado = df_ventas_completas[df_ventas_completas['dias_desde_registro'] <= dias]
+        
+        if len(df_filtrado) > 0:
+            promedio_monto = df_filtrado['monto_total_venta'].mean().round(2)
+            num_ventas = len(df_filtrado)
+            num_clientes = df_filtrado['id_cliente'].nunique()
+        else:
+            promedio_monto = 0
+            num_ventas = 0
+            num_clientes = 0
+            
+        resultados.append({
+            'Período': nombre_periodo,
+            'Promedio Monto': promedio_monto,
+            'Número Ventas': num_ventas,
+            'Clientes Únicos': num_clientes
+        })
+    
+    # Crear DataFrame con todos los resultados
+    df_resultado = pd.DataFrame(resultados)
+    
+    # Agregar información adicional sobre el comportamiento general
+    tiempo_promedio_primera_compra = df_ventas_completas['dias_desde_registro'].min()
+    
+    print(f"📊 INSIGHT: El tiempo mínimo desde registro hasta primera compra es {tiempo_promedio_primera_compra} días")
+    
+    return df_resultado.reset_index(drop=True)
 
-def analisis_categoria_mayor_cantidad_de_ventas(df_maestro: pd.DataFrame):
-    df_categorias = df_maestro.groupby(['categoria']).agg(
-        Unidades_Vendidas=('cantidad', 'sum')
-    ).reset_index()
+    # Calculo de promedio de Monto Total
+    df_promedio_monto_30d = df_filtrado_30d['monto_total_venta'].mean().round(2)
 
-    df_mayor_cantidad_de_unidades = df_categorias.sort_values(
-        by=['Unidades_Vendidas'],
-        ascending=[False]
-    ).head(1)
-
-    return df_mayor_cantidad_de_unidades[['categoria', 'Unidades_Vendidas']]
-    return df_mayor_cantidad_de_unidades[['categoria', 'Unidades_Vendidas']].reset_index(drop=True)
+    return df_promedio_monto_30d

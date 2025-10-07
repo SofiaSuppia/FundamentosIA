@@ -188,10 +188,10 @@ erDiagram
 - **Datos clave:** Ventas (cálculos con fecha)
 - **Metodología:** Agrupación temporal, suma de montos
 
-#### ⏱️ **P13: Análisis de Nuevos Clientes (30 días)**
-- **Enunciado:** ¿Cuál es el monto de compra promedio por los clientes en los primeros 30 días después de registrarse?
-- **Datos clave:** Ventas + clientes
-- **Metodología:** Filtro temporal, cálculo de promedios
+#### ⏱️ **P13: Análisis de Comportamiento de Activación de Clientes**
+- **Enunciado:** ¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse en la plataforma? (30 días, 90 días, 6 meses, 1 año)
+- **Datos clave:** Ventas + clientes + análisis temporal multiperíodo
+- **Metodología:** Cálculo de diferencias temporales `(fecha_venta - fecha_registro).dt.days`, filtros por múltiples períodos, análisis de activación progresiva
 
 #### 📊 **P14: Análisis de Nuevos Clientes (60 días)**
 - **Enunciado:** ¿Cuál es la media de la venta promedio de los clientes que realizan un pedido en los primeros 60 días después de registrarse?

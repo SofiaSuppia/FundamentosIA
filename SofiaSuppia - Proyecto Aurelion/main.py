@@ -2,6 +2,7 @@
 import procesoDatos as pd
 import analisisDatos as ad
 import calendar
+import os
 
 def main():
     print("--- INICIO DEL ANÁLISIS DE VENTAS ---")
@@ -38,27 +39,6 @@ def main():
     print("\n--- 2. Promedio, Mínimo y Máximo de Compra ---")
     print(resultado_valor_compra)
 
-    # Pregunta 3: Clientes Más Fieles y sus Productos
-    df_clientes_fieles, df_productos_fieles = ad.analizar_frecuencia_productos_clientes_fieles(df_maestro)
-    print("\n--- 3. Clientes Más Fieles (>=10 compras) ---")
-    print(df_clientes_fieles)
-    print("\n--- 3.2 Productos Más Comprados por Clientes Fieles ---")
-    print(df_productos_fieles)  
-
-    # Pregunta 4: Cliente que Más Comprador
-    resultado_cliente_mas_comprador = ad.analizar_cliente_mas_comprador(df_maestro)
-    print("\n--- 4. Cliente que Más Compra ---")
-    print(resultado_cliente_mas_comprador)  
-
-    # Pregunta 5: Categoría Más Vendida y ingreso por Categoría
-    df_categoria_mayor_ingreso = ad.analisis_categoria_mayor_ingreso(df_maestro)
-    print("\n--- 5.1 Categoria con mayor ingreso total ---")
-    print(df_categoria_mayor_ingreso)
-    df_categoria_mayor_cantidades_vendidas = ad.analisis_categoria_mayor_cantidad_de_ventas(df_maestro)
-    print("\n--- 5.2 Categoria con mayor cantidad de unidades vendidas ---")
-    print(df_categoria_mayor_cantidades_vendidas)
-
-
     # Pregunta 6: Productos Menos Rentables
     resultado_rentabilidad = ad.analizar_productos_menos_rentables(df_maestro)
     print("\n--- 6. 10 Productos Menos Rentables (Ganancia Bruta) ---")
@@ -93,7 +73,7 @@ def main():
     print("\n--- 12.2 Importe Total de Ventas por Trimestre ---")
     print(df_importe_por_trimestre)
 
-    # Pregunta 13: Comportamiento Temprano del Cliente (30D)
+    # Pregunta 13: Comportamiento de Compra por Períodos desde Registro
     df_promedio_monto_30d = ad.comportamiento_temprano_cliente(df_maestro)
     print("\n--- 13. Monto de compra promedio en los primeros 30 días ---")
     print(df_promedio_monto_30d)
