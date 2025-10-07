@@ -247,3 +247,10 @@ def comportamiento_temprano_cliente(df_maestro):
     df_promedio_monto_30d = df_filtrado_30d['monto_total'].mean().round(2)
 
     return df_promedio_monto_30d
+
+def productos_mas_vendidos_primer_compra(df_maestro: pd.DataFrame):
+    primeras_ventas = df_maestro.groupby('id_cliente').min('fecha')
+    productos = df_maestro.merge(primeras_ventas, on='id_venta')
+    sumatoria_productos = productos.groupby('id_producto_x').size().reset_index(name='ocurrencias').sort_values('ocurrencias', ascending=False).head(10)
+    sumatoria_productos_con_nombre = sumatoria_productos.merge(sumatoria_productos, on='id_producto_x', how='left')
+    return sumatoria_productos_con_nombre

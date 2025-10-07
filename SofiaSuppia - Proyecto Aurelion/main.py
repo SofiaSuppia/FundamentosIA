@@ -44,8 +44,10 @@ def main():
     print(resultado_rentabilidad)
 
     #Pregunta 7: Productos mas vendidos en la primera compra 
-    
-
+    # EN PROCESO, NECESITA CORRECCIONES
+    # resultado_productos_mas_vendidos_primer_compra = ad.productos_mas_vendidos_primer_compra(df_maestro)
+    # print("\n--- 8. Productos más vendidos en la primer compra de cada cliente ---")
+    # print(resultado_productos_mas_vendidos_primer_compra)
     
     # Pregunta 8: Ingresos por Ciudad
     resultado_ciudad = ad.analizar_ventas_por_ciudad_ingreso(df_maestro)
