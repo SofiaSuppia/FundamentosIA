@@ -42,6 +42,10 @@ def main():
     resultado_rentabilidad = ad.analizar_productos_menos_rentables(df_maestro)
     print("\n--- 6. 10 Productos Menos Rentables (Ganancia Bruta) ---")
     print(resultado_rentabilidad)
+
+    #Pregunta 7: Productos mas vendidos en la primera compra 
+    
+
     
     # Pregunta 8: Ingresos por Ciudad
     resultado_ciudad = ad.analizar_ventas_por_ciudad_ingreso(df_maestro)
@@ -81,6 +85,10 @@ def main():
     print("\n--- 13.2 Categoria con mayor cantidad de unidades vendidas ---")
     df_categoria_mayor_cantidades_vendidas = ad.analisis_categoria_mayor_cantidad_de_ventas(df_maestro)
     print(df_categoria_mayor_cantidades_vendidas)
+    # Pregunta 13: Comportamiento Temprano del Cliente (30D)
+    df_promedio_monto_30d = ad.comportamiento_temprano_cliente(df_maestro)
+    print("\n--- 13. Monto de compra promedio en los primeros 30 días ---")
+    print(df_promedio_monto_30d)
 
     # ... (Llamadas a las demás funciones de análisis) ...
 
