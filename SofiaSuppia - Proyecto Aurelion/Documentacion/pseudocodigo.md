@@ -153,6 +153,17 @@ FUNCION ANALISIS_TEMPORAL_MAYOR_INGRESO(DF_MAESTRO):
     Resultados por monto descendente
 
 
+FUNCION ANALISIS_CATEGORIA_MAYOR_INGRESO(DF_MAESTRO):
+    df_categorias = AGRUPA POR CATEGORIA Y SUMA 'ganancia_bruta'
+    
+    df_mayor_ingreso = ORDENAR df_categorias DESCENDENTE POR 'Ganancia_Total'
+    -DEVUELVE LAS COLUMNAS 'categoria' Y 'Ganancia_Total'
+
+FUNCION ANALISIS_CATEGORIA_MAYOR_CANTIDAD_DE_VENTAS(DF_MAESTRO):
+    df_categorias = AGRUPA POR CATEGORIA Y SUMA 'cantidad'
+    
+    df_mayor_cantidad_de_unidades = ORDENAR df_categorias DESCENDENTE POR 'Unidades_Vendidas'
+    -DEVUELVE LAS COLUMNAS 'categoria' Y 'Unidades_Vendidas'
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------

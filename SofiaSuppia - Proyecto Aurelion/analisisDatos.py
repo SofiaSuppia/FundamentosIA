@@ -190,3 +190,35 @@ def analisis_temporal_mayor_ingreso(df_maestro):
     df_importe_por_trimestre = df_importe_por_trimestre.sort_values(by='monto_total_venta', ascending=False)
 
     return df_importe_por_mes, df_importe_por_trimestre
+
+# --------------------------------------------------------------------------------------
+# Responde a : ¿Cuàl es la categoria de producto que genera el mayor ingreso total?
+# --------------------------------------------------------------------------------------
+
+def analisis_categoria_mayor_ingreso(df_maestro: pd.DataFrame):
+    df_categorias = df_maestro.groupby(['categoria']).agg(
+        Ganancia_Total=('ganancia_bruta', 'sum')
+    ).reset_index()
+
+    df_mayor_ingreso = df_categorias.sort_values(
+        by=['Ganancia_Total'],
+        ascending=[False]
+    ).head(1)
+
+    return df_mayor_ingreso[['categoria', 'Ganancia_Total']]
+
+# ------------------------------------------------------------------------------------------------
+# Responde a : ¿Cuàl es la categoria de producto que tiene mayor cantidad de unidades vendidas?
+# ------------------------------------------------------------------------------------------------
+
+def analisis_categoria_mayor_cantidad_de_ventas(df_maestro: pd.DataFrame):
+    df_categorias = df_maestro.groupby(['categoria']).agg(
+        Unidades_Vendidas=('cantidad', 'sum')
+    ).reset_index()
+
+    df_mayor_cantidad_de_unidades = df_categorias.sort_values(
+        by=['Unidades_Vendidas'],
+        ascending=[False]
+    ).head(1)
+
+    return df_mayor_cantidad_de_unidades[['categoria', 'Unidades_Vendidas']]
