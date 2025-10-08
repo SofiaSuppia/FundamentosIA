@@ -103,7 +103,7 @@ FUNCION ANALIZAR_MEDIOS_DE_PAGO(DF_MAESTRO):
     Dentro de DF_MAESTRO se cuentan los valores de la columna 'medio_pago'
 
     # 2. Calcula el PORCENTAJE GLOBAL de CADA MEDIO de pago
-   Valores de columna 'medio_pago' en porcentaje %
+    Valores de columna 'medio_pago' en porcentaje %
 
     # 3. Crea los Resultados en TABLA
     Col. 1 El conteo de transacciones
@@ -131,6 +131,7 @@ FUNCION ANALIZAR_VENTAS_POR_CIUDAD(DF_MAESTRO)
 
 
 FUNCION ANALISIS_TEMPORAL_MAYOR_INGRESO(DF_MAESTRO):
+
     # 1. AGRUPAR por ''id_venta' y SUMAR 'importe'
     CREA columna 'monto_total_venta' con suma total
 

@@ -193,19 +193,14 @@ erDiagram
 - **Datos clave:** Ventas + clientes + análisis temporal multiperíodo
 - **Metodología:** Cálculo de diferencias temporales `(fecha_venta - fecha_registro).dt.days`, filtros por múltiples períodos, análisis de activación progresiva
 
-#### 📊 **P14: Análisis de Nuevos Clientes (60 días)**
-- **Enunciado:** ¿Cuál es la media de la venta promedio de los clientes que realizan un pedido en los primeros 60 días después de registrarse?
-- **Datos clave:** Clientes, ventas, detalle de ventas
-- **Metodología:** Análisis temporal extendido, cálculo de promedios
-
 ### 💲 **Categoría: Análisis de Precios y Costos**
 
-#### 🏷️ **P15: Análisis de Precios por Categoría**
+#### 🏷️ **P14: Análisis de Precios por Categoría**
 - **Enunciado:** ¿Cuál es el precio unitario promedio de los productos por categoría?
 - **Datos clave:** Detalle de ventas + productos
 - **Metodología:** Agrupación por categoría, promedio de precios
 
-#### 📈 **P16: Rentabilidad por Producto**
+#### 📈 **P15: Rentabilidad por Producto**
 - **Enunciado:** ¿Cuál es el monto de compra promedio comparado con el precio unitario promedio (diferenciadas valor y volumen)?
 - **Datos clave:** Detalle de ventas + productos
 - **Metodología:** Análisis de márgenes y rentabilidad

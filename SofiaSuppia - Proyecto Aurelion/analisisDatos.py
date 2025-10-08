@@ -351,3 +351,48 @@ def comportamiento_temprano_cliente(df_maestro):
     df_promedio_monto_30d = df_filtrado_30d['monto_total_venta'].mean().round(2)
 
     return df_promedio_monto_30d
+
+
+def analizar_volumen_por_ciudad_multiperiodo(df_maestro):
+
+    # Unir columnas relevantes 
+    df_info_venta = df_maestro[['id_venta', 'id_cliente', 'fecha_venta', 'fecha_registro', 'ciudad']].drop_duplicates()
+
+    # Unir Monto total con info venta
+    df_ventas_completas = df_monto_total_venta.merge(df_info_venta, on='id_venta', how='left')
+
+    # Calcular días transcurridos
+    df_ventas_completas['dias_desde_registro'] = (df_ventas_completas['fecha_venta'] - df_ventas_completas['fecha_registro']).dt.days
+
+    # Definir períodos para análisis
+     periodos = {
+      '30 días': 30,
+      '90 días': 90,
+       '6 meses': 180,
+       '1 año': 365
+      }
+    
+resultados_multi = []
+
+    for nombre_periodo, dias in periodos.items():
+      df_filtrado_periodo = df_ventas_completas[df_ventas_completas['dias_desde_registro'] <= dias].copy()
+      
+     df_promedio_ciudad = (
+     df_filtrado_periodo
+        .groupby('ciudad')['monto_total_venta']
+        .mean()
+        .reset_index()
+        .rename(columns={'monto_total_venta': 'Monto promedio'})
+     )
+
+df_promedio_ciudad['Período'] = nombre_periodo
+
+resultados_multi.append(df_promedio_ciudad)
+
+
+# Formatear resultado
+df_resultado_final = pd.concat(resultados_multi, ignore_index=True)
+df_resultado_final['Monto Promedio'] = df_resultado_final['Monto Promedio'].round(2)
+df_resultado_final.sort_values(by=['Período', 'Monto Promedio'], ascending=[True, False], inplace=True)
+
+return df_resultado_final
