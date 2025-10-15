@@ -37,23 +37,6 @@ pip install pandas numpy openpyxl
 
 ---
 
-## 🗂️ Estructura de Archivos del Proyecto
-
-```
-📁 SofiaSuppia - Proyecto Aurelion/
-├── 📄 main.py                     ← Archivo principal para ejecutar
-├── 📄 procesoDatos.py             ← Procesamiento y limpieza de datos
-├── 📄 analisisDatos.py            ← Funciones de análisis
-├── 📄 INSTRUCCIONES_EJECUCION.md  ← Este archivo
-├── 📁 BaseDatos/                  ← Carpeta recomendada para datos
-│   ├── Clientes.xlsx
-│   ├── Productos.xlsx
-│   ├── Ventas.xlsx
-│   └── Detalle_ventas.xlsx
-└── 📁 __pycache__/               ← Archivos temporales de Python
-```
-
----
 
 ## 🚀 Ejecución del Programa
 

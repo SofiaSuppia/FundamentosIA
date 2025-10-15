@@ -39,6 +39,25 @@ def main():
     print("\n--- 2. Promedio, Mínimo y Máximo de Compra ---")
     print(resultado_valor_compra)
 
+    #Pregunta 3: Frecuentes y qué productos compran los clientes más fieles
+    df_clientes_fieles, df_productos_fieles = ad.analizar_frecuencia_productos_clientes_fieles(df_maestro)
+    print("\n--- 3. Clientes Más Frecuentes (10+ compras) ---")
+    print(df_clientes_fieles.head(5))  # Mostrar solo top 5 clientes
+    print("\n--- 3.1. Top 10 Productos más comprados por Clientes Fieles ---")
+    print(df_productos_fieles)
+
+    #Pregunta 4: Clientes que más productos compran
+    resultado_compra = ad.analizar_cliente_mas_comprador(df_maestro)
+    print("\n--- 4. Clientes que más productos compran ---")
+    print(resultado_compra)
+    
+    # Pregunta 5: Categorías con más ventas e ingresos de cada categoría
+    df_categoria_top, df_todas_categorias = ad.analizar_categoria_mas_vendida(df_maestro)
+    print("\n--- 5. Categoría Más Vendida ---")
+    print(df_categoria_top)
+    print("\n--- 5.1. Resumen de Todas las Categorías ---")
+    print(df_todas_categorias)
+
     # Pregunta 6: Productos Menos Rentables
     resultado_rentabilidad = ad.analizar_productos_menos_rentables(df_maestro)
     print("\n--- 6. 10 Productos Menos Rentables (Ganancia Bruta) ---")
@@ -48,6 +67,11 @@ def main():
     resultado_ciudad = ad.analizar_ventas_por_ciudad_ingreso(df_maestro)
     print("\n--- 8. Distribución de Ingresos por Ciudad ---")
     print(resultado_ciudad)
+    
+    # Pregunta 9: volumen de ventas por ciudad
+    resultado_volumen_ciudad = ad.analizar_volumen_por_ciudad_multiperiodo(df_maestro)
+    print("\n--- 9. Volumen de Ventas por Ciudad ---")
+    print(resultado_volumen_ciudad) 
     
     # Pregunta 10: Análisis de Medios de Pago (Porcentaje)
     df_porcentaje_global = ad.analizar_medios_de_pago(df_maestro)
@@ -77,8 +101,6 @@ def main():
     df_promedio_monto_30d = ad.comportamiento_temprano_cliente(df_maestro)
     print("\n--- 13. Monto de compra promedio en los primeros 30 días ---")
     print(df_promedio_monto_30d)
-
-    # ... (Llamadas a las demás funciones de análisis) ...
 
     print("\n--- ANÁLISIS COMPLETADO EXITOSAMENTE ---")
 

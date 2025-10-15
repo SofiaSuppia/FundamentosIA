@@ -4,21 +4,10 @@
 > **Fecha:** Octubre 2025  
 > **Materia:** Fundamentos de Inteligencia Artificial
 
----
-
-## 📋 Tabla de Contenidos
-
-- [🎯 Resumen Ejecutivo](#-resumen-ejecutivo)
-- [🔍 Análisis del Problema](#-análisis-del-problema)
-- [💾 Arquitectura de Datos](#-arquitectura-de-datos)
-- [❓ Preguntas Estratégicas Completas](#-preguntas-estratégicas-completas)
-- [💰 Metodología: Cálculo de Costo Unitario](#-metodología-cálculo-de-costo-unitario)
-- [⚙️ Planificación del Desarrollo](#️-planificación-del-desarrollo)
-- [🔧 Implementación Técnica](#-implementación-técnica)
 
 ---
 
-## 🎯 Resumen Ejecutivo
+## 🎯 Resumen 
 
 ### Tema Principal
 **Análisis de datos de ventas en un market digital** (modelo JustMart) para identificar patrones de consumo, optimizar decisiones comerciales y diseñar estrategias de fidelización de clientes.
@@ -103,10 +92,10 @@ erDiagram
 
 | 📋 **Tabla** | 📈 **Registros** | 🔗 **Relaciones** | 📝 **Campos Principales** |
 |:-------------|:-----------------|:-------------------|:---------------------------|
-| **👥 Clientes** | ~1,000+ | PK: `ID_Cliente` | ID, Nombre, Ciudad, Fecha_Registro |
-| **📦 Productos** | ~300+ | PK: `ID_Producto` | ID, Nombre, Categoría |
-| **🛒 Ventas** | ~5,000+ | PK: `ID_Venta` → FK: `ID_Cliente` | ID_Venta, Fecha, Medio_Pago, Monto |
-| **📋 Detalle_Ventas** | ~15,000+ | FK: `ID_Venta`, `ID_Producto` | Cantidad, Precios, Costos, Importe |
+| **👥 Clientes** | 100 | PK: `ID_Cliente` | ID, Nombre, Ciudad, Fecha_Registro |
+| **📦 Productos** | 100| PK: `ID_Producto` | ID, Nombre, Categoría |
+| **🛒 Ventas** | 120 |PK: `ID_Venta` → FK: `ID_Cliente` | ID_Venta, Fecha, Medio_Pago, Monto |
+| **📋 Detalle_Ventas** | 120 | FK: `ID_Venta`, `ID_Producto` | Cantidad, Precios, Costos, Importe |
 
 ### 🔧 Características del Dataset
 - **📊 Tipo:** Simulación de Base de Datos Relacional (OLTP → OLAP)
@@ -234,212 +223,6 @@ Ganancia_Bruta = Importe - (Costo_Unitario × Cantidad)
 # - Cantidad = Unidades vendidas del producto
 ```
 
-### 🔧 **Pseudocódigo de Implementación con NumPy**
-
-```pseudocode
-ALGORITMO calcular_costo_y_ganancia_bruta
-ENTRADA: tabla_detalle_ventas, tabla_productos
-SALIDA: tabla_con_costos_y_ganancias
-
-INICIO
-    // Paso 1: Unir tablas para obtener información completa
-    tabla_resultado = UNIR tabla_detalle_ventas CON tabla_productos POR ID_Producto
-    
-    // Paso 2: Convertir datos a arrays numpy para cálculos eficientes
-    array_precios = CONVERTIR_A_ARRAY_NUMPY(tabla_resultado.Precio_Unitario)
-    array_cantidad = CONVERTIR_A_ARRAY_NUMPY(tabla_resultado.Cantidad)
-    array_importe = CONVERTIR_A_ARRAY_NUMPY(tabla_resultado.Importe)
-    
-    // Paso 3: Calcular Costo Unitario usando operaciones vectorizadas
-    // Fórmula: Costo_Unitario = Precio_Unitario / 1.30 (margen bruto 30%)
-    array_costo_unitario = DIVIDIR_VECTORIZADO(array_precios, 1.30)
-    
-    // Paso 4: Calcular Ganancia Bruta usando numpy
-    // Fórmula: Ganancia_Bruta = Importe - (Costo_Unitario × Cantidad)
-    array_costo_total = MULTIPLICAR_VECTORIZADO(array_costo_unitario, array_cantidad)
-    array_ganancia_bruta = RESTAR_VECTORIZADO(array_importe, array_costo_total)
-    
-    // Paso 5: Calcular métricas adicionales
-    array_margen_porcentaje = DIVIDIR_VECTORIZADO(array_ganancia_bruta, array_importe) * 100
-    
-    // Paso 6: Agregar columnas calculadas al DataFrame
-    tabla_resultado.Costo_Unitario = array_costo_unitario
-    tabla_resultado.Costo_Total = array_costo_total
-    tabla_resultado.Ganancia_Bruta = array_ganancia_bruta
-    tabla_resultado.Margen_Bruto_Porcentaje = array_margen_porcentaje
-    
-    RETORNAR tabla_resultado
-FIN
-
-ALGORITMO identificar_productos_menos_rentables
-ENTRADA: tabla_con_ganancia, numero_productos
-SALIDA: productos_menos_rentables
-
-INICIO
-    // Paso 1: Agrupar por producto y agregar métricas
-    ganancia_por_producto = AGRUPAR tabla_con_ganancia POR (ID_Producto, Nombre_Producto)
-    AGREGAR:
-        - SUMAR Ganancia_Bruta
-        - SUMAR Cantidad
-        - SUMAR Importe
-        - SUMAR Costo_Total
-        - OBTENER_PRIMERO Categoria
-    
-    // Paso 2: Convertir a arrays numpy para cálculos eficientes
-    array_ganancia = CONVERTIR_A_ARRAY_NUMPY(ganancia_por_producto.Ganancia_Bruta)
-    array_cantidad = CONVERTIR_A_ARRAY_NUMPY(ganancia_por_producto.Cantidad)
-    
-    // Paso 3: Calcular ganancia promedio por unidad vendida
-    ganancia_por_producto.Ganancia_Promedio_Por_Unidad = DIVIDIR_SEGURO_NUMPY(
-        array_ganancia, array_cantidad, valor_por_defecto=0
-    )
-    
-    // Paso 4: Ordenar y seleccionar menos rentables
-    productos_menos_rentables = ORDENAR ganancia_por_producto POR Ganancia_Bruta ASCENDENTE
-    productos_menos_rentables = TOMAR_PRIMEROS numero_productos
-    
-    RETORNAR productos_menos_rentables
-FIN
-
-ALGORITMO analizar_rentabilidad_principal
-ENTRADA: tabla_detalle, tabla_productos
-SALIDA: tabla_con_ganancias, productos_menos_rentables
-
-INICIO
-    // Paso 1: Mostrar mensaje de inicio
-    MOSTRAR "🚀 INICIANDO ANÁLISIS DE RENTABILIDAD CON NUMPY"
-    
-    // Paso 2: Ejecutar cálculos principales
-    tabla_con_ganancia = calcular_costo_y_ganancia_bruta(tabla_detalle, tabla_productos)
-    
-    // Paso 3: Calcular estadísticas usando funciones numpy
-    ganancia_total = SUMAR_NUMPY(tabla_con_ganancia.Ganancia_Bruta)
-    ganancia_promedio = PROMEDIO_NUMPY(tabla_con_ganancia.Ganancia_Bruta)
-    ganancia_mediana = MEDIANA_NUMPY(tabla_con_ganancia.Ganancia_Bruta)
-    desviacion_estandar = DESVIACION_ESTANDAR_NUMPY(tabla_con_ganancia.Ganancia_Bruta)
-    
-    // Paso 4: Mostrar estadísticas generales
-    MOSTRAR "💰 Ganancia Bruta Total: $", FORMATEAR(ganancia_total, 2_decimales)
-    MOSTRAR "📊 Ganancia Promedio por Venta: $", FORMATEAR(ganancia_promedio, 2_decimales)
-    MOSTRAR "📈 Ganancia Mediana: $", FORMATEAR(ganancia_mediana, 2_decimales)
-    MOSTRAR "📉 Desviación Estándar: $", FORMATEAR(desviacion_estandar, 2_decimales)
-    
-    // Paso 5: Identificar productos menos rentables
-    productos_menos_rentables = identificar_productos_menos_rentables(tabla_con_ganancia, 10)
-    
-    // Paso 6: Mostrar resultados detallados
-    MOSTRAR "🔻 TOP 10 PRODUCTOS MENOS RENTABLES:"
-    contador = 1
-    PARA CADA producto EN productos_menos_rentables:
-        MOSTRAR contador, TRUNCAR(producto.Nombre_Producto, 30), 
-               "Ganancia: $", FORMATEAR(producto.Ganancia_Bruta, 2_decimales),
-               "Categoría:", producto.Categoria
-        contador = contador + 1
-    FIN_PARA
-    
-    RETORNAR tabla_con_ganancia, productos_menos_rentables
-FIN
-```
-
-### 📊 **Pseudocódigo de Validación con NumPy**
-
-```pseudocode
-ALGORITMO validar_calculos_rentabilidad
-ENTRADA: tabla_con_ganancias
-SALIDA: validacion_exitosa (booleano)
-
-INICIO
-    MOSTRAR "📊 VALIDACIÓN DE CÁLCULOS DE RENTABILIDAD"
-    
-    // Paso 1: Convertir datos a arrays numpy para validaciones eficientes
-    array_costos = CONVERTIR_A_ARRAY_NUMPY(tabla_con_ganancias.Costo_Unitario)
-    array_precios = CONVERTIR_A_ARRAY_NUMPY(tabla_con_ganancias.Precio_Unitario)
-    array_ganancias = CONVERTIR_A_ARRAY_NUMPY(tabla_con_ganancias.Ganancia_Bruta)
-    array_margenes = CONVERTIR_A_ARRAY_NUMPY(tabla_con_ganancias.Margen_Bruto_Porcentaje)
-    
-    // Paso 2: Verificar costos positivos usando numpy
-    costos_negativos = CONTAR_NUMPY(array_costos < 0)
-    MOSTRAR "❌ Costos negativos:", costos_negativos, "registros"
-    
-    // Paso 3: Verificar que costo < precio usando operaciones vectorizadas
-    costos_mayores = CONTAR_NUMPY(array_costos >= array_precios)
-    MOSTRAR "❌ Costos >= Precio:", costos_mayores, "registros"
-    
-    // Paso 4: Verificar margen esperado (23.08% aproximadamente)
-    margen_esperado = 23.08
-    diferencias = VALOR_ABSOLUTO_NUMPY(array_margenes - margen_esperado)
-    margenes_incorrectos = CONTAR_NUMPY(diferencias > 5)  // Tolerancia 5%
-    MOSTRAR "⚠️ Márgenes fuera de rango:", margenes_incorrectos, "registros"
-    
-    // Paso 5: Calcular estadísticas usando funciones numpy
-    margen_promedio = PROMEDIO_NUMPY(array_margenes)
-    margen_minimo = MINIMO_NUMPY(array_margenes)
-    margen_maximo = MAXIMO_NUMPY(array_margenes)
-    margen_desviacion = DESVIACION_ESTANDAR_NUMPY(array_margenes)
-    
-    MOSTRAR "✅ Margen bruto promedio:", FORMATEAR(margen_promedio, 2_decimales), "%"
-    MOSTRAR "✅ Margen bruto mínimo:", FORMATEAR(margen_minimo, 2_decimales), "%"
-    MOSTRAR "✅ Margen bruto máximo:", FORMATEAR(margen_maximo, 2_decimales), "%"
-    MOSTRAR "✅ Desviación estándar:", FORMATEAR(margen_desviacion, 2_decimales), "%"
-    
-    // Paso 6: Verificar ganancias negativas
-    ganancias_negativas = CONTAR_NUMPY(array_ganancias < 0)
-    MOSTRAR "🔴 Productos con ganancia negativa:", ganancias_negativas, "registros"
-    
-    // Paso 7: Determinar validación exitosa
-    total_registros = LONGITUD(tabla_con_ganancias)
-    limite_errores = total_registros * 0.05  // Máximo 5% de errores
-    
-    condicion1 = (costos_negativos = 0)
-    condicion2 = (costos_mayores = 0)  
-    condicion3 = (margenes_incorrectos < limite_errores)
-    
-    SI condicion1 Y condicion2 Y condicion3 ENTONCES
-        validacion_exitosa = VERDADERO
-        MOSTRAR "✅ VALIDACIÓN EXITOSA"
-    SINO
-        validacion_exitosa = FALSO
-        MOSTRAR "❌ VALIDACIÓN FALLIDA"
-    FIN_SI
-    
-    RETORNAR validacion_exitosa
-FIN
-
-ALGORITMO ejemplo_uso_completo
-ENTRADA: ninguna
-SALIDA: tabla_con_ganancias, productos_menos_rentables
-
-INICIO
-    // Paso 1: Cargar datos desde archivos Excel
-    tabla_detalle = CARGAR_EXCEL('Detalle_ventas.xlsx')
-    tabla_productos = CARGAR_EXCEL('Productos.xlsx')
-    
-    // Paso 2: Realizar análisis completo de rentabilidad
-    tabla_con_ganancias, productos_menos_rentables = analizar_rentabilidad_principal(
-        tabla_detalle, tabla_productos
-    )
-    
-    // Paso 3: Validar resultados
-    validacion_ok = validar_calculos_rentabilidad(tabla_con_ganancias)
-    
-    // Paso 4: Mostrar reporte detallado de productos menos rentables
-    MOSTRAR "📊 ANÁLISIS DETALLADO - PRODUCTOS MENOS RENTABLES"
-    MOSTRAR "Rank | Producto | Ganancia Total | Unidades | Ganancia/Unidad | Categoría"
-    
-    posicion = 1
-    PARA CADA producto EN productos_menos_rentables:
-        nombre_truncado = TRUNCAR(producto.Nombre_Producto, 24)
-        MOSTRAR posicion, nombre_truncado,
-               "$", FORMATEAR(producto.Ganancia_Bruta, 2_decimales),
-               producto.Cantidad,
-               "$", FORMATEAR(producto.Ganancia_Promedio_Por_Unidad, 2_decimales),
-               producto.Categoria
-        posicion = posicion + 1
-    FIN_PARA
-    
-    RETORNAR tabla_con_ganancias, productos_menos_rentables
-FIN
-```
 
 ### 🎯 **Justificación de la Metodología**
 
@@ -466,17 +249,6 @@ ganancia_por_unidad = precio_unitario - costo_unitario  # = $23.08
 # Margen bruto porcentual
 margen_bruto = (ganancia_por_unidad / precio_unitario) * 100  # = 23.08%
 ```
-
-#### **Ventajas del Uso de NumPy:**
-
-| 🚀 **Ventaja** | 📈 **Beneficio** |
-|:---------------|:-----------------|
-| **Rendimiento** | Operaciones vectorizadas 10-100x más rápidas que loops Python |
-| **Precisión** | Cálculos de punto flotante optimizados para análisis financiero |
-| **Escalabilidad** | Manejo eficiente de datasets grandes (miles de productos) |
-| **Validación** | Funciones estadísticas integradas para validar resultados |
-
----
 
 ## ⚙️ Planificación del Desarrollo
 
@@ -522,57 +294,4 @@ El sistema necesita los siguientes archivos para su correcto funcionamiento:
 | **NumPy** | Cálculos numéricos | Operaciones matemáticas eficientes |
 | **Openpyxl** | Lectura de Excel | Importación de archivos .xlsx |
 
-### 📋 Algoritmo Principal: Análisis Pareto de Clientes
-
-```python
-def analisis_pareto_clientes(df_maestro):
-    """
-    Identifica el 20% de clientes que generan el 80% de los ingresos
-    
-    Args:
-        df_maestro (DataFrame): Dataset unificado de ventas
-        
-    Returns:
-        DataFrame: Clientes ordenados por valor con análisis Pareto
-    """
-    
-    # 1️⃣ Calcular ingresos totales por cliente
-    ingresos_cliente = (df_maestro
-                       .groupby(['ID_Cliente', 'Nombre'])
-                       .agg({'Importe': 'sum'})
-                       .reset_index()
-                       .sort_values('Importe', ascending=False))
-    
-    # 2️⃣ Calcular porcentajes acumulados
-    total_ingresos = ingresos_cliente['Importe'].sum()
-    ingresos_cliente['Ingreso_Acumulado'] = ingresos_cliente['Importe'].cumsum()
-    ingresos_cliente['Porcentaje_Acumulado'] = (
-        ingresos_cliente['Ingreso_Acumulado'] / total_ingresos * 100
-    )
-    
-    # 3️⃣ Identificar clientes Pareto (80% de ingresos)
-    clientes_pareto = ingresos_cliente[
-        ingresos_cliente['Porcentaje_Acumulado'] <= 80
-    ]
-    
-    return clientes_pareto
-```
-
-### 📊 Métricas de Éxito
-
-- **⚡ Rendimiento:** Procesamiento de +20K registros en <5 segundos
-- **🎯 Precisión:** Identificación exacta de clientes Pareto
-- **📈 Escalabilidad:** Capacidad de manejar datasets 10x más grandes
-- **🔧 Mantenibilidad:** Código modular y bien documentado
-
----
-
-## 🚀 Próximos Pasos
-
-1. **Implementación del código Python** 📝
-2. **Validación con datos reales** ✅
-3. **Optimización de performance** ⚡
-4. **Creación de dashboard interactivo** 📊
-
----
 
