@@ -55,14 +55,13 @@
 
 <hr>
 
-<h2>❓ Preguntas Críticas Resueltas por el Sistema</h2>
-    
-<h4>📊 Enfoque en Rentabilidad y Clientes (Ganancia)</h4>
-<ul>
-  <li><strong>Análisis Pareto (P1):</strong> ¿Quiénes son los clientes que generan el 80% de los ingresos?</li>
-  <li><strong>Comportamiento de Compra (P2, P3):</strong> ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes y qué tan frecuentes son sus pedidos?</li>
-  <li><strong>Activación y Lealtad (P13):</strong> ¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse (30 días, 90 días, etc.)?</li>
-</ul>
+<h2>❓ Preguntas Críticas Resueltas por el Sistema</h2>  
+  <p>📊 Enfoque en Rentabilidad y Clientes (Ganancia)</p>
+    <ul>
+      <li><strong>Análisis Pareto (P1):</strong> ¿Quiénes son los clientes que generan el 80% de los ingresos?</li>
+      <li><strong>Comportamiento de Compra (P2, P3):</strong> ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes y qué tan frecuentes son sus pedidos?</li>
+      <li><strong>Activación y Lealtad (P13):</strong> ¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse (30 días, 90 días, etc.)?</li>
+    </ul>
 
 <h4>📦 Enfoque en Inventario y Producto</h4>
 <ul>
@@ -78,4 +77,77 @@
   <li><strong>Tendencia Temporal (P12):</strong> ¿Cuál es el mes o trimestre con más ingresos a nivel general y por ciudad?</li>
 </ul>
 
+<hr>
 
+<h2>&#x1F5C3; Estructura y Composición de la Base de Datos</h2>
+    <p>El sistema de análisis de ventas se basa en un conjunto de <strong>cuatro tablas relacionales</strong> que capturan la información de transacciones y entidades de negocio. El diseño original es un esquema transaccional, lo que requiere un proceso de <strong>ETL (Extracción, Transformación y Carga)</strong> para unificar la información y responder a las preguntas estratégicas.</p>
+    
+<hr>
+
+<h3>1. Composición y Estructura Detallada de las Tablas</h3>
+<table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Tabla (Archivo)</th>
+                <th>Clave Primaria (PK)</th>
+                <th>Claves Foráneas (FK)</th>
+                <th>Columnas Clave y Tipo de Dato</th>
+                <th>Registros (Estimado)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Clientes</strong></td>
+                <td><code>id_cliente</code></td>
+                <td>N/A</td>
+                <td><code>nombre_cliente</code>, <code>ciudad</code>, <code>fecha_alta</code></td>
+                <td>~100</td>
+            </tr>
+            <tr>
+                <td><strong>Productos</strong></td>
+                <td><code>id_producto</code></td>
+                <td>N/A</td>
+                <td><code>nombre_producto</code>, <code>categoria</code>, <code>precio_unitario</code></td>
+                <td>~100</td>
+            </tr>
+            <tr>
+                <td><strong>Ventas</strong></td>
+                <td><code>id_venta</code></td>
+                <td><code>id_cliente</code></td>
+                <td><code>fecha</code>, <code>medio_pago</code></td>
+                <td>~112</td>
+            </tr>
+            <tr>
+                <td><strong>Detalle_ventas</strong></td>
+                <td>N/A (Compuesta)</td>
+                <td><code>id_venta</code>, <code>id_producto</code></td>
+                <td><code>cantidad</code>, <code>precio_unitario</code>, <code>importe</code></td>
+                <td>~500+</td>
+            </tr>
+        </tbody>
+    </table>
+
+<hr>
+<h3>2. Explicación del Esquema Relacional (Joins)</h3>
+    <p>El modelo utiliza claves para conectar lógicamente las transacciones con sus atributos. La tabla <strong><code>Detalle_ventas</code></strong> es el corazón del análisis y se conecta a las demás dimensiones:</p>
+    <ul>
+        <li>&#x1F449; <strong>Venta a Cliente:</strong> <code>Ventas.id_cliente</code> enlaza con <code>Clientes.id_cliente</code>.</li>
+        <li>&#x1F449; <strong>Detalle a Producto:</strong> <code>Detalle_ventas.id_producto</code> enlaza con <code>Productos.id_producto</code>.</li>
+        <li>&#x1F449; <strong>Detalle a Venta:</strong> <code>Detalle_ventas.id_venta</code> enlaza con <code>Ventas.id_venta</code>.</li>
+    </ul>
+<hr>
+<h3>3. &#x1F6A7; Reflexiones sobre la Base de Datos y Desafíos</h3>
+ <h4>A. Desafíos (Justificación del ETL)</h4>
+    <p>La estructura transaccional requiere la <strong>Transformación de Datos</strong> (ETL) debido a:</p>
+    <ul>
+        <li><strong>Rentabilidad Inexistente:</strong> La métrica de <strong><code>Ganancia Bruta</code></strong> debe ser <strong>calculada</strong> y no existe en los archivos de origen.</li>
+        <li><strong>Venta Fragmentada:</strong> El <strong><code>Monto Total de la Venta</code></strong> debe ser calculado sumando ítems de la tabla <code>Detalle_ventas</code>.</li>
+        <li><strong>Integración:</strong> Es necesaria la <strong>unión total</strong> de las 4 tablas en un <strong>DataFrame Maestro</strong> para el análisis eficiente.</li>
+    </ul>
+
+  <h4>B. Redundancias Observadas</h4>
+    <p>Se identifican campos redundantes comunes en sistemas transaccionales que son gestionados en el ETL:</p>
+    <ul>
+        <li>La tabla <code>Ventas</code> repite atributos de cliente (`nombre_cliente`, `email`).</li>
+        <li>La tabla <code>Detalle_ventas</code> repite atributos de producto (`nombre_producto`, `precio_unitario`).</li>
+    </ul>
