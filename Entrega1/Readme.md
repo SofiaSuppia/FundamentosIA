@@ -50,27 +50,27 @@
 
 <h2>&#x2753; Preguntas Críticas Resueltas por el Sistema</h2>
 <p><strong>📊 Enfoque en Rentabilidad y Clientes (Ganancia)</strong><br>
-  <ol>
+  <ul>
     <li><strong>Análisis Pareto (P1):</strong> ¿Quiénes son los clientes que generan el 80% de los ingresos?<br></li>
     <li><strong>Comportamiento de Compra (P2, P3):</strong> ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes y qué tan frecuentes son sus pedidos?<br></li>
     <li><strong>Activación y Lealtad (P13):</strong> ¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse (30 días, 90 días, etc.)?</li>
-  </ol>
+  </ul>
 </p>
 
 <p><strong>📦 Enfoque en Inventario y Producto</strong><br>
-   <ol>
+   <ul>
     <li><strong>Ingreso por Categoría (P5):</strong> ¿Cuál es la categoría de productos que genera la mayor cantidad de ventas e ingresos?<br></li>
     <li><strong>Optimización de Stock (P6):</strong> ¿Cuáles son los <strong>10 productos menos vendidos</strong> que podrían ser retirados o reemplazados?<br></li>
     <li><strong>Fidelización Inicial (P7):</strong> ¿Cuáles son los productos más frecuentemente consumidos en el <strong>primer pedido</strong>?</li>
-  </ol>
+  </ul>
 </p>
 
 <p><strong>🌍 Enfoque Geográfico y Operativo (Ciudades)</strong><br>
-   <ol>
+   <ul>
     <li><strong>Rendimiento Regional (P8):</strong> ¿Cómo se distribuyen los ingresos entre las ciudades y cuál genera más rentabilidad?<br></li>
     <li><strong>Medio de Pago por Ciudad (P10, P11):</strong> ¿Varía el porcentaje de ventas por medio de pago según la ciudad?<br></li>
     <li><strong>Tendencia Temporal (P12):</strong> ¿Cuál es el mes o trimestre con más ingresos a nivel general y por ciudad?</li>
-  </ol>
+  </ul>
 </p>
 
 <hr>
