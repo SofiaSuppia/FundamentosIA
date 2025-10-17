@@ -93,6 +93,14 @@ def mostrar_stack_tecnologico():
         print(f"  - {herramienta}: {proposito}")
         time.sleep(0.5)
 
+def mostrar_solucion():
+    """Describe la solución propuesta por el sistema."""
+    print("\n---Solución: Un Sistema de Inteligencia de Negocio ---")
+    print("El sistema centraliza, calcula y analiza las métricas clave de negocio.")
+    print("Su objetivo es transformar los datos de ventas en conocimiento accionable para mejorar la rentabilidad general de la cadena de mini súper y optimizar los esfuerzos en áreas críticas como la atención al cliente, logística e inventario.")
+    time.sleep(1)
+
+
 def main():
     """Función principal que orquesta la presentación del proyecto."""
     mostrar_titulo()
@@ -102,8 +110,9 @@ def main():
         "2": ("Arquitectura de Datos", mostrar_arquitectura_datos),
         "3": ("Preguntas Estratégicas", mostrar_preguntas_estrategicas),
         "4": ("Stack Tecnológico", mostrar_stack_tecnologico),
-        "5": ("Mostrar Todo", None),
-        "6": ("Salir", None)
+        "5": ("Solución Propuesta", mostrar_solucion),
+        "6": ("Mostrar Todo", None),
+        "7": ("Salir", None)
     }
 
     while True:
@@ -124,6 +133,7 @@ def main():
             mostrar_arquitectura_datos()
             mostrar_preguntas_estrategicas()
             mostrar_stack_tecnologico()
+            mostrar_solucion()
             print("\n--- Fin de la presentación completa ---")
         elif eleccion in opciones:
             _, funcion = opciones[eleccion]
