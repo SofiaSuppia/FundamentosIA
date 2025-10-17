@@ -1,6 +1,7 @@
 # Importaciones de módulos con alias
 import procesoDatos as pd
 import analisisDatos as ad
+
 import calendar
 import os
 
@@ -103,6 +104,11 @@ def main():
     print(df_promedio_monto_30d)
 
     print("\n--- ANÁLISIS COMPLETADO EXITOSAMENTE ---")
+    
+    #Pregunta Extra: Media de productos por compra con el importe total
+    print("\n--- Pregunta Extra: Media de productos por compra con el importe total ---")
+    df_extra = ad.media_productos_importe_total(df_maestro)
+    print(df_extra)
 
 if __name__ == "__main__":
     main()

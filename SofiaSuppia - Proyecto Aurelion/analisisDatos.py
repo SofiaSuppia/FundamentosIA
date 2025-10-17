@@ -392,7 +392,33 @@ def comportamiento_temprano_cliente(df_maestro):
     
     return df_resultado.reset_index(drop=True)
 
-    # Calculo de promedio de Monto Total
-    df_promedio_monto_30d = df_filtrado_30d['monto_total_venta'].mean().round(2)
+# --------------------------------------------------------------------
+# Responde: ¿Cuál es la media de productos por compra y el importe total promedio?
+# --------------------------------------------------------------------
+def media_productos_importe_total(df_maestro):
+    """
+    Calcula la cantidad media de productos por compra y el importe total promedio.
+    """
+    # 1. Calcular la cantidad total de productos por cada venta.
+    # Se agrupa por 'id_venta' y se suma la 'cantidad'.
+    productos_por_venta = df_maestro.groupby('id_venta')['cantidad'].sum().reset_index()
+    productos_por_venta.rename(columns={'cantidad': 'Total_Productos'}, inplace=True)
 
-    return df_promedio_monto_30d
+    # 2. Obtener el importe total para cada venta (sin duplicados).
+    importe_por_venta = df_maestro[['id_venta', 'monto_total']].drop_duplicates()
+
+    # 3. Unir los dos dataframes por 'id_venta'.
+    df_completo = pd.merge(productos_por_venta, importe_por_venta, on='id_venta')
+
+    # 4. Calcular las medias.
+    media_productos = df_completo['Total_Productos'].mean()
+    media_importe = df_completo['monto_total'].mean()
+
+    # 5. Crear un DataFrame para mostrar el resultado.
+    df_resultado = pd.DataFrame({
+        'Media de Productos por Compra': [media_productos],
+        'Importe Total Promedio': [media_importe]
+    })
+    
+    return df_resultado.round(2)
+
