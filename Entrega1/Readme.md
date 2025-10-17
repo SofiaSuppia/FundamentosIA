@@ -69,8 +69,9 @@
 <p><strong>🌍 Enfoque Geográfico y Operativo (Ciudades)</strong><br>
    <ul>
     <li><strong>Rendimiento Regional (P8):</strong> ¿Cómo se distribuyen los ingresos entre las ciudades y cuál genera más rentabilidad?<br></li>
-    <li><strong>Rendimiento Regional (P9):</strong> ¿Cómo se distribuyen los ingresos entre las ciudades y cuál genera más rentabilidad?<br></li>
-    <li><strong>Medio de Pago por Ciudad (P10, P11):</strong> ¿Varía el porcentaje de ventas por medio de pago según la ciudad?<br></li>
+    <li><strong>Rendimiento Regional (P9):</strong> ¿Cuál es el comportamiento de compra de los clientes por períodos después de registrarse?<br></li>
+    <li><strong>Medio de Pago por Ciudad (P10):</strong> ¿Cuál es el porcentaje de ventas por medio de pago y varía este porcentaje según la ciudad?<br></li>
+    <li><strong>Medio de Pago por Ciudad (P11):</strong> ¿Cuál es el promedio de ventas por Medio de pago?¿Cuál es el mes o trimestre con más ingresos?<br></li>
     <li><strong>Tendencia Temporal (P12):</strong> ¿Cuál es el mes o trimestre con más ingresos a nivel general y por ciudad?</li>
   </ul>
 </p>
