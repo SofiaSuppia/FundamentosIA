@@ -37,6 +37,7 @@ El sistema centraliza, calcula y analiza las métricas clave de negocio. Su obje
 - **Comportamiento de Compra (P2, P3):** ¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes y qué tan frecuentes son sus pedidos?
 - **Comportamiento del cliente (P4):** ¿Cuál es el cliente que más compra?
 - **Activación y Lealtad (P13):** ¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse (30 días, 90 días, etc.)?
+- **Media de producto (14):** ¿Cuál es la media de productos por compra y el importe total promedio?
 
 ### 📦 Enfoque en Inventario y Producto
 

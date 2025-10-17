@@ -17,11 +17,16 @@ def mostrar_analisis_problema():
     print("\n--- 🔍 Análisis del Problema ---")
     print("\n[Contexto Empresarial]")
     print("El Proyecto Aurelion aborda el desafío central que enfrentan las cadenas de mini súper con presencia en múltiples ciudades:")
-    texto_original = """El Proyecto Aurelion aborda el desafío central que enfrentan las cadenas de mini súper con presencia en múltiples ciudades: la falta de una visión unificada y analítica de la rentabilidad que permita optimizar la operación y la experiencia del cliente en cada ubicación. Actualmente, la empresa genera un gran volumen de datos de ventas, pero carece de un sistema automatizado para convertir estos datos en información estratégica y accionable. Esta ceguera analítica impide:
+    texto_original = """La falta de una visión unificada y analítica de la rentabilidad que permita optimizar la operación y la experiencia del cliente en cada ubicación. Actualmente, la empresa genera un gran volumen de datos de ventas, pero carece de un sistema automatizado para convertir estos datos en información estratégica y accionable. Esta ceguera analítica impide:
 
-    1. Optimizar la Rentabilidad Geográfica: No se sabe con certeza qué ciudades, clientes o categorías de productos están impulsando realmente las ganancias.
-    2. Personalizar la Atención y Fidelización: Es imposible identificar y recompensar a los clientes más valiosos, ni entender su comportamiento de compra a lo largo del tiempo.
-    3. Mejorar la Eficiencia del Inventario: La falta de un análisis sobre los productos menos vendidos o la estacionalidad provoca exceso de stock en ubicaciones equivocadas."""
+    1. Optimizar la Rentabilidad Geográfica:
+       No se sabe con certeza qué ciudades, clientes o categorías de productos están impulsando realmente las ganancias.
+
+    2. Personalizar la Atención y Fidelización:
+       Es imposible identificar y recompensar a los clientes más valiosos, ni entender su comportamiento de compra a lo largo del tiempo.
+
+    3. Mejorar la Eficiencia del Inventario:
+       La falta de un análisis sobre los productos menos vendidos o la estacionalidad provoca exceso de stock en ubicaciones equivocadas."""
 
     ancho_maximo = 87 
 
@@ -133,7 +138,6 @@ def main():
             print("¡Hasta luego!")
             break
         elif eleccion == "6":
-            mostrar_resumen()
             mostrar_analisis_problema()
             mostrar_arquitectura_datos()
             mostrar_preguntas_estrategicas()
