@@ -10,26 +10,20 @@ def mostrar_titulo():
     print("Materia: Fundamentos de Inteligencia Artificial\n")
     time.sleep(1)
 
-def mostrar_resumen():
-    """Muestra la sección de resumen del proyecto."""
-    print("\n--- 🎯 Resumen ---")
-    print("\n[Tema Principal]")
-    print("Análisis de datos de ventas en un market digital para identificar patrones, optimizar decisiones y diseñar estrategias de fidelización.")
-    
-    print("\n[Problema Identificado]")
-    print("La empresa carece de un sistema para responder preguntas estratégicas clave,")
-    print("lo que impide la toma de decisiones basadas en datos.")
-    
-    print("\n[Solución Propuesta]")
-    print("Desarrollo de un programa en Python que integra y analiza múltiples fuentes de datos")
-    print("utilizando Pandas para generar insights valiosos.")
-    time.sleep(1)
 
 def mostrar_analisis_problema():
     """Describe el contexto y los objetivos del problema."""
     print("\n--- 🔍 Análisis del Problema ---")
     print("\n[Contexto Empresarial]")
-    print("Simulación del análisis de datos para una tienda digital que necesita optimizar operaciones.")
+    print("El Proyecto Aurelion aborda el desafío central que enfrentan las cadenas de mini súper con presencia en múltiples ciudades:")
+    texto_proyecto_completo = """El Proyecto Aurelion aborda el desafío central que enfrentan las cadenas de mini súper con presencia en múltiples ciudades: la falta de una visión unificada y analítica de la rentabilidad que permita optimizar la operación y la experiencia del cliente en cada ubicación. Actualmente, la empresa genera un gran volumen de datos de ventas, pero carece de un sistema automatizado para convertir estos datos en información estratégica y accionable. Esta ceguera analítica impide:
+
+    1. Optimizar la Rentabilidad Geográfica: No se sabe con certeza qué ciudades, clientes o categorías de productos están impulsando realmente las ganancias.
+    2. Personalizar la Atención y Fidelización: Es imposible identificar y recompensar a los clientes más valiosos, ni entender su comportamiento de compra a lo largo del tiempo.
+    3. Mejorar la Eficiencia del Inventario: La falta de un análisis sobre los productos menos vendidos o la estacionalidad provoca exceso de stock en ubicaciones equivocadas."""
+
+    print(texto_proyecto_completo)
+
     
     print("\n[Objetivos Específicos]")
     objetivos = [
@@ -104,13 +98,12 @@ def main():
     mostrar_titulo()
     
     opciones = {
-        "1": ("Resumen", mostrar_resumen),
-        "2": ("Análisis del Problema", mostrar_analisis_problema),
-        "3": ("Arquitectura de Datos", mostrar_arquitectura_datos),
-        "4": ("Preguntas Estratégicas", mostrar_preguntas_estrategicas),
-        "5": ("Stack Tecnológico", mostrar_stack_tecnologico),
-        "6": ("Mostrar Todo", None),
-        "7": ("Salir", None)
+        "1": ("Análisis del Problema", mostrar_analisis_problema),
+        "2": ("Arquitectura de Datos", mostrar_arquitectura_datos),
+        "3": ("Preguntas Estratégicas", mostrar_preguntas_estrategicas),
+        "4": ("Stack Tecnológico", mostrar_stack_tecnologico),
+        "5": ("Mostrar Todo", None),
+        "6": ("Salir", None)
     }
 
     while True:
