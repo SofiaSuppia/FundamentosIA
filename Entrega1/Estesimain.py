@@ -68,19 +68,24 @@ def mostrar_preguntas_estrategicas():
     """Enumera las preguntas estratégicas que el sistema busca responder."""
     print("\n--- ❓ Preguntas Estratégicas ---")
     preguntas = {
-        "Análisis de Clientes": [
+        "Enfoque en Rentabilidad y Clientes (Ganancia)": [
             "¿Quiénes son los clientes que generan el 80% de los ingresos?",
-            "¿Cuál es el valor de compra promedio, mínimo y máximo?",
-            "¿Qué tan frecuentes son las compras de los clientes más fieles?"
+            "¿Cuál es el promedio, mínimo y máximo de compra de nuestros clientes y qué tan frecuentes son sus pedidos?",
+            "¿Cuál es el cliente que más compra?",
+            "¿Cuál es el comportamiento de compra de los clientes en diferentes períodos después de registrarse (30 días, 90 días, etc.)?",
+            "¿Cuál es la media de productos por compra y el importe total promedio?"
         ],
-        "Análisis de Productos": [
-            "¿Qué categorías de productos son las más rentables?",
-            "¿Cuáles son los 10 productos menos vendidos?",
-            "¿Qué productos se compran más en el primer pedido?"
+        "Enfoque en Inventario y Producto": [
+            "¿¿Cuál es la categoría de productos que genera la mayor cantidad de ventas e ingresos?",
+            "¿Cuáles son los 10 productos menos vendidos que podrían ser retirados o reemplazados?",
+            "¿Cuáles son los productos más frecuentemente consumidos en el primer pedido?"
         ],
-        "Análisis Geográfico": [
-            "¿Cómo se distribuyen los ingresos entre las ciudades?",
-            "¿Cuál es el volumen de ventas promedio por ciudad en los primeros 30 días?"
+        "Enfoque Geográfico y Operativo (Ciudades)": [
+            "¿Cómo se distribuyen los ingresos entre las ciudades y cuál genera más rentabilidad?",
+            "¿Cuál es el comportamiento de compra de los clientes por períodos después de registrarse?",
+            "¿Cuál es el porcentaje de ventas por medio de pago y varía este porcentaje según la ciudad?",
+            "¿Cuál es el promedio de ventas por Medio de pago? ¿Cuál es el mes o trimestre con más ingresos?",
+            "¿Cuál es el mes o trimestre con más ingresos a nivel general y por ciudad?"
         ]
     }
     for categoria, lista_preguntas in preguntas.items():
