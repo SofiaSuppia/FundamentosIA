@@ -1,0 +1,344 @@
+id_venta,id_producto,nombre_producto,cantidad,precio_unitario,importe
+1,90,toallas húmedas x50,1,2902,2902
+2,82,aceitunas negras 200g,5,2394,11970
+2,39,helado vainilla 1l,5,469,2345
+2,70,fernet 750ml,2,4061,8122
+2,22,medialunas de manteca,1,2069,2069
+2,79,hamburguesas congeladas x4,4,2420,9680
+3,9,yerba mate suave 1kg,2,3878,7756
+3,2,pepsi 1.5l,2,4973,9946
+3,85,jugo en polvo naranja,1,1856,1856
+4,4,fanta naranja 1.5l,2,2033,4066
+4,23,bizcochos salados,5,2380,11900
+5,86,jugo en polvo limón,4,4090,16360
+6,25,galletitas vainilla,2,4015,8030
+6,31,mix de frutos secos 200g,3,3409,10227
+6,83,queso untable 190g,1,1830,1830
+6,59,chicle menta,4,3612,14448
+7,63,granola 250g,3,4337,13011
+8,53,lavandina 1l,5,1664,8320
+8,18,queso rallado 150g,4,3444,13776
+8,68,vino blanco 750ml,5,2684,13420
+9,65,cerveza rubia 1l,4,2423,9692
+10,36,dulce de leche 400g,2,2559,5118
+10,100,trapo de piso,4,4854,19416
+10,37,mermelada de durazno 400g,3,3196,9588
+10,62,stevia 100 sobres,1,3848,3848
+11,13,té verde 20 saquitos,1,2383,2383
+11,65,cerveza rubia 1l,2,2423,4846
+11,28,papas fritas clásicas 100g,1,936,936
+12,72,ron 700ml,2,3876,7752
+12,50,azúcar 1kg,2,727,1454
+12,56,papel higiénico x4,3,2532,7596
+12,87,sopa instantánea pollo,3,1679,5037
+12,38,mermelada de frutilla 400g,4,1584,6336
+13,87,sopa instantánea pollo,1,1679,1679
+13,81,aceitunas verdes 200g,3,2520,7560
+13,13,té verde 20 saquitos,1,2383,2383
+14,36,dulce de leche 400g,4,2559,10236
+14,72,ron 700ml,5,3876,19380
+14,38,mermelada de frutilla 400g,3,1584,4752
+14,97,limpiavidrios 500ml,1,872,872
+15,37,mermelada de durazno 400g,3,3196,9588
+16,35,barrita de cereal 30g,5,4430,22150
+17,81,aceitunas verdes 200g,5,2520,12600
+17,46,lentejas secas 500g,5,3036,15180
+17,74,whisky 750ml,3,2953,8859
+18,33,chocolate con leche 100g,2,1255,2510
+18,4,fanta naranja 1.5l,5,2033,10165
+18,24,galletitas chocolate,2,1305,2610
+18,15,leche descremada 1l,3,2538,7614
+18,22,medialunas de manteca,5,2069,10345
+19,38,mermelada de frutilla 400g,2,1584,3168
+19,98,desengrasante 500ml,3,2843,8529
+19,63,granola 250g,3,4337,13011
+20,32,chocolate amargo 100g,3,2234,6702
+21,76,pizza congelada muzzarella,5,4286,21430
+21,35,barrita de cereal 30g,1,4430,4430
+22,9,yerba mate suave 1kg,2,3878,7756
+22,28,papas fritas clásicas 100g,3,936,2808
+22,24,galletitas chocolate,4,1305,5220
+23,64,avena instantánea 250g,4,3953,15812
+23,83,queso untable 190g,4,1830,7320
+24,91,desodorante aerosol,2,4690,9380
+24,40,helado chocolate 1l,5,1215,6075
+25,55,shampoo 400ml,1,1407,1407
+25,95,mascarilla capilar,5,1581,7905
+25,72,ron 700ml,1,3876,3876
+26,79,hamburguesas congeladas x4,2,2420,4840
+26,86,jugo en polvo limón,1,4090,4090
+27,7,jugo de manzana 1l,4,3269,13076
+27,78,verduras congeladas mix,4,4289,17156
+28,74,whisky 750ml,1,2953,2953
+28,91,desodorante aerosol,2,4690,9380
+28,72,ron 700ml,1,3876,3876
+28,18,queso rallado 150g,2,3444,6888
+28,27,alfajor simple,5,2502,12510
+29,58,caramelos masticables,1,4752,4752
+29,36,dulce de leche 400g,2,2559,5118
+29,71,vodka 700ml,4,508,2032
+29,27,alfajor simple,2,2502,5004
+29,66,cerveza negra 1l,1,1533,1533
+30,49,harina de trigo 1kg,4,2512,10048
+30,78,verduras congeladas mix,3,4289,12867
+30,82,aceitunas negras 200g,4,2394,9576
+30,7,jugo de manzana 1l,1,3269,3269
+31,92,crema dental 90g,4,2512,10048
+31,90,toallas húmedas x50,3,2902,8706
+31,84,queso azul 150g,5,1645,8225
+32,72,ron 700ml,5,3876,19380
+32,53,lavandina 1l,4,1664,6656
+32,17,queso cremoso 500g,3,4834,14502
+32,35,barrita de cereal 30g,3,4430,13290
+33,47,garbanzos 500g,2,2939,5878
+33,76,pizza congelada muzzarella,4,4286,17144
+33,100,trapo de piso,1,4854,4854
+33,91,desodorante aerosol,2,4690,9380
+34,10,yerba mate intensa 1kg,1,4883,4883
+34,32,chocolate amargo 100g,5,2234,11170
+35,93,cepillo de dientes,3,2142,6426
+35,80,helado de frutilla 1l,2,1981,3962
+35,88,caldo concentrado carne,5,2570,12850
+36,50,azúcar 1kg,4,727,2908
+36,48,porotos negros 500g,2,4462,8924
+37,18,queso rallado 150g,3,3444,10332
+38,62,stevia 100 sobres,5,3848,19240
+38,14,leche entera 1l,3,1723,5169
+38,65,cerveza rubia 1l,5,2423,12115
+38,5,agua mineral 500ml,3,4777,14331
+39,44,arroz largo fino 1kg,4,2979,11916
+39,22,medialunas de manteca,2,2069,4138
+39,58,caramelos masticables,4,4752,19008
+39,81,aceitunas verdes 200g,4,2520,10080
+40,44,arroz largo fino 1kg,2,2979,5958
+41,51,sal fina 500g,1,1745,1745
+41,15,leche descremada 1l,1,2538,2538
+42,47,garbanzos 500g,3,2939,8817
+42,29,papas fritas onduladas 100g,1,1868,1868
+42,73,gin 700ml,3,1561,4683
+43,1,coca cola 1.5l,5,2347,11735
+43,49,harina de trigo 1kg,2,2512,5024
+43,66,cerveza negra 1l,2,1533,3066
+44,48,porotos negros 500g,1,4462,4462
+44,47,garbanzos 500g,2,2939,5878
+44,100,trapo de piso,2,4854,9708
+45,12,té negro 20 saquitos,2,570,1140
+45,18,queso rallado 150g,2,3444,6888
+45,87,sopa instantánea pollo,4,1679,6716
+45,98,desengrasante 500ml,1,2843,2843
+45,52,detergente líquido 750ml,2,2582,5164
+46,21,pan lactal integral,1,272,272
+47,43,salsa de tomate 500g,5,887,4435
+47,6,jugo de naranja 1l,3,4170,12510
+48,70,fernet 750ml,1,4061,4061
+48,54,jabón de tocador,5,1592,7960
+48,57,servilletas x100,4,4520,18080
+49,59,chicle menta,2,3612,7224
+49,21,pan lactal integral,4,272,1088
+49,59,chicle menta,4,3612,14448
+49,18,queso rallado 150g,3,3444,10332
+49,85,jugo en polvo naranja,3,1856,5568
+50,10,yerba mate intensa 1kg,2,4883,9766
+50,34,turrón 50g,5,503,2515
+50,58,caramelos masticables,5,4752,23760
+50,32,chocolate amargo 100g,3,2234,6702
+50,91,desodorante aerosol,4,4690,18760
+51,31,mix de frutos secos 200g,1,3409,3409
+52,83,queso untable 190g,2,1830,3660
+52,9,yerba mate suave 1kg,4,3878,15512
+52,81,aceitunas verdes 200g,5,2520,12600
+52,38,mermelada de frutilla 400g,3,1584,4752
+53,28,papas fritas clásicas 100g,1,936,936
+54,65,cerveza rubia 1l,1,2423,2423
+54,18,queso rallado 150g,2,3444,6888
+54,91,desodorante aerosol,3,4690,14070
+54,8,energética nitro 500ml,3,4218,12654
+55,39,helado vainilla 1l,4,469,1876
+56,18,queso rallado 150g,5,3444,17220
+57,31,mix de frutos secos 200g,3,3409,10227
+57,41,aceite de girasol 1l,4,860,3440
+57,9,yerba mate suave 1kg,5,3878,19390
+57,76,pizza congelada muzzarella,3,4286,12858
+57,98,desengrasante 500ml,4,2843,11372
+58,43,salsa de tomate 500g,2,887,1774
+58,11,café molido 250g,1,2053,2053
+59,31,mix de frutos secos 200g,1,3409,3409
+59,8,energética nitro 500ml,2,4218,8436
+59,97,limpiavidrios 500ml,5,872,4360
+60,43,salsa de tomate 500g,1,887,887
+60,98,desengrasante 500ml,3,2843,8529
+60,15,leche descremada 1l,1,2538,2538
+60,21,pan lactal integral,2,272,544
+60,91,desodorante aerosol,4,4690,18760
+61,9,yerba mate suave 1kg,3,3878,11634
+61,19,manteca 200g,3,3251,9753
+62,47,garbanzos 500g,4,2939,11756
+62,95,mascarilla capilar,3,1581,4743
+63,8,energética nitro 500ml,5,4218,21090
+63,2,pepsi 1.5l,2,4973,9946
+63,70,fernet 750ml,3,4061,12183
+63,45,fideos spaghetti 500g,4,745,2980
+64,4,fanta naranja 1.5l,2,2033,4066
+64,41,aceite de girasol 1l,2,860,1720
+65,77,empanadas congeladas,4,4778,19112
+65,22,medialunas de manteca,3,2069,6207
+65,38,mermelada de frutilla 400g,5,1584,7920
+65,36,dulce de leche 400g,4,2559,10236
+66,16,yogur natural 200g,3,4613,13839
+67,53,lavandina 1l,1,1664,1664
+67,8,energética nitro 500ml,2,4218,8436
+68,94,hilo dental,4,1418,5672
+69,76,pizza congelada muzzarella,4,4286,17144
+69,74,whisky 750ml,3,2953,8859
+70,66,cerveza negra 1l,3,1533,4599
+70,89,caldo concentrado verdura,4,1003,4012
+70,38,mermelada de frutilla 400g,3,1584,4752
+71,11,café molido 250g,3,2053,6159
+71,79,hamburguesas congeladas x4,4,2420,9680
+71,100,trapo de piso,4,4854,19416
+71,92,crema dental 90g,1,2512,2512
+72,94,hilo dental,3,1418,4254
+72,41,aceite de girasol 1l,4,860,3440
+72,51,sal fina 500g,2,1745,3490
+73,28,papas fritas clásicas 100g,1,936,936
+73,24,galletitas chocolate,3,1305,3915
+73,19,manteca 200g,1,3251,3251
+74,32,chocolate amargo 100g,3,2234,6702
+74,14,leche entera 1l,2,1723,3446
+74,55,shampoo 400ml,2,1407,2814
+75,3,sprite 1.5l,4,4964,19856
+75,2,pepsi 1.5l,5,4973,24865
+76,22,medialunas de manteca,4,2069,8276
+76,23,bizcochos salados,4,2380,9520
+76,24,galletitas chocolate,1,1305,1305
+76,11,café molido 250g,2,2053,4106
+77,53,lavandina 1l,2,1664,3328
+77,41,aceite de girasol 1l,1,860,860
+77,34,turrón 50g,5,503,2515
+77,98,desengrasante 500ml,2,2843,5686
+77,39,helado vainilla 1l,2,469,938
+78,37,mermelada de durazno 400g,3,3196,9588
+78,79,hamburguesas congeladas x4,5,2420,12100
+78,17,queso cremoso 500g,2,4834,9668
+78,85,jugo en polvo naranja,1,1856,1856
+78,39,helado vainilla 1l,2,469,938
+79,81,aceitunas verdes 200g,2,2520,5040
+79,56,papel higiénico x4,2,2532,5064
+80,39,helado vainilla 1l,5,469,2345
+80,30,maní salado 200g,3,4875,14625
+80,41,aceite de girasol 1l,5,860,4300
+81,10,yerba mate intensa 1kg,2,4883,9766
+82,38,mermelada de frutilla 400g,1,1584,1584
+82,28,papas fritas clásicas 100g,2,936,1872
+82,29,papas fritas onduladas 100g,5,1868,9340
+82,82,aceitunas negras 200g,2,2394,4788
+83,5,agua mineral 500ml,2,4777,9554
+83,26,alfajor triple,2,1001,2002
+83,73,gin 700ml,5,1561,7805
+83,51,sal fina 500g,2,1745,3490
+84,83,queso untable 190g,5,1830,9150
+84,76,pizza congelada muzzarella,4,4286,17144
+85,32,chocolate amargo 100g,4,2234,8936
+85,80,helado de frutilla 1l,2,1981,3962
+86,66,cerveza negra 1l,2,1533,3066
+86,1,coca cola 1.5l,4,2347,9388
+86,13,té verde 20 saquitos,5,2383,11915
+86,41,aceite de girasol 1l,3,860,2580
+87,53,lavandina 1l,2,1664,3328
+87,86,jugo en polvo limón,2,4090,8180
+88,7,jugo de manzana 1l,5,3269,16345
+88,53,lavandina 1l,5,1664,8320
+88,8,energética nitro 500ml,4,4218,16872
+89,72,ron 700ml,2,3876,7752
+90,79,hamburguesas congeladas x4,4,2420,9680
+90,6,jugo de naranja 1l,2,4170,8340
+91,57,servilletas x100,3,4520,13560
+92,10,yerba mate intensa 1kg,2,4883,9766
+92,43,salsa de tomate 500g,4,887,3548
+93,80,helado de frutilla 1l,4,1981,7924
+93,66,cerveza negra 1l,3,1533,4599
+93,91,desodorante aerosol,3,4690,14070
+94,24,galletitas chocolate,1,1305,1305
+94,86,jugo en polvo limón,5,4090,20450
+94,98,desengrasante 500ml,2,2843,5686
+95,72,ron 700ml,5,3876,19380
+95,12,té negro 20 saquitos,1,570,570
+96,81,aceitunas verdes 200g,3,2520,7560
+96,68,vino blanco 750ml,1,2684,2684
+96,11,café molido 250g,2,2053,4106
+96,50,azúcar 1kg,3,727,2181
+97,59,chicle menta,5,3612,18060
+97,36,dulce de leche 400g,1,2559,2559
+97,4,fanta naranja 1.5l,3,2033,6099
+98,28,papas fritas clásicas 100g,4,936,3744
+98,61,miel pura 250g,1,4982,4982
+98,29,papas fritas onduladas 100g,1,1868,1868
+98,83,queso untable 190g,3,1830,5490
+99,40,helado chocolate 1l,5,1215,6075
+100,13,té verde 20 saquitos,3,2383,7149
+100,18,queso rallado 150g,4,3444,13776
+100,58,caramelos masticables,2,4752,9504
+100,57,servilletas x100,1,4520,4520
+100,9,yerba mate suave 1kg,4,3878,15512
+101,34,turrón 50g,4,503,2012
+102,78,verduras congeladas mix,3,4289,12867
+102,36,dulce de leche 400g,3,2559,7677
+103,79,hamburguesas congeladas x4,5,2420,12100
+103,43,salsa de tomate 500g,5,887,4435
+103,34,turrón 50g,1,503,503
+103,70,fernet 750ml,1,4061,4061
+104,95,mascarilla capilar,2,1581,3162
+104,68,vino blanco 750ml,3,2684,8052
+104,68,vino blanco 750ml,5,2684,13420
+105,13,té verde 20 saquitos,2,2383,4766
+105,4,fanta naranja 1.5l,4,2033,8132
+105,58,caramelos masticables,2,4752,9504
+105,82,aceitunas negras 200g,4,2394,9576
+105,43,salsa de tomate 500g,5,887,4435
+106,88,caldo concentrado carne,3,2570,7710
+107,7,jugo de manzana 1l,4,3269,13076
+107,11,café molido 250g,2,2053,4106
+107,12,té negro 20 saquitos,4,570,2280
+107,5,agua mineral 500ml,4,4777,19108
+108,90,toallas húmedas x50,4,2902,11608
+109,18,queso rallado 150g,1,3444,3444
+109,74,whisky 750ml,1,2953,2953
+109,20,pan lactal blanco,2,1571,3142
+109,44,arroz largo fino 1kg,5,2979,14895
+110,6,jugo de naranja 1l,1,4170,4170
+110,59,chicle menta,3,3612,10836
+110,6,jugo de naranja 1l,5,4170,20850
+111,97,limpiavidrios 500ml,4,872,3488
+111,93,cepillo de dientes,3,2142,6426
+111,20,pan lactal blanco,2,1571,3142
+111,23,bizcochos salados,4,2380,9520
+112,55,shampoo 400ml,1,1407,1407
+112,21,pan lactal integral,4,272,1088
+112,43,salsa de tomate 500g,5,887,4435
+112,13,té verde 20 saquitos,2,2383,4766
+112,59,chicle menta,1,3612,3612
+113,53,lavandina 1l,2,1664,3328
+113,92,crema dental 90g,3,2512,7536
+114,8,energética nitro 500ml,1,4218,4218
+114,84,queso azul 150g,1,1645,1645
+114,10,yerba mate intensa 1kg,1,4883,4883
+114,55,shampoo 400ml,5,1407,7035
+114,92,crema dental 90g,4,2512,10048
+115,17,queso cremoso 500g,4,4834,19336
+115,97,limpiavidrios 500ml,5,872,4360
+115,95,mascarilla capilar,4,1581,6324
+115,84,queso azul 150g,2,1645,3290
+116,65,cerveza rubia 1l,1,2423,2423
+116,35,barrita de cereal 30g,2,4430,8860
+116,42,vinagre de alcohol 500ml,4,1195,4780
+116,54,jabón de tocador,5,1592,7960
+116,90,toallas húmedas x50,4,2902,11608
+117,67,vino tinto malbec 750ml,4,4719,18876
+117,61,miel pura 250g,2,4982,9964
+118,68,vino blanco 750ml,5,2684,13420
+118,68,vino blanco 750ml,3,2684,8052
+118,70,fernet 750ml,2,4061,8122
+118,93,cepillo de dientes,3,2142,6426
+118,50,azúcar 1kg,2,727,1454
+119,45,fideos spaghetti 500g,5,745,3725
+120,20,pan lactal blanco,5,1571,7855

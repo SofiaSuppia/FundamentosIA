@@ -1,0 +1,101 @@
+id_producto,nombre_producto,categoria,precio_unitario
+1,coca cola 1.5l,alimentos,2347
+2,pepsi 1.5l,alimentos,4973
+3,sprite 1.5l,alimentos,4964
+4,fanta naranja 1.5l,alimentos,2033
+5,agua mineral 500ml,alimentos,4777
+6,jugo de naranja 1l,alimentos,4170
+7,jugo de manzana 1l,alimentos,3269
+8,energética nitro 500ml,alimentos,4218
+9,yerba mate suave 1kg,alimentos,3878
+10,yerba mate intensa 1kg,alimentos,4883
+11,café molido 250g,alimentos,2053
+12,té negro 20 saquitos,alimentos,570
+13,té verde 20 saquitos,alimentos,2383
+14,leche entera 1l,alimentos,1723
+15,leche descremada 1l,alimentos,2538
+16,yogur natural 200g,alimentos,4613
+17,queso cremoso 500g,alimentos,4834
+18,queso rallado 150g,alimentos,3444
+19,manteca 200g,alimentos,3251
+20,pan lactal blanco,alimentos,1571
+21,pan lactal integral,alimentos,272
+22,medialunas de manteca,alimentos,2069
+23,bizcochos salados,alimentos,2380
+24,galletitas chocolate,alimentos,1305
+25,galletitas vainilla,alimentos,4015
+26,alfajor triple,alimentos,1001
+27,alfajor simple,alimentos,2502
+28,papas fritas clásicas 100g,alimentos,936
+29,papas fritas onduladas 100g,alimentos,1868
+30,maní salado 200g,alimentos,4875
+31,mix de frutos secos 200g,alimentos,3409
+32,chocolate amargo 100g,alimentos,2234
+33,chocolate con leche 100g,alimentos,1255
+34,turrón 50g,alimentos,503
+35,barrita de cereal 30g,alimentos,4430
+36,dulce de leche 400g,alimentos,2559
+37,mermelada de durazno 400g,alimentos,3196
+38,mermelada de frutilla 400g,alimentos,1584
+39,helado vainilla 1l,alimentos,469
+40,helado chocolate 1l,alimentos,1215
+41,aceite de girasol 1l,alimentos,860
+42,vinagre de alcohol 500ml,alimentos,1195
+43,salsa de tomate 500g,alimentos,887
+44,arroz largo fino 1kg,alimentos,2979
+45,fideos spaghetti 500g,alimentos,745
+46,lentejas secas 500g,alimentos,3036
+47,garbanzos 500g,alimentos,2939
+48,porotos negros 500g,alimentos,4462
+49,harina de trigo 1kg,alimentos,2512
+50,azúcar 1kg,alimentos,727
+51,sal fina 500g,alimentos,1745
+52,detergente líquido 750ml,limpieza,2582
+53,lavandina 1l,limpieza,1664
+54,jabón de tocador,higiene personal,1592
+55,shampoo 400ml,higiene personal,1407
+56,papel higiénico x4,limpieza,2532
+57,servilletas x100,limpieza,4520
+58,caramelos masticables,alimentos,4752
+59,chicle menta,alimentos,3612
+60,chupetín,alimentos,4647
+61,miel pura 250g,alimentos,4982
+62,stevia 100 sobres,alimentos,3848
+63,granola 250g,alimentos,4337
+64,avena instantánea 250g,alimentos,3953
+65,cerveza rubia 1l,alimentos,2423
+66,cerveza negra 1l,alimentos,1533
+67,vino tinto malbec 750ml,alimentos,4719
+68,vino blanco 750ml,alimentos,2684
+69,sidra 750ml,alimentos,744
+70,fernet 750ml,alimentos,4061
+71,vodka 700ml,alimentos,508
+72,ron 700ml,alimentos,3876
+73,gin 700ml,alimentos,1561
+74,whisky 750ml,alimentos,2953
+75,licor de café 700ml,alimentos,3204
+76,pizza congelada muzzarella,alimentos,4286
+77,empanadas congeladas,alimentos,4778
+78,verduras congeladas mix,alimentos,4289
+79,hamburguesas congeladas x4,alimentos,2420
+80,helado de frutilla 1l,alimentos,1981
+81,aceitunas verdes 200g,alimentos,2520
+82,aceitunas negras 200g,alimentos,2394
+83,queso untable 190g,alimentos,1830
+84,queso azul 150g,alimentos,1645
+85,jugo en polvo naranja,alimentos,1856
+86,jugo en polvo limón,alimentos,4090
+87,sopa instantánea pollo,alimentos,1679
+88,caldo concentrado carne,alimentos,2570
+89,caldo concentrado verdura,alimentos,1003
+90,toallas húmedas x50,higiene personal,2902
+91,desodorante aerosol,higiene personal,4690
+92,crema dental 90g,higiene personal,2512
+93,cepillo de dientes,higiene personal,2142
+94,hilo dental,higiene personal,1418
+95,mascarilla capilar,higiene personal,1581
+96,suavizante 1l,limpieza,4920
+97,limpiavidrios 500ml,limpieza,872
+98,desengrasante 500ml,limpieza,2843
+99,esponjas x3,limpieza,2430
+100,trapo de piso,limpieza,4854

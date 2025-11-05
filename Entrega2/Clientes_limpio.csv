@@ -1,0 +1,101 @@
+id_cliente,nombre_cliente,email,ciudad,fecha_alta
+1,mariana lopez,mariana.lopez@mail.com,carlos paz,2023-01-01
+2,nicolas rojas,nicolas.rojas@mail.com,carlos paz,2023-01-02
+3,hernan martinez,hernan.martinez@mail.com,rio cuarto,2023-01-03
+4,uma martinez,uma.martinez@mail.com,carlos paz,2023-01-04
+5,agustina flores,agustina.flores@mail.com,cordoba,2023-01-05
+6,uma medina,uma.medina@mail.com,villa maria,2023-01-06
+7,emilia castro,emilia.castro@mail.com,rio cuarto,2023-01-07
+8,bruno castro,bruno.castro@mail.com,carlos paz,2023-01-08
+9,yamila molina,yamila.molina@mail.com,carlos paz,2023-01-09
+10,karina acosta,karina.acosta@mail.com,cordoba,2023-01-10
+11,helena sanchez,helena.sanchez@mail.com,villa maria,2023-01-11
+12,gael gomez,gael.gomez@mail.com,alta gracia,2023-01-12
+13,ivana sanchez,ivana.sanchez@mail.com,carlos paz,2023-01-13
+14,gael martinez,gael.martinez@mail.com,carlos paz,2023-01-14
+15,tomas ruiz,tomas.ruiz@mail.com,cordoba,2023-01-15
+16,felipe alvarez,felipe.alvarez@mail.com,rio cuarto,2023-01-16
+17,pablo gomez,pablo.gomez@mail.com,villa maria,2023-01-17
+18,ivana torres,ivana.torres@mail.com,carlos paz,2023-01-18
+19,uma silva,uma.silva@mail.com,mendiolaza,2023-01-19
+20,tomas acosta,tomas.acosta@mail.com,rio cuarto,2023-01-20
+21,elena rodriguez,elena.rodriguez@mail.com,alta gracia,2023-01-21
+22,franco rodriguez,franco.rodriguez@mail.com,alta gracia,2023-01-22
+23,helena fernandez,helena.fernandez@mail.com,rio cuarto,2023-01-23
+24,nicolas silva,nicolas.silva@mail.com,villa maria,2023-01-24
+25,karina castro,karina.castro@mail.com,rio cuarto,2023-01-25
+26,camila sanchez,camila.sanchez@mail.com,alta gracia,2023-01-26
+27,tomas castro,tomas.castro@mail.com,rio cuarto,2023-01-27
+28,rocio silva,rocio.silva@mail.com,cordoba,2023-01-28
+29,diego fernandez,diego.fernandez@mail.com,alta gracia,2023-01-29
+30,ivana medina,ivana.medina@mail.com,alta gracia,2023-01-30
+31,felipe ruiz,felipe.ruiz@mail.com,villa maria,2023-01-31
+32,martina alvarez,martina.alvarez@mail.com,mendiolaza,2023-02-01
+33,franco acosta,franco.acosta@mail.com,rio cuarto,2023-02-02
+34,bruno castro,bruno.castro2@mail.com,villa maria,2023-02-03
+35,yamila lopez,yamila.lopez@mail.com,mendiolaza,2023-02-04
+36,martina molina,martina.molina@mail.com,mendiolaza,2023-02-05
+37,martina perez,martina.perez@mail.com,mendiolaza,2023-02-06
+38,franco herrera,franco.herrera@mail.com,alta gracia,2023-02-07
+39,santiago diaz,santiago.diaz@mail.com,alta gracia,2023-02-08
+40,felipe diaz,felipe.diaz@mail.com,rio cuarto,2023-02-09
+41,elena rodriguez,elena.rodriguez2@mail.com,alta gracia,2023-02-10
+42,tomas flores,tomas.flores@mail.com,alta gracia,2023-02-11
+43,lucas perez,lucas.perez@mail.com,mendiolaza,2023-02-12
+44,camila romero,camila.romero@mail.com,carlos paz,2023-02-13
+45,olivia castro,olivia.castro@mail.com,rio cuarto,2023-02-14
+46,agustina martinez,agustina.martinez@mail.com,alta gracia,2023-02-15
+47,franco silva,franco.silva@mail.com,alta gracia,2023-02-16
+48,rocio alvarez,rocio.alvarez@mail.com,cordoba,2023-02-17
+49,olivia gomez,olivia.gomez@mail.com,rio cuarto,2023-02-18
+50,lucas diaz,lucas.diaz@mail.com,carlos paz,2023-02-19
+51,agustina gomez,agustina.gomez@mail.com,rio cuarto,2023-02-20
+52,diego diaz,diego.diaz@mail.com,rio cuarto,2023-02-21
+53,emilia rojas,emilia.rojas@mail.com,mendiolaza,2023-02-22
+54,uma herrera,uma.herrera@mail.com,alta gracia,2023-02-23
+55,olivia ruiz,olivia.ruiz@mail.com,mendiolaza,2023-02-24
+56,bruno diaz,bruno.diaz@mail.com,rio cuarto,2023-02-25
+57,julian acosta,julian.acosta@mail.com,rio cuarto,2023-02-26
+58,karina acosta,karina.acosta2@mail.com,rio cuarto,2023-02-27
+59,emilia ruiz,emilia.ruiz@mail.com,villa maria,2023-02-28
+60,uma gonzalez,uma.gonzalez@mail.com,alta gracia,2023-03-01
+61,guadalupe martinez,guadalupe.martinez@mail.com,rio cuarto,2023-03-02
+62,guadalupe romero,guadalupe.romero@mail.com,carlos paz,2023-03-03
+63,pablo medina,pablo.medina@mail.com,cordoba,2023-03-04
+64,julian alvarez,julian.alvarez@mail.com,villa maria,2023-03-05
+65,tomas perez,tomas.perez@mail.com,alta gracia,2023-03-06
+66,tomas herrera,tomas.herrera@mail.com,villa maria,2023-03-07
+67,ivana romero,ivana.romero@mail.com,alta gracia,2023-03-08
+68,uma torres,uma.torres@mail.com,villa maria,2023-03-09
+69,felipe flores,felipe.flores@mail.com,rio cuarto,2023-03-10
+70,julian diaz,julian.diaz@mail.com,carlos paz,2023-03-11
+71,valentina alvarez,valentina.alvarez@mail.com,villa maria,2023-03-12
+72,camila rodriguez,camila.rodriguez@mail.com,cordoba,2023-03-13
+73,yamila diaz,yamila.diaz@mail.com,alta gracia,2023-03-14
+74,zoe flores,zoe.flores@mail.com,carlos paz,2023-03-15
+75,santiago castro,santiago.castro@mail.com,rio cuarto,2023-03-16
+76,pablo perez,pablo.perez@mail.com,mendiolaza,2023-03-17
+77,bruno alvarez,bruno.alvarez@mail.com,villa maria,2023-03-18
+78,emilia alvarez,emilia.alvarez@mail.com,villa maria,2023-03-19
+79,olivia perez,olivia.perez@mail.com,carlos paz,2023-03-20
+80,gael ruiz,gael.ruiz@mail.com,mendiolaza,2023-03-21
+81,camila ruiz,camila.ruiz@mail.com,carlos paz,2023-03-22
+82,lucas lopez,lucas.lopez@mail.com,alta gracia,2023-03-23
+83,franco gomez,franco.gomez@mail.com,rio cuarto,2023-03-24
+84,pablo sanchez,pablo.sanchez@mail.com,cordoba,2023-03-25
+85,agustina martinez,agustina.martinez2@mail.com,mendiolaza,2023-03-26
+86,diego torres,diego.torres@mail.com,cordoba,2023-03-27
+87,bautista lopez,bautista.lopez@mail.com,alta gracia,2023-03-28
+88,felipe castro,felipe.castro@mail.com,villa maria,2023-03-29
+89,karina martinez,karina.martinez@mail.com,rio cuarto,2023-03-30
+90,guadalupe ruiz,guadalupe.ruiz@mail.com,rio cuarto,2023-03-31
+91,uma sanchez,uma.sanchez@mail.com,mendiolaza,2023-04-01
+92,mariana rodriguez,mariana.rodriguez@mail.com,alta gracia,2023-04-02
+93,gael rojas,gael.rojas@mail.com,alta gracia,2023-04-03
+94,elena sanchez,elena.sanchez@mail.com,mendiolaza,2023-04-04
+95,olivia perez,olivia.perez2@mail.com,rio cuarto,2023-04-05
+96,rocio gonzalez,rocio.gonzalez@mail.com,cordoba,2023-04-06
+97,uma alvarez,uma.alvarez@mail.com,cordoba,2023-04-07
+98,camila castro,camila.castro@mail.com,cordoba,2023-04-08
+99,bruno molina,bruno.molina@mail.com,villa maria,2023-04-09
+100,agustina lopez,agustina.lopez@mail.com,cordoba,2023-04-10
