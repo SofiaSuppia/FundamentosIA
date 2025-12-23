@@ -1,0 +1,2001 @@
+id_cliente,ciudad,id_producto,categoria,nombre_producto,cantidad,precio_unitario,importe,medio_pago,mes
+7,rio cuarto,73,alimentos,gin 700ml,2,1561,3122,transferencia,6
+77,villa maria,24,alimentos,galletitas chocolate,4,1305,5220,transferencia,8
+4,carlos paz,42,alimentos,vinagre de alcohol 500ml,5,1195,5975,tarjeta_debito,2
+93,alta gracia,24,alimentos,galletitas chocolate,3,1305,3915,tarjeta_debito,5
+9,carlos paz,22,alimentos,medialunas de manteca,2,2069,4138,efectivo,9
+88,villa maria,41,alimentos,aceite de girasol 1l,3,860,2580,tarjeta_credito,12
+80,mendiolaza,92,higiene personal,crema dental 90g,5,2512,12560,efectivo,10
+42,alta gracia,4,alimentos,fanta naranja 1.5l,3,2033,6099,transferencia,6
+11,villa maria,13,alimentos,té verde 20 saquitos,3,2383,7149,transferencia,2
+23,rio cuarto,93,higiene personal,cepillo de dientes,5,2142,10710,transferencia,5
+69,rio cuarto,17,alimentos,queso cremoso 500g,4,4834,19336,transferencia,4
+34,villa maria,56,limpieza,papel higiénico x4,3,2532,7596,transferencia,11
+82,alta gracia,39,alimentos,helado vainilla 1l,1,469,469,tarjeta_credito,3
+44,carlos paz,22,alimentos,medialunas de manteca,3,2069,6207,tarjeta_debito,11
+55,mendiolaza,19,alimentos,manteca 200g,5,3251,16255,tarjeta_credito,4
+41,alta gracia,65,alimentos,cerveza rubia 1l,2,2423,4846,transferencia,8
+96,cordoba,23,alimentos,bizcochos salados,5,2380,11900,tarjeta_credito,1
+95,rio cuarto,90,higiene personal,toallas húmedas x50,5,2902,14510,transferencia,4
+96,cordoba,15,alimentos,leche descremada 1l,4,2538,10152,transferencia,6
+38,alta gracia,48,alimentos,porotos negros 500g,2,4462,8924,efectivo,4
+34,villa maria,77,alimentos,empanadas congeladas,1,4778,4778,transferencia,7
+37,mendiolaza,7,alimentos,jugo de manzana 1l,3,3269,9807,transferencia,8
+82,alta gracia,68,alimentos,vino blanco 750ml,3,2684,8052,transferencia,4
+47,alta gracia,96,limpieza,suavizante 1l,3,4920,14760,transferencia,10
+75,rio cuarto,93,higiene personal,cepillo de dientes,2,2142,4284,tarjeta_credito,4
+94,mendiolaza,34,alimentos,turrón 50g,2,503,1006,efectivo,7
+88,villa maria,25,alimentos,galletitas vainilla,3,4015,12045,tarjeta_debito,2
+57,rio cuarto,62,alimentos,stevia 100 sobres,4,3848,15392,efectivo,4
+23,rio cuarto,67,alimentos,vino tinto malbec 750ml,3,4719,14157,tarjeta_debito,8
+100,cordoba,64,alimentos,avena instantánea 250g,1,3953,3953,transferencia,3
+29,alta gracia,86,alimentos,jugo en polvo limón,1,4090,4090,tarjeta_credito,10
+92,alta gracia,75,alimentos,licor de café 700ml,2,3204,6408,tarjeta_credito,11
+22,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,efectivo,1
+42,alta gracia,47,alimentos,garbanzos 500g,2,2939,5878,transferencia,11
+88,villa maria,21,alimentos,pan lactal integral,4,272,1088,transferencia,7
+28,cordoba,79,alimentos,hamburguesas congeladas x4,4,2420,9680,tarjeta_credito,11
+39,alta gracia,60,alimentos,chupetín,1,4647,4647,efectivo,9
+44,carlos paz,11,alimentos,café molido 250g,3,2053,6159,tarjeta_debito,10
+29,alta gracia,31,alimentos,mix de frutos secos 200g,5,3409,17045,tarjeta_credito,5
+32,mendiolaza,1,alimentos,coca cola 1.5l,5,2347,11735,efectivo,6
+44,carlos paz,5,alimentos,agua mineral 500ml,5,4777,23885,transferencia,10
+26,alta gracia,21,alimentos,pan lactal integral,2,272,544,efectivo,7
+66,villa maria,16,alimentos,yogur natural 200g,1,4613,4613,transferencia,6
+73,alta gracia,79,alimentos,hamburguesas congeladas x4,3,2420,7260,tarjeta_debito,6
+24,villa maria,86,alimentos,jugo en polvo limón,2,4090,8180,efectivo,7
+82,alta gracia,78,alimentos,verduras congeladas mix,4,4289,17156,transferencia,2
+97,cordoba,14,alimentos,leche entera 1l,3,1723,5169,transferencia,9
+54,alta gracia,98,limpieza,desengrasante 500ml,1,2843,2843,transferencia,2
+9,carlos paz,56,limpieza,papel higiénico x4,5,2532,12660,tarjeta_credito,9
+68,villa maria,91,higiene personal,desodorante aerosol,3,4690,14070,tarjeta_debito,2
+57,rio cuarto,52,limpieza,detergente líquido 750ml,2,2582,5164,tarjeta_credito,11
+59,villa maria,5,alimentos,agua mineral 500ml,3,4777,14331,efectivo,10
+90,rio cuarto,6,alimentos,jugo de naranja 1l,1,4170,4170,tarjeta_debito,10
+28,cordoba,91,higiene personal,desodorante aerosol,2,4690,9380,tarjeta_credito,5
+100,cordoba,22,alimentos,medialunas de manteca,4,2069,8276,efectivo,6
+96,cordoba,91,higiene personal,desodorante aerosol,1,4690,4690,transferencia,2
+64,villa maria,13,alimentos,té verde 20 saquitos,1,2383,2383,tarjeta_credito,2
+43,mendiolaza,94,higiene personal,hilo dental,4,1418,5672,efectivo,8
+25,rio cuarto,77,alimentos,empanadas congeladas,5,4778,23890,transferencia,2
+57,rio cuarto,91,higiene personal,desodorante aerosol,3,4690,14070,transferencia,8
+68,villa maria,3,alimentos,sprite 1.5l,4,4964,19856,tarjeta_debito,1
+86,cordoba,76,alimentos,pizza congelada muzzarella,4,4286,17144,efectivo,3
+94,mendiolaza,71,alimentos,vodka 700ml,3,508,1524,tarjeta_debito,10
+94,mendiolaza,43,alimentos,salsa de tomate 500g,5,887,4435,transferencia,7
+23,rio cuarto,24,alimentos,galletitas chocolate,4,1305,5220,tarjeta_debito,4
+31,villa maria,21,alimentos,pan lactal integral,5,272,1360,transferencia,9
+42,alta gracia,70,alimentos,fernet 750ml,3,4061,12183,tarjeta_debito,12
+68,villa maria,26,alimentos,alfajor triple,1,1001,1001,tarjeta_credito,10
+61,rio cuarto,17,alimentos,queso cremoso 500g,1,4834,4834,efectivo,11
+28,cordoba,34,alimentos,turrón 50g,4,503,2012,tarjeta_debito,7
+29,alta gracia,75,alimentos,licor de café 700ml,1,3204,3204,efectivo,8
+21,alta gracia,61,alimentos,miel pura 250g,5,4982,24910,tarjeta_debito,2
+87,alta gracia,35,alimentos,barrita de cereal 30g,1,4430,4430,tarjeta_debito,6
+83,rio cuarto,62,alimentos,stevia 100 sobres,4,3848,15392,tarjeta_debito,5
+59,villa maria,49,alimentos,harina de trigo 1kg,2,2512,5024,tarjeta_debito,2
+1,carlos paz,29,alimentos,papas fritas onduladas 100g,2,1868,3736,transferencia,11
+53,mendiolaza,77,alimentos,empanadas congeladas,1,4778,4778,efectivo,10
+57,rio cuarto,33,alimentos,chocolate con leche 100g,1,1255,1255,efectivo,7
+7,rio cuarto,14,alimentos,leche entera 1l,1,1723,1723,tarjeta_credito,3
+44,carlos paz,36,alimentos,dulce de leche 400g,5,2559,12795,tarjeta_credito,5
+52,rio cuarto,70,alimentos,fernet 750ml,5,4061,20305,tarjeta_debito,8
+68,villa maria,95,higiene personal,mascarilla capilar,4,1581,6324,transferencia,11
+13,carlos paz,93,higiene personal,cepillo de dientes,3,2142,6426,tarjeta_credito,5
+46,alta gracia,68,alimentos,vino blanco 750ml,5,2684,13420,transferencia,7
+63,cordoba,8,alimentos,energética nitro 500ml,5,4218,21090,tarjeta_debito,4
+44,carlos paz,74,alimentos,whisky 750ml,2,2953,5906,tarjeta_debito,11
+52,rio cuarto,49,alimentos,harina de trigo 1kg,2,2512,5024,tarjeta_credito,6
+98,cordoba,78,alimentos,verduras congeladas mix,5,4289,21445,tarjeta_debito,7
+92,alta gracia,74,alimentos,whisky 750ml,4,2953,11812,transferencia,9
+52,rio cuarto,29,alimentos,papas fritas onduladas 100g,1,1868,1868,tarjeta_credito,4
+48,cordoba,80,alimentos,helado de frutilla 1l,3,1981,5943,transferencia,5
+63,cordoba,16,alimentos,yogur natural 200g,4,4613,18452,tarjeta_debito,1
+79,carlos paz,54,higiene personal,jabón de tocador,4,1592,6368,tarjeta_debito,10
+56,rio cuarto,32,alimentos,chocolate amargo 100g,5,2234,11170,transferencia,2
+10,cordoba,41,alimentos,aceite de girasol 1l,5,860,4300,efectivo,3
+76,mendiolaza,64,alimentos,avena instantánea 250g,3,3953,11859,tarjeta_credito,5
+2,carlos paz,84,alimentos,queso azul 150g,1,1645,1645,tarjeta_debito,9
+87,alta gracia,74,alimentos,whisky 750ml,2,2953,5906,tarjeta_debito,11
+43,mendiolaza,47,alimentos,garbanzos 500g,5,2939,14695,tarjeta_debito,8
+90,rio cuarto,25,alimentos,galletitas vainilla,1,4015,4015,tarjeta_credito,1
+52,rio cuarto,23,alimentos,bizcochos salados,2,2380,4760,transferencia,10
+67,alta gracia,96,limpieza,suavizante 1l,4,4920,19680,transferencia,5
+9,carlos paz,65,alimentos,cerveza rubia 1l,1,2423,2423,transferencia,4
+79,carlos paz,26,alimentos,alfajor triple,4,1001,4004,tarjeta_credito,5
+52,rio cuarto,18,alimentos,queso rallado 150g,4,3444,13776,tarjeta_credito,5
+55,mendiolaza,79,alimentos,hamburguesas congeladas x4,1,2420,2420,transferencia,12
+46,alta gracia,1,alimentos,coca cola 1.5l,4,2347,9388,efectivo,8
+45,rio cuarto,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,transferencia,5
+28,cordoba,7,alimentos,jugo de manzana 1l,1,3269,3269,transferencia,1
+33,rio cuarto,59,alimentos,chicle menta,2,3612,7224,tarjeta_debito,7
+74,carlos paz,98,limpieza,desengrasante 500ml,5,2843,14215,efectivo,12
+18,carlos paz,53,limpieza,lavandina 1l,5,1664,8320,tarjeta_debito,6
+67,alta gracia,68,alimentos,vino blanco 750ml,3,2684,8052,tarjeta_debito,7
+44,carlos paz,60,alimentos,chupetín,5,4647,23235,tarjeta_debito,12
+40,rio cuarto,24,alimentos,galletitas chocolate,3,1305,3915,tarjeta_debito,11
+9,carlos paz,96,limpieza,suavizante 1l,4,4920,19680,efectivo,7
+55,mendiolaza,65,alimentos,cerveza rubia 1l,4,2423,9692,tarjeta_credito,10
+7,rio cuarto,71,alimentos,vodka 700ml,4,508,2032,transferencia,7
+65,alta gracia,38,alimentos,mermelada de frutilla 400g,1,1584,1584,tarjeta_debito,12
+62,carlos paz,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,tarjeta_credito,3
+35,mendiolaza,10,alimentos,yerba mate intensa 1kg,1,4883,4883,efectivo,12
+6,villa maria,20,alimentos,pan lactal blanco,2,1571,3142,tarjeta_credito,7
+19,mendiolaza,74,alimentos,whisky 750ml,4,2953,11812,tarjeta_debito,4
+25,rio cuarto,94,higiene personal,hilo dental,1,1418,1418,tarjeta_debito,11
+75,rio cuarto,87,alimentos,sopa instantánea pollo,1,1679,1679,tarjeta_debito,4
+1,carlos paz,50,alimentos,azúcar 1kg,5,727,3635,transferencia,4
+54,alta gracia,29,alimentos,papas fritas onduladas 100g,2,1868,3736,efectivo,10
+71,villa maria,12,alimentos,té negro 20 saquitos,2,570,1140,efectivo,8
+13,carlos paz,29,alimentos,papas fritas onduladas 100g,4,1868,7472,tarjeta_credito,8
+86,cordoba,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_credito,7
+82,alta gracia,15,alimentos,leche descremada 1l,2,2538,5076,efectivo,5
+40,rio cuarto,22,alimentos,medialunas de manteca,1,2069,2069,tarjeta_credito,11
+82,alta gracia,84,alimentos,queso azul 150g,3,1645,4935,transferencia,6
+84,cordoba,15,alimentos,leche descremada 1l,5,2538,12690,efectivo,4
+11,villa maria,7,alimentos,jugo de manzana 1l,5,3269,16345,tarjeta_debito,7
+16,rio cuarto,16,alimentos,yogur natural 200g,3,4613,13839,tarjeta_credito,6
+28,cordoba,50,alimentos,azúcar 1kg,1,727,727,efectivo,7
+69,rio cuarto,34,alimentos,turrón 50g,1,503,503,tarjeta_debito,10
+4,carlos paz,57,limpieza,servilletas x100,1,4520,4520,transferencia,6
+57,rio cuarto,24,alimentos,galletitas chocolate,1,1305,1305,efectivo,10
+91,mendiolaza,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_credito,12
+52,rio cuarto,84,alimentos,queso azul 150g,4,1645,6580,efectivo,3
+81,carlos paz,74,alimentos,whisky 750ml,4,2953,11812,transferencia,9
+64,villa maria,27,alimentos,alfajor simple,3,2502,7506,tarjeta_debito,11
+13,carlos paz,66,alimentos,cerveza negra 1l,2,1533,3066,tarjeta_credito,1
+84,cordoba,13,alimentos,té verde 20 saquitos,2,2383,4766,transferencia,6
+80,mendiolaza,23,alimentos,bizcochos salados,3,2380,7140,tarjeta_debito,10
+34,villa maria,28,alimentos,papas fritas clásicas 100g,5,936,4680,tarjeta_debito,7
+25,rio cuarto,41,alimentos,aceite de girasol 1l,1,860,860,efectivo,4
+95,rio cuarto,34,alimentos,turrón 50g,1,503,503,tarjeta_credito,8
+59,villa maria,47,alimentos,garbanzos 500g,5,2939,14695,efectivo,1
+45,rio cuarto,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_credito,5
+45,rio cuarto,94,higiene personal,hilo dental,1,1418,1418,tarjeta_credito,3
+27,rio cuarto,17,alimentos,queso cremoso 500g,4,4834,19336,transferencia,12
+38,alta gracia,84,alimentos,queso azul 150g,4,1645,6580,tarjeta_credito,3
+60,alta gracia,11,alimentos,café molido 250g,4,2053,8212,tarjeta_debito,7
+52,rio cuarto,81,alimentos,aceitunas verdes 200g,5,2520,12600,tarjeta_debito,10
+71,villa maria,81,alimentos,aceitunas verdes 200g,1,2520,2520,efectivo,7
+57,rio cuarto,71,alimentos,vodka 700ml,2,508,1016,tarjeta_credito,11
+27,rio cuarto,100,limpieza,trapo de piso,4,4854,19416,efectivo,3
+34,villa maria,50,alimentos,azúcar 1kg,3,727,2181,efectivo,12
+41,alta gracia,67,alimentos,vino tinto malbec 750ml,4,4719,18876,tarjeta_debito,11
+11,villa maria,83,alimentos,queso untable 190g,4,1830,7320,tarjeta_debito,1
+53,mendiolaza,86,alimentos,jugo en polvo limón,1,4090,4090,efectivo,8
+21,alta gracia,19,alimentos,manteca 200g,3,3251,9753,tarjeta_credito,10
+45,rio cuarto,14,alimentos,leche entera 1l,5,1723,8615,tarjeta_debito,8
+33,rio cuarto,90,higiene personal,toallas húmedas x50,5,2902,14510,efectivo,11
+21,alta gracia,48,alimentos,porotos negros 500g,5,4462,22310,efectivo,11
+39,alta gracia,55,higiene personal,shampoo 400ml,1,1407,1407,tarjeta_debito,8
+76,mendiolaza,40,alimentos,helado chocolate 1l,1,1215,1215,transferencia,12
+82,alta gracia,57,limpieza,servilletas x100,2,4520,9040,tarjeta_debito,5
+86,cordoba,57,limpieza,servilletas x100,3,4520,13560,transferencia,3
+12,alta gracia,68,alimentos,vino blanco 750ml,4,2684,10736,efectivo,6
+77,villa maria,78,alimentos,verduras congeladas mix,2,4289,8578,efectivo,3
+14,carlos paz,95,higiene personal,mascarilla capilar,4,1581,6324,transferencia,12
+49,rio cuarto,71,alimentos,vodka 700ml,2,508,1016,tarjeta_credito,8
+5,cordoba,24,alimentos,galletitas chocolate,1,1305,1305,tarjeta_credito,12
+59,villa maria,65,alimentos,cerveza rubia 1l,3,2423,7269,efectivo,11
+100,cordoba,15,alimentos,leche descremada 1l,4,2538,10152,transferencia,5
+30,alta gracia,69,alimentos,sidra 750ml,5,744,3720,transferencia,12
+65,alta gracia,38,alimentos,mermelada de frutilla 400g,4,1584,6336,tarjeta_debito,4
+56,rio cuarto,78,alimentos,verduras congeladas mix,1,4289,4289,efectivo,12
+71,villa maria,76,alimentos,pizza congelada muzzarella,4,4286,17144,tarjeta_credito,10
+26,alta gracia,33,alimentos,chocolate con leche 100g,4,1255,5020,tarjeta_credito,8
+44,carlos paz,25,alimentos,galletitas vainilla,4,4015,16060,tarjeta_debito,11
+22,alta gracia,59,alimentos,chicle menta,2,3612,7224,efectivo,3
+55,mendiolaza,83,alimentos,queso untable 190g,5,1830,9150,tarjeta_credito,6
+31,villa maria,33,alimentos,chocolate con leche 100g,4,1255,5020,transferencia,11
+5,cordoba,60,alimentos,chupetín,4,4647,18588,transferencia,4
+63,cordoba,70,alimentos,fernet 750ml,2,4061,8122,tarjeta_credito,3
+10,cordoba,82,alimentos,aceitunas negras 200g,3,2394,7182,efectivo,1
+49,rio cuarto,90,higiene personal,toallas húmedas x50,2,2902,5804,tarjeta_credito,3
+81,carlos paz,100,limpieza,trapo de piso,2,4854,9708,tarjeta_debito,8
+84,cordoba,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_debito,9
+89,rio cuarto,92,higiene personal,crema dental 90g,3,2512,7536,tarjeta_debito,11
+51,rio cuarto,48,alimentos,porotos negros 500g,4,4462,17848,efectivo,2
+86,cordoba,79,alimentos,hamburguesas congeladas x4,4,2420,9680,tarjeta_credito,8
+48,cordoba,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_credito,11
+13,carlos paz,50,alimentos,azúcar 1kg,4,727,2908,tarjeta_credito,6
+62,carlos paz,48,alimentos,porotos negros 500g,2,4462,8924,transferencia,6
+2,carlos paz,74,alimentos,whisky 750ml,4,2953,11812,efectivo,8
+50,carlos paz,59,alimentos,chicle menta,5,3612,18060,tarjeta_credito,1
+21,alta gracia,97,limpieza,limpiavidrios 500ml,5,872,4360,tarjeta_debito,10
+71,villa maria,50,alimentos,azúcar 1kg,5,727,3635,tarjeta_debito,6
+24,villa maria,61,alimentos,miel pura 250g,1,4982,4982,tarjeta_debito,3
+66,villa maria,47,alimentos,garbanzos 500g,2,2939,5878,transferencia,9
+26,alta gracia,22,alimentos,medialunas de manteca,4,2069,8276,tarjeta_debito,12
+42,alta gracia,68,alimentos,vino blanco 750ml,4,2684,10736,tarjeta_debito,6
+93,alta gracia,64,alimentos,avena instantánea 250g,1,3953,3953,tarjeta_debito,10
+12,alta gracia,9,alimentos,yerba mate suave 1kg,4,3878,15512,transferencia,2
+17,villa maria,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_debito,8
+62,carlos paz,53,limpieza,lavandina 1l,1,1664,1664,tarjeta_credito,5
+29,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,transferencia,5
+34,villa maria,34,alimentos,turrón 50g,5,503,2515,tarjeta_debito,2
+7,rio cuarto,44,alimentos,arroz largo fino 1kg,5,2979,14895,tarjeta_credito,3
+85,mendiolaza,41,alimentos,aceite de girasol 1l,1,860,860,tarjeta_credito,4
+94,mendiolaza,77,alimentos,empanadas congeladas,3,4778,14334,transferencia,8
+53,mendiolaza,51,alimentos,sal fina 500g,3,1745,5235,transferencia,12
+60,alta gracia,62,alimentos,stevia 100 sobres,3,3848,11544,tarjeta_debito,11
+1,carlos paz,62,alimentos,stevia 100 sobres,3,3848,11544,tarjeta_credito,1
+81,carlos paz,87,alimentos,sopa instantánea pollo,3,1679,5037,efectivo,1
+37,mendiolaza,60,alimentos,chupetín,1,4647,4647,tarjeta_credito,2
+11,villa maria,70,alimentos,fernet 750ml,2,4061,8122,efectivo,2
+79,carlos paz,75,alimentos,licor de café 700ml,5,3204,16020,efectivo,8
+37,mendiolaza,3,alimentos,sprite 1.5l,5,4964,24820,tarjeta_debito,2
+42,alta gracia,50,alimentos,azúcar 1kg,5,727,3635,transferencia,11
+1,carlos paz,16,alimentos,yogur natural 200g,3,4613,13839,tarjeta_debito,1
+94,mendiolaza,39,alimentos,helado vainilla 1l,1,469,469,efectivo,5
+93,alta gracia,77,alimentos,empanadas congeladas,1,4778,4778,tarjeta_debito,8
+30,alta gracia,57,limpieza,servilletas x100,5,4520,22600,tarjeta_debito,2
+73,alta gracia,23,alimentos,bizcochos salados,5,2380,11900,transferencia,5
+63,cordoba,77,alimentos,empanadas congeladas,3,4778,14334,tarjeta_debito,10
+95,rio cuarto,31,alimentos,mix de frutos secos 200g,2,3409,6818,tarjeta_credito,1
+100,cordoba,43,alimentos,salsa de tomate 500g,5,887,4435,efectivo,6
+46,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,tarjeta_debito,5
+91,mendiolaza,50,alimentos,azúcar 1kg,2,727,1454,tarjeta_credito,1
+90,rio cuarto,29,alimentos,papas fritas onduladas 100g,5,1868,9340,tarjeta_debito,6
+26,alta gracia,62,alimentos,stevia 100 sobres,4,3848,15392,tarjeta_credito,2
+95,rio cuarto,44,alimentos,arroz largo fino 1kg,1,2979,2979,tarjeta_credito,12
+69,rio cuarto,58,alimentos,caramelos masticables,1,4752,4752,tarjeta_credito,2
+58,rio cuarto,58,alimentos,caramelos masticables,1,4752,4752,transferencia,4
+42,alta gracia,11,alimentos,café molido 250g,5,2053,10265,transferencia,11
+87,alta gracia,56,limpieza,papel higiénico x4,3,2532,7596,tarjeta_credito,1
+100,cordoba,56,limpieza,papel higiénico x4,5,2532,12660,transferencia,11
+32,mendiolaza,84,alimentos,queso azul 150g,3,1645,4935,tarjeta_debito,12
+69,rio cuarto,60,alimentos,chupetín,1,4647,4647,transferencia,7
+83,rio cuarto,91,higiene personal,desodorante aerosol,2,4690,9380,transferencia,4
+93,alta gracia,5,alimentos,agua mineral 500ml,1,4777,4777,tarjeta_debito,5
+75,rio cuarto,40,alimentos,helado chocolate 1l,2,1215,2430,efectivo,7
+71,villa maria,56,limpieza,papel higiénico x4,3,2532,7596,transferencia,3
+57,rio cuarto,69,alimentos,sidra 750ml,3,744,2232,tarjeta_debito,1
+36,mendiolaza,47,alimentos,garbanzos 500g,5,2939,14695,tarjeta_debito,9
+37,mendiolaza,7,alimentos,jugo de manzana 1l,4,3269,13076,tarjeta_credito,10
+32,mendiolaza,82,alimentos,aceitunas negras 200g,3,2394,7182,tarjeta_credito,9
+15,cordoba,94,higiene personal,hilo dental,3,1418,4254,tarjeta_debito,4
+22,alta gracia,92,higiene personal,crema dental 90g,2,2512,5024,efectivo,10
+76,mendiolaza,43,alimentos,salsa de tomate 500g,5,887,4435,efectivo,2
+19,mendiolaza,97,limpieza,limpiavidrios 500ml,1,872,872,tarjeta_credito,10
+47,alta gracia,100,limpieza,trapo de piso,4,4854,19416,efectivo,4
+42,alta gracia,58,alimentos,caramelos masticables,1,4752,4752,transferencia,10
+58,rio cuarto,11,alimentos,café molido 250g,3,2053,6159,tarjeta_credito,7
+55,mendiolaza,4,alimentos,fanta naranja 1.5l,4,2033,8132,tarjeta_credito,10
+69,rio cuarto,88,alimentos,caldo concentrado carne,2,2570,5140,transferencia,9
+46,alta gracia,37,alimentos,mermelada de durazno 400g,1,3196,3196,tarjeta_credito,10
+28,cordoba,71,alimentos,vodka 700ml,3,508,1524,tarjeta_credito,9
+29,alta gracia,36,alimentos,dulce de leche 400g,5,2559,12795,tarjeta_credito,5
+54,alta gracia,60,alimentos,chupetín,1,4647,4647,tarjeta_debito,6
+97,cordoba,77,alimentos,empanadas congeladas,3,4778,14334,tarjeta_debito,11
+83,rio cuarto,5,alimentos,agua mineral 500ml,4,4777,19108,tarjeta_credito,12
+23,rio cuarto,12,alimentos,té negro 20 saquitos,5,570,2850,tarjeta_credito,12
+9,carlos paz,56,limpieza,papel higiénico x4,4,2532,10128,efectivo,5
+9,carlos paz,66,alimentos,cerveza negra 1l,3,1533,4599,tarjeta_debito,4
+74,carlos paz,63,alimentos,granola 250g,2,4337,8674,tarjeta_debito,4
+75,rio cuarto,63,alimentos,granola 250g,1,4337,4337,transferencia,4
+29,alta gracia,3,alimentos,sprite 1.5l,2,4964,9928,efectivo,1
+28,cordoba,45,alimentos,fideos spaghetti 500g,5,745,3725,transferencia,2
+62,carlos paz,35,alimentos,barrita de cereal 30g,4,4430,17720,tarjeta_credito,5
+94,mendiolaza,95,higiene personal,mascarilla capilar,2,1581,3162,transferencia,11
+79,carlos paz,76,alimentos,pizza congelada muzzarella,1,4286,4286,transferencia,3
+65,alta gracia,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_credito,11
+9,carlos paz,17,alimentos,queso cremoso 500g,3,4834,14502,tarjeta_debito,12
+38,alta gracia,65,alimentos,cerveza rubia 1l,3,2423,7269,efectivo,9
+65,alta gracia,79,alimentos,hamburguesas congeladas x4,5,2420,12100,transferencia,3
+95,rio cuarto,41,alimentos,aceite de girasol 1l,4,860,3440,tarjeta_credito,5
+70,carlos paz,98,limpieza,desengrasante 500ml,1,2843,2843,transferencia,11
+5,cordoba,7,alimentos,jugo de manzana 1l,5,3269,16345,tarjeta_credito,1
+85,mendiolaza,55,higiene personal,shampoo 400ml,2,1407,2814,tarjeta_debito,2
+24,villa maria,6,alimentos,jugo de naranja 1l,5,4170,20850,tarjeta_debito,6
+66,villa maria,67,alimentos,vino tinto malbec 750ml,3,4719,14157,efectivo,4
+28,cordoba,30,alimentos,maní salado 200g,1,4875,4875,efectivo,2
+58,rio cuarto,6,alimentos,jugo de naranja 1l,4,4170,16680,efectivo,5
+46,alta gracia,45,alimentos,fideos spaghetti 500g,5,745,3725,tarjeta_credito,5
+93,alta gracia,9,alimentos,yerba mate suave 1kg,4,3878,15512,efectivo,11
+81,carlos paz,35,alimentos,barrita de cereal 30g,3,4430,13290,tarjeta_credito,5
+40,rio cuarto,74,alimentos,whisky 750ml,1,2953,2953,efectivo,4
+35,mendiolaza,88,alimentos,caldo concentrado carne,5,2570,12850,tarjeta_credito,11
+77,villa maria,74,alimentos,whisky 750ml,4,2953,11812,transferencia,7
+72,cordoba,73,alimentos,gin 700ml,2,1561,3122,efectivo,9
+51,rio cuarto,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_debito,9
+5,cordoba,15,alimentos,leche descremada 1l,2,2538,5076,tarjeta_credito,8
+76,mendiolaza,82,alimentos,aceitunas negras 200g,3,2394,7182,tarjeta_debito,8
+90,rio cuarto,94,higiene personal,hilo dental,3,1418,4254,tarjeta_credito,1
+12,alta gracia,38,alimentos,mermelada de frutilla 400g,5,1584,7920,transferencia,2
+88,villa maria,19,alimentos,manteca 200g,4,3251,13004,efectivo,9
+1,carlos paz,87,alimentos,sopa instantánea pollo,2,1679,3358,tarjeta_debito,5
+77,villa maria,81,alimentos,aceitunas verdes 200g,1,2520,2520,tarjeta_debito,7
+24,villa maria,87,alimentos,sopa instantánea pollo,1,1679,1679,tarjeta_debito,2
+1,carlos paz,27,alimentos,alfajor simple,1,2502,2502,tarjeta_debito,4
+38,alta gracia,24,alimentos,galletitas chocolate,5,1305,6525,transferencia,10
+53,mendiolaza,33,alimentos,chocolate con leche 100g,3,1255,3765,efectivo,10
+82,alta gracia,88,alimentos,caldo concentrado carne,5,2570,12850,transferencia,2
+73,alta gracia,98,limpieza,desengrasante 500ml,1,2843,2843,efectivo,6
+66,villa maria,30,alimentos,maní salado 200g,3,4875,14625,efectivo,8
+52,rio cuarto,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_credito,12
+11,villa maria,96,limpieza,suavizante 1l,5,4920,24600,tarjeta_credito,6
+54,alta gracia,48,alimentos,porotos negros 500g,3,4462,13386,transferencia,9
+20,rio cuarto,20,alimentos,pan lactal blanco,2,1571,3142,tarjeta_debito,6
+72,cordoba,20,alimentos,pan lactal blanco,4,1571,6284,transferencia,3
+37,mendiolaza,48,alimentos,porotos negros 500g,1,4462,4462,transferencia,10
+78,villa maria,34,alimentos,turrón 50g,2,503,1006,transferencia,6
+52,rio cuarto,60,alimentos,chupetín,4,4647,18588,tarjeta_debito,4
+5,cordoba,80,alimentos,helado de frutilla 1l,5,1981,9905,transferencia,10
+5,cordoba,38,alimentos,mermelada de frutilla 400g,2,1584,3168,tarjeta_debito,6
+74,carlos paz,82,alimentos,aceitunas negras 200g,1,2394,2394,tarjeta_debito,11
+46,alta gracia,97,limpieza,limpiavidrios 500ml,1,872,872,tarjeta_credito,2
+95,rio cuarto,55,higiene personal,shampoo 400ml,5,1407,7035,transferencia,2
+51,rio cuarto,90,higiene personal,toallas húmedas x50,3,2902,8706,transferencia,4
+77,villa maria,29,alimentos,papas fritas onduladas 100g,2,1868,3736,tarjeta_debito,12
+88,villa maria,97,limpieza,limpiavidrios 500ml,4,872,3488,tarjeta_debito,8
+2,carlos paz,62,alimentos,stevia 100 sobres,2,3848,7696,tarjeta_debito,3
+28,cordoba,97,limpieza,limpiavidrios 500ml,2,872,1744,transferencia,2
+17,villa maria,5,alimentos,agua mineral 500ml,3,4777,14331,transferencia,5
+40,rio cuarto,50,alimentos,azúcar 1kg,2,727,1454,transferencia,5
+39,alta gracia,70,alimentos,fernet 750ml,2,4061,8122,tarjeta_debito,2
+31,villa maria,66,alimentos,cerveza negra 1l,3,1533,4599,tarjeta_debito,8
+52,rio cuarto,64,alimentos,avena instantánea 250g,3,3953,11859,tarjeta_credito,3
+56,rio cuarto,59,alimentos,chicle menta,3,3612,10836,efectivo,12
+68,villa maria,20,alimentos,pan lactal blanco,3,1571,4713,tarjeta_credito,9
+12,alta gracia,2,alimentos,pepsi 1.5l,1,4973,4973,tarjeta_debito,4
+92,alta gracia,44,alimentos,arroz largo fino 1kg,2,2979,5958,efectivo,2
+53,mendiolaza,94,higiene personal,hilo dental,3,1418,4254,transferencia,2
+79,carlos paz,92,higiene personal,crema dental 90g,2,2512,5024,efectivo,10
+73,alta gracia,57,limpieza,servilletas x100,3,4520,13560,tarjeta_debito,5
+48,cordoba,29,alimentos,papas fritas onduladas 100g,4,1868,7472,tarjeta_debito,6
+79,carlos paz,25,alimentos,galletitas vainilla,3,4015,12045,transferencia,8
+62,carlos paz,59,alimentos,chicle menta,4,3612,14448,transferencia,4
+55,mendiolaza,23,alimentos,bizcochos salados,2,2380,4760,transferencia,9
+5,cordoba,41,alimentos,aceite de girasol 1l,2,860,1720,tarjeta_debito,12
+45,rio cuarto,7,alimentos,jugo de manzana 1l,5,3269,16345,transferencia,6
+10,cordoba,46,alimentos,lentejas secas 500g,3,3036,9108,transferencia,9
+51,rio cuarto,55,higiene personal,shampoo 400ml,2,1407,2814,transferencia,1
+71,villa maria,31,alimentos,mix de frutos secos 200g,4,3409,13636,tarjeta_debito,11
+80,mendiolaza,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,8
+13,carlos paz,31,alimentos,mix de frutos secos 200g,1,3409,3409,transferencia,1
+15,cordoba,55,higiene personal,shampoo 400ml,2,1407,2814,transferencia,9
+88,villa maria,75,alimentos,licor de café 700ml,3,3204,9612,tarjeta_credito,2
+20,rio cuarto,75,alimentos,licor de café 700ml,1,3204,3204,efectivo,10
+46,alta gracia,33,alimentos,chocolate con leche 100g,3,1255,3765,efectivo,5
+19,mendiolaza,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,transferencia,6
+22,alta gracia,44,alimentos,arroz largo fino 1kg,3,2979,8937,tarjeta_credito,7
+47,alta gracia,66,alimentos,cerveza negra 1l,3,1533,4599,efectivo,7
+68,villa maria,28,alimentos,papas fritas clásicas 100g,3,936,2808,tarjeta_debito,3
+68,villa maria,69,alimentos,sidra 750ml,1,744,744,transferencia,11
+24,villa maria,62,alimentos,stevia 100 sobres,5,3848,19240,transferencia,8
+13,carlos paz,75,alimentos,licor de café 700ml,4,3204,12816,efectivo,11
+53,mendiolaza,87,alimentos,sopa instantánea pollo,4,1679,6716,tarjeta_credito,4
+34,villa maria,100,limpieza,trapo de piso,4,4854,19416,efectivo,3
+83,rio cuarto,80,alimentos,helado de frutilla 1l,5,1981,9905,tarjeta_credito,3
+77,villa maria,16,alimentos,yogur natural 200g,3,4613,13839,transferencia,6
+87,alta gracia,34,alimentos,turrón 50g,1,503,503,efectivo,9
+25,rio cuarto,15,alimentos,leche descremada 1l,5,2538,12690,tarjeta_debito,12
+87,alta gracia,91,higiene personal,desodorante aerosol,4,4690,18760,tarjeta_credito,6
+52,rio cuarto,6,alimentos,jugo de naranja 1l,1,4170,4170,transferencia,6
+49,rio cuarto,78,alimentos,verduras congeladas mix,4,4289,17156,transferencia,5
+60,alta gracia,14,alimentos,leche entera 1l,4,1723,6892,tarjeta_debito,7
+62,carlos paz,87,alimentos,sopa instantánea pollo,4,1679,6716,transferencia,11
+3,rio cuarto,89,alimentos,caldo concentrado verdura,3,1003,3009,efectivo,11
+16,rio cuarto,69,alimentos,sidra 750ml,5,744,3720,tarjeta_credito,2
+49,rio cuarto,73,alimentos,gin 700ml,1,1561,1561,tarjeta_debito,5
+53,mendiolaza,44,alimentos,arroz largo fino 1kg,5,2979,14895,efectivo,6
+65,alta gracia,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_debito,2
+93,alta gracia,33,alimentos,chocolate con leche 100g,3,1255,3765,tarjeta_debito,8
+77,villa maria,2,alimentos,pepsi 1.5l,2,4973,9946,efectivo,9
+77,villa maria,81,alimentos,aceitunas verdes 200g,2,2520,5040,transferencia,6
+34,villa maria,86,alimentos,jugo en polvo limón,1,4090,4090,tarjeta_credito,3
+16,rio cuarto,91,higiene personal,desodorante aerosol,5,4690,23450,efectivo,3
+95,rio cuarto,76,alimentos,pizza congelada muzzarella,3,4286,12858,transferencia,8
+13,carlos paz,81,alimentos,aceitunas verdes 200g,4,2520,10080,tarjeta_credito,10
+74,carlos paz,40,alimentos,helado chocolate 1l,2,1215,2430,tarjeta_debito,11
+16,rio cuarto,33,alimentos,chocolate con leche 100g,4,1255,5020,transferencia,2
+37,mendiolaza,22,alimentos,medialunas de manteca,3,2069,6207,tarjeta_debito,9
+13,carlos paz,32,alimentos,chocolate amargo 100g,4,2234,8936,tarjeta_debito,12
+88,villa maria,13,alimentos,té verde 20 saquitos,5,2383,11915,transferencia,2
+83,rio cuarto,95,higiene personal,mascarilla capilar,1,1581,1581,tarjeta_credito,5
+88,villa maria,21,alimentos,pan lactal integral,1,272,272,tarjeta_credito,9
+92,alta gracia,93,higiene personal,cepillo de dientes,2,2142,4284,transferencia,10
+12,alta gracia,27,alimentos,alfajor simple,3,2502,7506,tarjeta_credito,5
+95,rio cuarto,87,alimentos,sopa instantánea pollo,1,1679,1679,tarjeta_credito,8
+1,carlos paz,33,alimentos,chocolate con leche 100g,5,1255,6275,transferencia,1
+70,carlos paz,30,alimentos,maní salado 200g,2,4875,9750,transferencia,1
+6,villa maria,12,alimentos,té negro 20 saquitos,2,570,1140,efectivo,7
+63,cordoba,50,alimentos,azúcar 1kg,2,727,1454,efectivo,3
+38,alta gracia,55,higiene personal,shampoo 400ml,1,1407,1407,tarjeta_debito,3
+70,carlos paz,25,alimentos,galletitas vainilla,2,4015,8030,efectivo,7
+40,rio cuarto,42,alimentos,vinagre de alcohol 500ml,3,1195,3585,tarjeta_credito,10
+10,cordoba,15,alimentos,leche descremada 1l,2,2538,5076,transferencia,6
+82,alta gracia,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,efectivo,1
+35,mendiolaza,99,limpieza,esponjas x3,3,2430,7290,tarjeta_debito,1
+14,carlos paz,85,alimentos,jugo en polvo naranja,2,1856,3712,tarjeta_credito,3
+19,mendiolaza,54,higiene personal,jabón de tocador,2,1592,3184,tarjeta_debito,6
+68,villa maria,33,alimentos,chocolate con leche 100g,3,1255,3765,transferencia,7
+56,rio cuarto,26,alimentos,alfajor triple,5,1001,5005,transferencia,11
+51,rio cuarto,4,alimentos,fanta naranja 1.5l,2,2033,4066,transferencia,12
+37,mendiolaza,29,alimentos,papas fritas onduladas 100g,1,1868,1868,efectivo,5
+97,cordoba,38,alimentos,mermelada de frutilla 400g,2,1584,3168,tarjeta_debito,11
+41,alta gracia,78,alimentos,verduras congeladas mix,1,4289,4289,transferencia,3
+54,alta gracia,78,alimentos,verduras congeladas mix,2,4289,8578,efectivo,9
+47,alta gracia,84,alimentos,queso azul 150g,1,1645,1645,efectivo,3
+88,villa maria,96,limpieza,suavizante 1l,3,4920,14760,tarjeta_debito,1
+83,rio cuarto,31,alimentos,mix de frutos secos 200g,5,3409,17045,tarjeta_credito,1
+5,cordoba,15,alimentos,leche descremada 1l,3,2538,7614,efectivo,8
+51,rio cuarto,95,higiene personal,mascarilla capilar,5,1581,7905,efectivo,10
+38,alta gracia,48,alimentos,porotos negros 500g,5,4462,22310,efectivo,9
+47,alta gracia,15,alimentos,leche descremada 1l,4,2538,10152,tarjeta_credito,10
+54,alta gracia,46,alimentos,lentejas secas 500g,1,3036,3036,transferencia,4
+89,rio cuarto,26,alimentos,alfajor triple,5,1001,5005,transferencia,10
+73,alta gracia,90,higiene personal,toallas húmedas x50,5,2902,14510,tarjeta_debito,11
+63,cordoba,35,alimentos,barrita de cereal 30g,5,4430,22150,tarjeta_credito,7
+52,rio cuarto,36,alimentos,dulce de leche 400g,5,2559,12795,efectivo,4
+90,rio cuarto,34,alimentos,turrón 50g,2,503,1006,tarjeta_debito,6
+98,cordoba,63,alimentos,granola 250g,3,4337,13011,efectivo,3
+54,alta gracia,88,alimentos,caldo concentrado carne,1,2570,2570,efectivo,12
+68,villa maria,88,alimentos,caldo concentrado carne,4,2570,10280,tarjeta_credito,7
+41,alta gracia,44,alimentos,arroz largo fino 1kg,2,2979,5958,efectivo,10
+26,alta gracia,59,alimentos,chicle menta,5,3612,18060,tarjeta_credito,10
+89,rio cuarto,34,alimentos,turrón 50g,2,503,1006,transferencia,1
+60,alta gracia,95,higiene personal,mascarilla capilar,1,1581,1581,efectivo,1
+9,carlos paz,98,limpieza,desengrasante 500ml,3,2843,8529,efectivo,1
+59,villa maria,48,alimentos,porotos negros 500g,5,4462,22310,tarjeta_credito,10
+48,cordoba,16,alimentos,yogur natural 200g,4,4613,18452,tarjeta_debito,9
+49,rio cuarto,45,alimentos,fideos spaghetti 500g,1,745,745,tarjeta_debito,7
+20,rio cuarto,29,alimentos,papas fritas onduladas 100g,2,1868,3736,tarjeta_credito,9
+68,villa maria,28,alimentos,papas fritas clásicas 100g,3,936,2808,tarjeta_credito,9
+95,rio cuarto,10,alimentos,yerba mate intensa 1kg,1,4883,4883,tarjeta_debito,4
+86,cordoba,80,alimentos,helado de frutilla 1l,5,1981,9905,transferencia,7
+99,villa maria,27,alimentos,alfajor simple,2,2502,5004,tarjeta_credito,10
+47,alta gracia,61,alimentos,miel pura 250g,2,4982,9964,tarjeta_credito,1
+96,cordoba,76,alimentos,pizza congelada muzzarella,3,4286,12858,tarjeta_debito,12
+5,cordoba,45,alimentos,fideos spaghetti 500g,5,745,3725,transferencia,10
+2,carlos paz,77,alimentos,empanadas congeladas,4,4778,19112,tarjeta_credito,10
+41,alta gracia,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_credito,6
+82,alta gracia,16,alimentos,yogur natural 200g,5,4613,23065,tarjeta_credito,10
+47,alta gracia,57,limpieza,servilletas x100,5,4520,22600,tarjeta_credito,10
+41,alta gracia,85,alimentos,jugo en polvo naranja,2,1856,3712,tarjeta_debito,12
+12,alta gracia,75,alimentos,licor de café 700ml,1,3204,3204,tarjeta_credito,9
+22,alta gracia,68,alimentos,vino blanco 750ml,3,2684,8052,tarjeta_credito,4
+81,carlos paz,26,alimentos,alfajor triple,4,1001,4004,tarjeta_debito,8
+39,alta gracia,86,alimentos,jugo en polvo limón,4,4090,16360,tarjeta_debito,1
+20,rio cuarto,8,alimentos,energética nitro 500ml,1,4218,4218,tarjeta_debito,10
+51,rio cuarto,89,alimentos,caldo concentrado verdura,3,1003,3009,tarjeta_credito,5
+83,rio cuarto,30,alimentos,maní salado 200g,5,4875,24375,efectivo,3
+75,rio cuarto,41,alimentos,aceite de girasol 1l,3,860,2580,efectivo,9
+85,mendiolaza,86,alimentos,jugo en polvo limón,2,4090,8180,transferencia,7
+62,carlos paz,26,alimentos,alfajor triple,3,1001,3003,transferencia,7
+72,cordoba,17,alimentos,queso cremoso 500g,4,4834,19336,tarjeta_debito,8
+64,villa maria,83,alimentos,queso untable 190g,1,1830,1830,tarjeta_credito,3
+29,alta gracia,57,limpieza,servilletas x100,5,4520,22600,tarjeta_debito,1
+8,carlos paz,6,alimentos,jugo de naranja 1l,5,4170,20850,tarjeta_debito,2
+46,alta gracia,76,alimentos,pizza congelada muzzarella,3,4286,12858,transferencia,7
+29,alta gracia,87,alimentos,sopa instantánea pollo,2,1679,3358,tarjeta_credito,3
+10,cordoba,55,higiene personal,shampoo 400ml,2,1407,2814,transferencia,4
+29,alta gracia,66,alimentos,cerveza negra 1l,4,1533,6132,tarjeta_debito,11
+73,alta gracia,47,alimentos,garbanzos 500g,1,2939,2939,tarjeta_credito,11
+6,villa maria,54,higiene personal,jabón de tocador,2,1592,3184,transferencia,8
+79,carlos paz,80,alimentos,helado de frutilla 1l,3,1981,5943,transferencia,1
+16,rio cuarto,24,alimentos,galletitas chocolate,1,1305,1305,efectivo,7
+50,carlos paz,81,alimentos,aceitunas verdes 200g,5,2520,12600,tarjeta_credito,12
+41,alta gracia,74,alimentos,whisky 750ml,3,2953,8859,transferencia,9
+67,alta gracia,7,alimentos,jugo de manzana 1l,3,3269,9807,transferencia,4
+88,villa maria,48,alimentos,porotos negros 500g,4,4462,17848,tarjeta_credito,10
+84,cordoba,98,limpieza,desengrasante 500ml,1,2843,2843,transferencia,6
+75,rio cuarto,53,limpieza,lavandina 1l,4,1664,6656,tarjeta_debito,6
+42,alta gracia,98,limpieza,desengrasante 500ml,5,2843,14215,tarjeta_debito,4
+30,alta gracia,2,alimentos,pepsi 1.5l,2,4973,9946,tarjeta_credito,11
+42,alta gracia,72,alimentos,ron 700ml,4,3876,15504,transferencia,12
+49,rio cuarto,21,alimentos,pan lactal integral,1,272,272,tarjeta_credito,9
+50,carlos paz,48,alimentos,porotos negros 500g,5,4462,22310,tarjeta_debito,4
+45,rio cuarto,70,alimentos,fernet 750ml,5,4061,20305,efectivo,6
+65,alta gracia,25,alimentos,galletitas vainilla,2,4015,8030,tarjeta_debito,12
+25,rio cuarto,54,higiene personal,jabón de tocador,5,1592,7960,tarjeta_credito,12
+78,villa maria,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_credito,6
+94,mendiolaza,21,alimentos,pan lactal integral,4,272,1088,tarjeta_credito,4
+94,mendiolaza,56,limpieza,papel higiénico x4,3,2532,7596,tarjeta_debito,5
+36,mendiolaza,10,alimentos,yerba mate intensa 1kg,2,4883,9766,tarjeta_debito,3
+83,rio cuarto,64,alimentos,avena instantánea 250g,2,3953,7906,transferencia,4
+15,cordoba,2,alimentos,pepsi 1.5l,1,4973,4973,tarjeta_credito,2
+85,mendiolaza,79,alimentos,hamburguesas congeladas x4,4,2420,9680,transferencia,9
+40,rio cuarto,82,alimentos,aceitunas negras 200g,2,2394,4788,efectivo,9
+2,carlos paz,73,alimentos,gin 700ml,2,1561,3122,tarjeta_debito,8
+7,rio cuarto,71,alimentos,vodka 700ml,1,508,508,tarjeta_debito,9
+40,rio cuarto,46,alimentos,lentejas secas 500g,2,3036,6072,tarjeta_credito,12
+39,alta gracia,39,alimentos,helado vainilla 1l,2,469,938,efectivo,3
+54,alta gracia,81,alimentos,aceitunas verdes 200g,2,2520,5040,tarjeta_credito,7
+39,alta gracia,66,alimentos,cerveza negra 1l,2,1533,3066,tarjeta_debito,4
+89,rio cuarto,92,higiene personal,crema dental 90g,1,2512,2512,tarjeta_debito,10
+6,villa maria,2,alimentos,pepsi 1.5l,4,4973,19892,tarjeta_credito,1
+84,cordoba,87,alimentos,sopa instantánea pollo,3,1679,5037,tarjeta_credito,2
+26,alta gracia,25,alimentos,galletitas vainilla,1,4015,4015,tarjeta_credito,8
+40,rio cuarto,87,alimentos,sopa instantánea pollo,2,1679,3358,efectivo,10
+9,carlos paz,63,alimentos,granola 250g,1,4337,4337,tarjeta_debito,4
+63,cordoba,31,alimentos,mix de frutos secos 200g,3,3409,10227,tarjeta_credito,5
+98,cordoba,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_debito,3
+29,alta gracia,74,alimentos,whisky 750ml,2,2953,5906,efectivo,12
+69,rio cuarto,44,alimentos,arroz largo fino 1kg,3,2979,8937,tarjeta_credito,4
+31,villa maria,13,alimentos,té verde 20 saquitos,1,2383,2383,tarjeta_credito,11
+97,cordoba,81,alimentos,aceitunas verdes 200g,2,2520,5040,transferencia,11
+57,rio cuarto,100,limpieza,trapo de piso,1,4854,4854,transferencia,5
+52,rio cuarto,72,alimentos,ron 700ml,4,3876,15504,tarjeta_debito,2
+42,alta gracia,99,limpieza,esponjas x3,2,2430,4860,efectivo,4
+48,cordoba,77,alimentos,empanadas congeladas,5,4778,23890,efectivo,7
+33,rio cuarto,69,alimentos,sidra 750ml,3,744,2232,tarjeta_debito,4
+1,carlos paz,100,limpieza,trapo de piso,3,4854,14562,tarjeta_credito,4
+47,alta gracia,67,alimentos,vino tinto malbec 750ml,1,4719,4719,tarjeta_debito,8
+16,rio cuarto,75,alimentos,licor de café 700ml,5,3204,16020,tarjeta_debito,4
+52,rio cuarto,68,alimentos,vino blanco 750ml,4,2684,10736,efectivo,3
+78,villa maria,22,alimentos,medialunas de manteca,1,2069,2069,tarjeta_credito,3
+20,rio cuarto,80,alimentos,helado de frutilla 1l,4,1981,7924,efectivo,6
+18,carlos paz,50,alimentos,azúcar 1kg,5,727,3635,efectivo,12
+73,alta gracia,60,alimentos,chupetín,2,4647,9294,transferencia,3
+37,mendiolaza,92,higiene personal,crema dental 90g,3,2512,7536,tarjeta_credito,9
+44,carlos paz,25,alimentos,galletitas vainilla,3,4015,12045,efectivo,4
+72,cordoba,6,alimentos,jugo de naranja 1l,4,4170,16680,efectivo,4
+73,alta gracia,60,alimentos,chupetín,4,4647,18588,transferencia,11
+95,rio cuarto,91,higiene personal,desodorante aerosol,5,4690,23450,tarjeta_debito,11
+8,carlos paz,6,alimentos,jugo de naranja 1l,5,4170,20850,transferencia,11
+17,villa maria,63,alimentos,granola 250g,3,4337,13011,tarjeta_credito,1
+93,alta gracia,64,alimentos,avena instantánea 250g,1,3953,3953,tarjeta_debito,3
+75,rio cuarto,86,alimentos,jugo en polvo limón,3,4090,12270,efectivo,3
+76,mendiolaza,35,alimentos,barrita de cereal 30g,1,4430,4430,tarjeta_debito,8
+93,alta gracia,3,alimentos,sprite 1.5l,4,4964,19856,tarjeta_credito,3
+42,alta gracia,8,alimentos,energética nitro 500ml,1,4218,4218,tarjeta_debito,12
+97,cordoba,84,alimentos,queso azul 150g,4,1645,6580,efectivo,2
+86,cordoba,28,alimentos,papas fritas clásicas 100g,5,936,4680,tarjeta_credito,2
+97,cordoba,51,alimentos,sal fina 500g,5,1745,8725,tarjeta_debito,8
+17,villa maria,46,alimentos,lentejas secas 500g,4,3036,12144,transferencia,9
+18,carlos paz,77,alimentos,empanadas congeladas,5,4778,23890,efectivo,12
+60,alta gracia,71,alimentos,vodka 700ml,5,508,2540,tarjeta_debito,7
+48,cordoba,16,alimentos,yogur natural 200g,2,4613,9226,efectivo,10
+81,carlos paz,20,alimentos,pan lactal blanco,1,1571,1571,efectivo,12
+100,cordoba,50,alimentos,azúcar 1kg,4,727,2908,transferencia,12
+27,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,tarjeta_credito,12
+91,mendiolaza,49,alimentos,harina de trigo 1kg,5,2512,12560,tarjeta_debito,9
+52,rio cuarto,43,alimentos,salsa de tomate 500g,4,887,3548,tarjeta_debito,10
+96,cordoba,49,alimentos,harina de trigo 1kg,4,2512,10048,tarjeta_credito,10
+63,cordoba,90,higiene personal,toallas húmedas x50,5,2902,14510,tarjeta_credito,1
+26,alta gracia,96,limpieza,suavizante 1l,1,4920,4920,tarjeta_debito,1
+61,rio cuarto,35,alimentos,barrita de cereal 30g,4,4430,17720,tarjeta_credito,3
+31,villa maria,21,alimentos,pan lactal integral,4,272,1088,transferencia,3
+89,rio cuarto,13,alimentos,té verde 20 saquitos,4,2383,9532,tarjeta_credito,8
+4,carlos paz,4,alimentos,fanta naranja 1.5l,1,2033,2033,efectivo,8
+60,alta gracia,67,alimentos,vino tinto malbec 750ml,3,4719,14157,transferencia,1
+52,rio cuarto,26,alimentos,alfajor triple,5,1001,5005,efectivo,8
+85,mendiolaza,14,alimentos,leche entera 1l,1,1723,1723,efectivo,9
+13,carlos paz,33,alimentos,chocolate con leche 100g,2,1255,2510,efectivo,6
+33,rio cuarto,46,alimentos,lentejas secas 500g,3,3036,9108,efectivo,1
+77,villa maria,68,alimentos,vino blanco 750ml,1,2684,2684,efectivo,7
+53,mendiolaza,88,alimentos,caldo concentrado carne,2,2570,5140,transferencia,6
+60,alta gracia,18,alimentos,queso rallado 150g,2,3444,6888,tarjeta_debito,2
+54,alta gracia,72,alimentos,ron 700ml,3,3876,11628,efectivo,12
+80,mendiolaza,40,alimentos,helado chocolate 1l,5,1215,6075,tarjeta_credito,11
+14,carlos paz,12,alimentos,té negro 20 saquitos,1,570,570,efectivo,8
+35,mendiolaza,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_debito,9
+81,carlos paz,66,alimentos,cerveza negra 1l,1,1533,1533,tarjeta_credito,4
+95,rio cuarto,2,alimentos,pepsi 1.5l,2,4973,9946,tarjeta_debito,5
+99,villa maria,48,alimentos,porotos negros 500g,1,4462,4462,tarjeta_credito,5
+6,villa maria,60,alimentos,chupetín,3,4647,13941,tarjeta_credito,11
+82,alta gracia,17,alimentos,queso cremoso 500g,4,4834,19336,transferencia,2
+43,mendiolaza,7,alimentos,jugo de manzana 1l,5,3269,16345,tarjeta_credito,1
+21,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_credito,7
+17,villa maria,100,limpieza,trapo de piso,2,4854,9708,transferencia,7
+2,carlos paz,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,8
+33,rio cuarto,88,alimentos,caldo concentrado carne,1,2570,2570,transferencia,3
+92,alta gracia,62,alimentos,stevia 100 sobres,4,3848,15392,tarjeta_credito,12
+21,alta gracia,91,higiene personal,desodorante aerosol,4,4690,18760,efectivo,12
+14,carlos paz,37,alimentos,mermelada de durazno 400g,1,3196,3196,tarjeta_debito,8
+58,rio cuarto,22,alimentos,medialunas de manteca,2,2069,4138,tarjeta_debito,6
+52,rio cuarto,16,alimentos,yogur natural 200g,1,4613,4613,efectivo,4
+78,villa maria,100,limpieza,trapo de piso,2,4854,9708,efectivo,7
+20,rio cuarto,27,alimentos,alfajor simple,1,2502,2502,tarjeta_credito,12
+79,carlos paz,84,alimentos,queso azul 150g,2,1645,3290,tarjeta_debito,5
+44,carlos paz,87,alimentos,sopa instantánea pollo,2,1679,3358,efectivo,6
+98,cordoba,74,alimentos,whisky 750ml,4,2953,11812,transferencia,11
+90,rio cuarto,44,alimentos,arroz largo fino 1kg,4,2979,11916,tarjeta_credito,3
+10,cordoba,84,alimentos,queso azul 150g,5,1645,8225,transferencia,9
+17,villa maria,19,alimentos,manteca 200g,4,3251,13004,tarjeta_debito,10
+65,alta gracia,74,alimentos,whisky 750ml,1,2953,2953,tarjeta_credito,2
+88,villa maria,100,limpieza,trapo de piso,2,4854,9708,efectivo,3
+97,cordoba,98,limpieza,desengrasante 500ml,5,2843,14215,tarjeta_debito,1
+60,alta gracia,39,alimentos,helado vainilla 1l,2,469,938,tarjeta_credito,3
+92,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,tarjeta_debito,1
+29,alta gracia,30,alimentos,maní salado 200g,3,4875,14625,tarjeta_credito,3
+8,carlos paz,33,alimentos,chocolate con leche 100g,2,1255,2510,tarjeta_credito,2
+25,rio cuarto,95,higiene personal,mascarilla capilar,3,1581,4743,efectivo,3
+55,mendiolaza,13,alimentos,té verde 20 saquitos,2,2383,4766,tarjeta_credito,9
+77,villa maria,36,alimentos,dulce de leche 400g,1,2559,2559,tarjeta_debito,10
+77,villa maria,32,alimentos,chocolate amargo 100g,1,2234,2234,transferencia,12
+46,alta gracia,92,higiene personal,crema dental 90g,3,2512,7536,tarjeta_debito,6
+7,rio cuarto,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_debito,4
+89,rio cuarto,40,alimentos,helado chocolate 1l,2,1215,2430,efectivo,7
+35,mendiolaza,50,alimentos,azúcar 1kg,2,727,1454,tarjeta_debito,5
+9,carlos paz,78,alimentos,verduras congeladas mix,3,4289,12867,tarjeta_debito,2
+27,rio cuarto,17,alimentos,queso cremoso 500g,2,4834,9668,transferencia,5
+67,alta gracia,95,higiene personal,mascarilla capilar,2,1581,3162,tarjeta_credito,9
+60,alta gracia,39,alimentos,helado vainilla 1l,4,469,1876,efectivo,12
+73,alta gracia,15,alimentos,leche descremada 1l,3,2538,7614,efectivo,3
+77,villa maria,24,alimentos,galletitas chocolate,4,1305,5220,transferencia,10
+86,cordoba,54,higiene personal,jabón de tocador,4,1592,6368,efectivo,4
+16,rio cuarto,74,alimentos,whisky 750ml,4,2953,11812,transferencia,11
+91,mendiolaza,73,alimentos,gin 700ml,1,1561,1561,tarjeta_debito,5
+25,rio cuarto,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,transferencia,11
+40,rio cuarto,83,alimentos,queso untable 190g,3,1830,5490,tarjeta_debito,6
+87,alta gracia,36,alimentos,dulce de leche 400g,4,2559,10236,transferencia,6
+20,rio cuarto,29,alimentos,papas fritas onduladas 100g,3,1868,5604,tarjeta_debito,3
+66,villa maria,33,alimentos,chocolate con leche 100g,1,1255,1255,tarjeta_credito,7
+29,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_debito,9
+72,cordoba,95,higiene personal,mascarilla capilar,2,1581,3162,tarjeta_credito,11
+100,cordoba,38,alimentos,mermelada de frutilla 400g,2,1584,3168,efectivo,7
+13,carlos paz,41,alimentos,aceite de girasol 1l,5,860,4300,tarjeta_credito,4
+5,cordoba,49,alimentos,harina de trigo 1kg,3,2512,7536,tarjeta_debito,7
+77,villa maria,70,alimentos,fernet 750ml,1,4061,4061,transferencia,12
+55,mendiolaza,81,alimentos,aceitunas verdes 200g,5,2520,12600,transferencia,11
+64,villa maria,9,alimentos,yerba mate suave 1kg,2,3878,7756,efectivo,11
+51,rio cuarto,73,alimentos,gin 700ml,4,1561,6244,tarjeta_credito,1
+60,alta gracia,36,alimentos,dulce de leche 400g,3,2559,7677,transferencia,7
+66,villa maria,41,alimentos,aceite de girasol 1l,5,860,4300,tarjeta_credito,4
+16,rio cuarto,86,alimentos,jugo en polvo limón,4,4090,16360,tarjeta_credito,7
+15,cordoba,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,tarjeta_debito,11
+3,rio cuarto,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_debito,10
+33,rio cuarto,17,alimentos,queso cremoso 500g,4,4834,19336,efectivo,9
+10,cordoba,43,alimentos,salsa de tomate 500g,1,887,887,efectivo,5
+94,mendiolaza,50,alimentos,azúcar 1kg,5,727,3635,tarjeta_credito,7
+11,villa maria,96,limpieza,suavizante 1l,5,4920,24600,tarjeta_credito,9
+27,rio cuarto,6,alimentos,jugo de naranja 1l,3,4170,12510,tarjeta_debito,7
+89,rio cuarto,92,higiene personal,crema dental 90g,2,2512,5024,efectivo,6
+87,alta gracia,81,alimentos,aceitunas verdes 200g,3,2520,7560,tarjeta_debito,3
+13,carlos paz,60,alimentos,chupetín,1,4647,4647,tarjeta_credito,1
+8,carlos paz,74,alimentos,whisky 750ml,3,2953,8859,transferencia,10
+39,alta gracia,73,alimentos,gin 700ml,5,1561,7805,efectivo,8
+79,carlos paz,42,alimentos,vinagre de alcohol 500ml,2,1195,2390,tarjeta_debito,3
+82,alta gracia,91,higiene personal,desodorante aerosol,4,4690,18760,efectivo,6
+7,rio cuarto,1,alimentos,coca cola 1.5l,2,2347,4694,tarjeta_debito,10
+88,villa maria,8,alimentos,energética nitro 500ml,1,4218,4218,efectivo,3
+36,mendiolaza,44,alimentos,arroz largo fino 1kg,5,2979,14895,tarjeta_debito,9
+6,villa maria,31,alimentos,mix de frutos secos 200g,3,3409,10227,efectivo,9
+93,alta gracia,63,alimentos,granola 250g,3,4337,13011,tarjeta_credito,1
+4,carlos paz,67,alimentos,vino tinto malbec 750ml,5,4719,23595,transferencia,10
+48,cordoba,39,alimentos,helado vainilla 1l,4,469,1876,efectivo,1
+63,cordoba,8,alimentos,energética nitro 500ml,2,4218,8436,transferencia,10
+59,villa maria,46,alimentos,lentejas secas 500g,2,3036,6072,tarjeta_debito,3
+89,rio cuarto,15,alimentos,leche descremada 1l,1,2538,2538,tarjeta_debito,1
+95,rio cuarto,81,alimentos,aceitunas verdes 200g,5,2520,12600,tarjeta_credito,7
+21,alta gracia,58,alimentos,caramelos masticables,3,4752,14256,efectivo,1
+3,rio cuarto,83,alimentos,queso untable 190g,4,1830,7320,efectivo,4
+52,rio cuarto,41,alimentos,aceite de girasol 1l,2,860,1720,tarjeta_debito,3
+96,cordoba,73,alimentos,gin 700ml,4,1561,6244,tarjeta_credito,12
+89,rio cuarto,90,higiene personal,toallas húmedas x50,4,2902,11608,tarjeta_debito,8
+41,alta gracia,86,alimentos,jugo en polvo limón,5,4090,20450,efectivo,4
+59,villa maria,59,alimentos,chicle menta,2,3612,7224,transferencia,4
+38,alta gracia,75,alimentos,licor de café 700ml,4,3204,12816,efectivo,9
+14,carlos paz,5,alimentos,agua mineral 500ml,1,4777,4777,tarjeta_credito,6
+99,villa maria,5,alimentos,agua mineral 500ml,1,4777,4777,tarjeta_debito,11
+38,alta gracia,55,higiene personal,shampoo 400ml,5,1407,7035,tarjeta_credito,11
+60,alta gracia,70,alimentos,fernet 750ml,5,4061,20305,transferencia,8
+57,rio cuarto,51,alimentos,sal fina 500g,4,1745,6980,tarjeta_debito,4
+37,mendiolaza,93,higiene personal,cepillo de dientes,2,2142,4284,efectivo,4
+51,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,tarjeta_debito,6
+20,rio cuarto,11,alimentos,café molido 250g,4,2053,8212,tarjeta_credito,1
+80,mendiolaza,8,alimentos,energética nitro 500ml,2,4218,8436,tarjeta_credito,2
+10,cordoba,1,alimentos,coca cola 1.5l,1,2347,2347,transferencia,5
+34,villa maria,71,alimentos,vodka 700ml,2,508,1016,transferencia,7
+3,rio cuarto,1,alimentos,coca cola 1.5l,5,2347,11735,transferencia,2
+61,rio cuarto,56,limpieza,papel higiénico x4,2,2532,5064,tarjeta_debito,12
+35,mendiolaza,99,limpieza,esponjas x3,2,2430,4860,efectivo,5
+51,rio cuarto,47,alimentos,garbanzos 500g,1,2939,2939,efectivo,6
+89,rio cuarto,16,alimentos,yogur natural 200g,4,4613,18452,efectivo,3
+42,alta gracia,57,limpieza,servilletas x100,1,4520,4520,tarjeta_debito,6
+57,rio cuarto,37,alimentos,mermelada de durazno 400g,5,3196,15980,transferencia,4
+55,mendiolaza,60,alimentos,chupetín,1,4647,4647,transferencia,10
+17,villa maria,5,alimentos,agua mineral 500ml,3,4777,14331,transferencia,2
+24,villa maria,88,alimentos,caldo concentrado carne,1,2570,2570,transferencia,12
+84,cordoba,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_debito,1
+5,cordoba,6,alimentos,jugo de naranja 1l,4,4170,16680,tarjeta_debito,4
+66,villa maria,19,alimentos,manteca 200g,1,3251,3251,transferencia,12
+53,mendiolaza,78,alimentos,verduras congeladas mix,2,4289,8578,transferencia,1
+6,villa maria,52,limpieza,detergente líquido 750ml,3,2582,7746,transferencia,3
+3,rio cuarto,92,higiene personal,crema dental 90g,5,2512,12560,tarjeta_credito,4
+44,carlos paz,34,alimentos,turrón 50g,2,503,1006,efectivo,10
+78,villa maria,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_debito,4
+99,villa maria,5,alimentos,agua mineral 500ml,2,4777,9554,efectivo,4
+33,rio cuarto,16,alimentos,yogur natural 200g,5,4613,23065,tarjeta_debito,4
+3,rio cuarto,58,alimentos,caramelos masticables,2,4752,9504,efectivo,7
+24,villa maria,51,alimentos,sal fina 500g,1,1745,1745,tarjeta_debito,8
+54,alta gracia,67,alimentos,vino tinto malbec 750ml,4,4719,18876,tarjeta_debito,8
+78,villa maria,83,alimentos,queso untable 190g,3,1830,5490,tarjeta_credito,5
+6,villa maria,66,alimentos,cerveza negra 1l,1,1533,1533,transferencia,10
+19,mendiolaza,37,alimentos,mermelada de durazno 400g,2,3196,6392,transferencia,9
+96,cordoba,59,alimentos,chicle menta,5,3612,18060,transferencia,9
+97,cordoba,30,alimentos,maní salado 200g,2,4875,9750,efectivo,3
+86,cordoba,34,alimentos,turrón 50g,1,503,503,transferencia,4
+24,villa maria,87,alimentos,sopa instantánea pollo,5,1679,8395,efectivo,2
+8,carlos paz,25,alimentos,galletitas vainilla,5,4015,20075,transferencia,12
+42,alta gracia,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_debito,3
+73,alta gracia,16,alimentos,yogur natural 200g,1,4613,4613,transferencia,9
+100,cordoba,21,alimentos,pan lactal integral,2,272,544,tarjeta_credito,3
+48,cordoba,55,higiene personal,shampoo 400ml,4,1407,5628,tarjeta_credito,12
+59,villa maria,51,alimentos,sal fina 500g,2,1745,3490,transferencia,4
+91,mendiolaza,75,alimentos,licor de café 700ml,5,3204,16020,transferencia,3
+25,rio cuarto,36,alimentos,dulce de leche 400g,2,2559,5118,transferencia,8
+24,villa maria,90,higiene personal,toallas húmedas x50,1,2902,2902,efectivo,1
+57,rio cuarto,53,limpieza,lavandina 1l,2,1664,3328,tarjeta_debito,8
+29,alta gracia,55,higiene personal,shampoo 400ml,4,1407,5628,tarjeta_credito,4
+56,rio cuarto,33,alimentos,chocolate con leche 100g,1,1255,1255,tarjeta_debito,7
+3,rio cuarto,20,alimentos,pan lactal blanco,5,1571,7855,efectivo,9
+67,alta gracia,59,alimentos,chicle menta,3,3612,10836,tarjeta_credito,8
+20,rio cuarto,10,alimentos,yerba mate intensa 1kg,2,4883,9766,transferencia,9
+39,alta gracia,52,limpieza,detergente líquido 750ml,1,2582,2582,transferencia,3
+16,rio cuarto,72,alimentos,ron 700ml,4,3876,15504,tarjeta_debito,11
+98,cordoba,38,alimentos,mermelada de frutilla 400g,1,1584,1584,efectivo,5
+73,alta gracia,73,alimentos,gin 700ml,1,1561,1561,transferencia,10
+70,carlos paz,9,alimentos,yerba mate suave 1kg,3,3878,11634,tarjeta_credito,3
+44,carlos paz,4,alimentos,fanta naranja 1.5l,1,2033,2033,transferencia,2
+60,alta gracia,40,alimentos,helado chocolate 1l,5,1215,6075,transferencia,9
+64,villa maria,85,alimentos,jugo en polvo naranja,4,1856,7424,transferencia,8
+32,mendiolaza,100,limpieza,trapo de piso,4,4854,19416,efectivo,11
+70,carlos paz,50,alimentos,azúcar 1kg,5,727,3635,transferencia,3
+30,alta gracia,29,alimentos,papas fritas onduladas 100g,3,1868,5604,efectivo,12
+58,rio cuarto,91,higiene personal,desodorante aerosol,2,4690,9380,tarjeta_credito,3
+39,alta gracia,33,alimentos,chocolate con leche 100g,2,1255,2510,tarjeta_debito,5
+92,alta gracia,74,alimentos,whisky 750ml,5,2953,14765,efectivo,3
+6,villa maria,8,alimentos,energética nitro 500ml,3,4218,12654,transferencia,9
+15,cordoba,94,higiene personal,hilo dental,3,1418,4254,tarjeta_debito,3
+55,mendiolaza,11,alimentos,café molido 250g,2,2053,4106,tarjeta_debito,4
+70,carlos paz,71,alimentos,vodka 700ml,4,508,2032,transferencia,1
+27,rio cuarto,50,alimentos,azúcar 1kg,4,727,2908,transferencia,8
+78,villa maria,15,alimentos,leche descremada 1l,1,2538,2538,transferencia,3
+14,carlos paz,94,higiene personal,hilo dental,5,1418,7090,transferencia,1
+47,alta gracia,28,alimentos,papas fritas clásicas 100g,1,936,936,tarjeta_credito,4
+18,carlos paz,64,alimentos,avena instantánea 250g,2,3953,7906,transferencia,5
+64,villa maria,26,alimentos,alfajor triple,4,1001,4004,efectivo,10
+28,cordoba,89,alimentos,caldo concentrado verdura,5,1003,5015,tarjeta_debito,4
+56,rio cuarto,5,alimentos,agua mineral 500ml,4,4777,19108,transferencia,3
+81,carlos paz,65,alimentos,cerveza rubia 1l,2,2423,4846,tarjeta_debito,10
+83,rio cuarto,45,alimentos,fideos spaghetti 500g,5,745,3725,tarjeta_credito,1
+41,alta gracia,97,limpieza,limpiavidrios 500ml,2,872,1744,efectivo,5
+93,alta gracia,74,alimentos,whisky 750ml,5,2953,14765,tarjeta_debito,9
+87,alta gracia,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,tarjeta_debito,8
+52,rio cuarto,100,limpieza,trapo de piso,1,4854,4854,tarjeta_debito,3
+76,mendiolaza,86,alimentos,jugo en polvo limón,2,4090,8180,tarjeta_credito,5
+57,rio cuarto,16,alimentos,yogur natural 200g,3,4613,13839,efectivo,6
+89,rio cuarto,59,alimentos,chicle menta,2,3612,7224,tarjeta_credito,7
+14,carlos paz,75,alimentos,licor de café 700ml,5,3204,16020,efectivo,5
+74,carlos paz,25,alimentos,galletitas vainilla,5,4015,20075,transferencia,9
+85,mendiolaza,92,higiene personal,crema dental 90g,1,2512,2512,efectivo,1
+51,rio cuarto,25,alimentos,galletitas vainilla,1,4015,4015,transferencia,1
+30,alta gracia,4,alimentos,fanta naranja 1.5l,5,2033,10165,tarjeta_credito,12
+92,alta gracia,77,alimentos,empanadas congeladas,3,4778,14334,transferencia,4
+52,rio cuarto,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,tarjeta_credito,1
+44,carlos paz,57,limpieza,servilletas x100,1,4520,4520,efectivo,6
+74,carlos paz,66,alimentos,cerveza negra 1l,1,1533,1533,transferencia,10
+87,alta gracia,51,alimentos,sal fina 500g,3,1745,5235,tarjeta_credito,3
+26,alta gracia,97,limpieza,limpiavidrios 500ml,2,872,1744,efectivo,9
+89,rio cuarto,11,alimentos,café molido 250g,2,2053,4106,tarjeta_debito,4
+75,rio cuarto,5,alimentos,agua mineral 500ml,2,4777,9554,transferencia,9
+53,mendiolaza,34,alimentos,turrón 50g,3,503,1509,efectivo,8
+74,carlos paz,84,alimentos,queso azul 150g,2,1645,3290,tarjeta_credito,10
+21,alta gracia,93,higiene personal,cepillo de dientes,2,2142,4284,efectivo,7
+32,mendiolaza,25,alimentos,galletitas vainilla,2,4015,8030,efectivo,4
+27,rio cuarto,90,higiene personal,toallas húmedas x50,2,2902,5804,transferencia,12
+20,rio cuarto,11,alimentos,café molido 250g,2,2053,4106,tarjeta_debito,6
+47,alta gracia,87,alimentos,sopa instantánea pollo,5,1679,8395,efectivo,7
+64,villa maria,51,alimentos,sal fina 500g,1,1745,1745,efectivo,9
+80,mendiolaza,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,7
+2,carlos paz,39,alimentos,helado vainilla 1l,1,469,469,transferencia,10
+54,alta gracia,13,alimentos,té verde 20 saquitos,5,2383,11915,tarjeta_debito,2
+88,villa maria,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,2
+35,mendiolaza,10,alimentos,yerba mate intensa 1kg,5,4883,24415,tarjeta_debito,12
+96,cordoba,70,alimentos,fernet 750ml,5,4061,20305,tarjeta_credito,9
+22,alta gracia,95,higiene personal,mascarilla capilar,4,1581,6324,tarjeta_debito,8
+82,alta gracia,34,alimentos,turrón 50g,4,503,2012,efectivo,9
+1,carlos paz,34,alimentos,turrón 50g,3,503,1509,tarjeta_debito,1
+7,rio cuarto,52,limpieza,detergente líquido 750ml,1,2582,2582,efectivo,12
+41,alta gracia,24,alimentos,galletitas chocolate,3,1305,3915,transferencia,3
+39,alta gracia,36,alimentos,dulce de leche 400g,4,2559,10236,efectivo,9
+33,rio cuarto,93,higiene personal,cepillo de dientes,2,2142,4284,efectivo,7
+54,alta gracia,29,alimentos,papas fritas onduladas 100g,1,1868,1868,tarjeta_debito,7
+42,alta gracia,34,alimentos,turrón 50g,1,503,503,tarjeta_debito,2
+83,rio cuarto,69,alimentos,sidra 750ml,3,744,2232,tarjeta_debito,9
+93,alta gracia,76,alimentos,pizza congelada muzzarella,5,4286,21430,tarjeta_credito,9
+63,cordoba,35,alimentos,barrita de cereal 30g,5,4430,22150,efectivo,10
+40,rio cuarto,68,alimentos,vino blanco 750ml,3,2684,8052,transferencia,4
+26,alta gracia,40,alimentos,helado chocolate 1l,2,1215,2430,efectivo,2
+66,villa maria,53,limpieza,lavandina 1l,1,1664,1664,tarjeta_debito,5
+76,mendiolaza,66,alimentos,cerveza negra 1l,2,1533,3066,transferencia,4
+8,carlos paz,2,alimentos,pepsi 1.5l,2,4973,9946,tarjeta_debito,1
+17,villa maria,79,alimentos,hamburguesas congeladas x4,2,2420,4840,tarjeta_debito,4
+28,cordoba,52,limpieza,detergente líquido 750ml,3,2582,7746,tarjeta_debito,12
+67,alta gracia,12,alimentos,té negro 20 saquitos,2,570,1140,efectivo,11
+36,mendiolaza,66,alimentos,cerveza negra 1l,4,1533,6132,tarjeta_debito,4
+71,villa maria,29,alimentos,papas fritas onduladas 100g,5,1868,9340,transferencia,5
+54,alta gracia,51,alimentos,sal fina 500g,1,1745,1745,tarjeta_credito,9
+21,alta gracia,82,alimentos,aceitunas negras 200g,4,2394,9576,tarjeta_credito,3
+1,carlos paz,21,alimentos,pan lactal integral,4,272,1088,tarjeta_credito,4
+9,carlos paz,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,efectivo,6
+12,alta gracia,32,alimentos,chocolate amargo 100g,5,2234,11170,efectivo,10
+50,carlos paz,33,alimentos,chocolate con leche 100g,3,1255,3765,tarjeta_debito,6
+7,rio cuarto,11,alimentos,café molido 250g,1,2053,2053,tarjeta_credito,11
+73,alta gracia,72,alimentos,ron 700ml,3,3876,11628,tarjeta_debito,10
+24,villa maria,40,alimentos,helado chocolate 1l,3,1215,3645,tarjeta_debito,6
+15,cordoba,10,alimentos,yerba mate intensa 1kg,4,4883,19532,tarjeta_debito,2
+77,villa maria,12,alimentos,té negro 20 saquitos,2,570,1140,tarjeta_credito,5
+55,mendiolaza,7,alimentos,jugo de manzana 1l,1,3269,3269,transferencia,12
+47,alta gracia,82,alimentos,aceitunas negras 200g,5,2394,11970,transferencia,9
+89,rio cuarto,45,alimentos,fideos spaghetti 500g,3,745,2235,tarjeta_credito,8
+80,mendiolaza,32,alimentos,chocolate amargo 100g,5,2234,11170,transferencia,2
+50,carlos paz,55,higiene personal,shampoo 400ml,1,1407,1407,efectivo,8
+73,alta gracia,35,alimentos,barrita de cereal 30g,3,4430,13290,tarjeta_credito,12
+74,carlos paz,84,alimentos,queso azul 150g,5,1645,8225,efectivo,2
+77,villa maria,36,alimentos,dulce de leche 400g,1,2559,2559,tarjeta_debito,9
+52,rio cuarto,43,alimentos,salsa de tomate 500g,3,887,2661,transferencia,7
+32,mendiolaza,53,limpieza,lavandina 1l,5,1664,8320,efectivo,3
+32,mendiolaza,51,alimentos,sal fina 500g,5,1745,8725,tarjeta_debito,8
+88,villa maria,72,alimentos,ron 700ml,4,3876,15504,tarjeta_credito,3
+67,alta gracia,53,limpieza,lavandina 1l,2,1664,3328,tarjeta_debito,9
+29,alta gracia,67,alimentos,vino tinto malbec 750ml,4,4719,18876,tarjeta_debito,1
+63,cordoba,34,alimentos,turrón 50g,3,503,1509,transferencia,8
+59,villa maria,43,alimentos,salsa de tomate 500g,3,887,2661,transferencia,11
+46,alta gracia,94,higiene personal,hilo dental,5,1418,7090,tarjeta_debito,3
+99,villa maria,76,alimentos,pizza congelada muzzarella,2,4286,8572,efectivo,8
+1,carlos paz,86,alimentos,jugo en polvo limón,4,4090,16360,tarjeta_credito,7
+35,mendiolaza,16,alimentos,yogur natural 200g,3,4613,13839,efectivo,5
+35,mendiolaza,72,alimentos,ron 700ml,5,3876,19380,efectivo,10
+10,cordoba,1,alimentos,coca cola 1.5l,5,2347,11735,tarjeta_debito,8
+20,rio cuarto,1,alimentos,coca cola 1.5l,3,2347,7041,tarjeta_debito,10
+85,mendiolaza,14,alimentos,leche entera 1l,1,1723,1723,tarjeta_credito,12
+66,villa maria,36,alimentos,dulce de leche 400g,3,2559,7677,efectivo,9
+17,villa maria,34,alimentos,turrón 50g,2,503,1006,tarjeta_credito,12
+7,rio cuarto,58,alimentos,caramelos masticables,1,4752,4752,transferencia,10
+34,villa maria,54,higiene personal,jabón de tocador,4,1592,6368,tarjeta_credito,1
+61,rio cuarto,92,higiene personal,crema dental 90g,1,2512,2512,efectivo,5
+14,carlos paz,88,alimentos,caldo concentrado carne,5,2570,12850,transferencia,1
+88,villa maria,70,alimentos,fernet 750ml,3,4061,12183,tarjeta_credito,3
+48,cordoba,77,alimentos,empanadas congeladas,5,4778,23890,tarjeta_credito,10
+97,cordoba,22,alimentos,medialunas de manteca,4,2069,8276,tarjeta_credito,2
+86,cordoba,88,alimentos,caldo concentrado carne,4,2570,10280,efectivo,5
+69,rio cuarto,77,alimentos,empanadas congeladas,4,4778,19112,transferencia,4
+14,carlos paz,44,alimentos,arroz largo fino 1kg,3,2979,8937,transferencia,8
+47,alta gracia,79,alimentos,hamburguesas congeladas x4,2,2420,4840,tarjeta_debito,4
+50,carlos paz,47,alimentos,garbanzos 500g,2,2939,5878,tarjeta_debito,2
+27,rio cuarto,66,alimentos,cerveza negra 1l,2,1533,3066,efectivo,5
+100,cordoba,10,alimentos,yerba mate intensa 1kg,1,4883,4883,efectivo,3
+99,villa maria,67,alimentos,vino tinto malbec 750ml,4,4719,18876,transferencia,10
+69,rio cuarto,28,alimentos,papas fritas clásicas 100g,1,936,936,tarjeta_credito,5
+64,villa maria,32,alimentos,chocolate amargo 100g,2,2234,4468,tarjeta_debito,8
+21,alta gracia,28,alimentos,papas fritas clásicas 100g,5,936,4680,efectivo,12
+91,mendiolaza,52,limpieza,detergente líquido 750ml,2,2582,5164,transferencia,11
+81,carlos paz,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_debito,10
+94,mendiolaza,47,alimentos,garbanzos 500g,2,2939,5878,efectivo,8
+90,rio cuarto,52,limpieza,detergente líquido 750ml,1,2582,2582,efectivo,12
+3,rio cuarto,62,alimentos,stevia 100 sobres,1,3848,3848,efectivo,10
+33,rio cuarto,3,alimentos,sprite 1.5l,1,4964,4964,tarjeta_credito,3
+36,mendiolaza,32,alimentos,chocolate amargo 100g,4,2234,8936,efectivo,2
+63,cordoba,38,alimentos,mermelada de frutilla 400g,2,1584,3168,efectivo,12
+54,alta gracia,69,alimentos,sidra 750ml,1,744,744,transferencia,11
+59,villa maria,85,alimentos,jugo en polvo naranja,3,1856,5568,efectivo,11
+23,rio cuarto,5,alimentos,agua mineral 500ml,2,4777,9554,tarjeta_credito,5
+13,carlos paz,97,limpieza,limpiavidrios 500ml,3,872,2616,transferencia,2
+94,mendiolaza,55,higiene personal,shampoo 400ml,5,1407,7035,transferencia,6
+18,carlos paz,25,alimentos,galletitas vainilla,1,4015,4015,tarjeta_debito,10
+67,alta gracia,6,alimentos,jugo de naranja 1l,2,4170,8340,tarjeta_debito,11
+2,carlos paz,76,alimentos,pizza congelada muzzarella,4,4286,17144,efectivo,9
+57,rio cuarto,3,alimentos,sprite 1.5l,2,4964,9928,tarjeta_debito,12
+23,rio cuarto,90,higiene personal,toallas húmedas x50,3,2902,8706,efectivo,1
+66,villa maria,58,alimentos,caramelos masticables,2,4752,9504,efectivo,9
+44,carlos paz,38,alimentos,mermelada de frutilla 400g,3,1584,4752,transferencia,2
+11,villa maria,7,alimentos,jugo de manzana 1l,4,3269,13076,tarjeta_debito,2
+65,alta gracia,15,alimentos,leche descremada 1l,2,2538,5076,tarjeta_credito,11
+8,carlos paz,35,alimentos,barrita de cereal 30g,3,4430,13290,tarjeta_debito,6
+20,rio cuarto,90,higiene personal,toallas húmedas x50,2,2902,5804,tarjeta_debito,12
+42,alta gracia,13,alimentos,té verde 20 saquitos,3,2383,7149,tarjeta_debito,9
+30,alta gracia,75,alimentos,licor de café 700ml,4,3204,12816,tarjeta_debito,10
+53,mendiolaza,64,alimentos,avena instantánea 250g,1,3953,3953,tarjeta_debito,6
+79,carlos paz,86,alimentos,jugo en polvo limón,5,4090,20450,tarjeta_credito,6
+10,cordoba,10,alimentos,yerba mate intensa 1kg,1,4883,4883,tarjeta_credito,1
+48,cordoba,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_debito,5
+44,carlos paz,76,alimentos,pizza congelada muzzarella,5,4286,21430,tarjeta_credito,7
+95,rio cuarto,86,alimentos,jugo en polvo limón,5,4090,20450,tarjeta_credito,1
+45,rio cuarto,36,alimentos,dulce de leche 400g,3,2559,7677,tarjeta_debito,5
+49,rio cuarto,57,limpieza,servilletas x100,5,4520,22600,tarjeta_debito,2
+80,mendiolaza,16,alimentos,yogur natural 200g,1,4613,4613,efectivo,9
+27,rio cuarto,15,alimentos,leche descremada 1l,5,2538,12690,tarjeta_credito,7
+19,mendiolaza,45,alimentos,fideos spaghetti 500g,4,745,2980,tarjeta_credito,4
+12,alta gracia,23,alimentos,bizcochos salados,4,2380,9520,transferencia,12
+57,rio cuarto,65,alimentos,cerveza rubia 1l,5,2423,12115,efectivo,11
+49,rio cuarto,100,limpieza,trapo de piso,1,4854,4854,efectivo,1
+57,rio cuarto,16,alimentos,yogur natural 200g,4,4613,18452,transferencia,6
+38,alta gracia,86,alimentos,jugo en polvo limón,5,4090,20450,tarjeta_credito,4
+17,villa maria,51,alimentos,sal fina 500g,3,1745,5235,transferencia,11
+78,villa maria,62,alimentos,stevia 100 sobres,4,3848,15392,tarjeta_debito,6
+78,villa maria,49,alimentos,harina de trigo 1kg,1,2512,2512,transferencia,3
+29,alta gracia,7,alimentos,jugo de manzana 1l,1,3269,3269,tarjeta_debito,12
+98,cordoba,36,alimentos,dulce de leche 400g,2,2559,5118,transferencia,7
+21,alta gracia,46,alimentos,lentejas secas 500g,2,3036,6072,efectivo,8
+92,alta gracia,36,alimentos,dulce de leche 400g,3,2559,7677,tarjeta_debito,10
+83,rio cuarto,4,alimentos,fanta naranja 1.5l,3,2033,6099,tarjeta_credito,9
+55,mendiolaza,13,alimentos,té verde 20 saquitos,4,2383,9532,tarjeta_debito,6
+4,carlos paz,20,alimentos,pan lactal blanco,4,1571,6284,tarjeta_debito,9
+44,carlos paz,6,alimentos,jugo de naranja 1l,4,4170,16680,efectivo,10
+75,rio cuarto,11,alimentos,café molido 250g,2,2053,4106,efectivo,9
+8,carlos paz,1,alimentos,coca cola 1.5l,1,2347,2347,transferencia,11
+16,rio cuarto,25,alimentos,galletitas vainilla,4,4015,16060,transferencia,9
+58,rio cuarto,64,alimentos,avena instantánea 250g,4,3953,15812,tarjeta_credito,3
+46,alta gracia,55,higiene personal,shampoo 400ml,1,1407,1407,transferencia,2
+95,rio cuarto,48,alimentos,porotos negros 500g,3,4462,13386,tarjeta_credito,9
+44,carlos paz,68,alimentos,vino blanco 750ml,3,2684,8052,transferencia,12
+24,villa maria,55,higiene personal,shampoo 400ml,3,1407,4221,tarjeta_debito,8
+62,carlos paz,46,alimentos,lentejas secas 500g,3,3036,9108,tarjeta_credito,9
+59,villa maria,1,alimentos,coca cola 1.5l,3,2347,7041,transferencia,9
+83,rio cuarto,23,alimentos,bizcochos salados,2,2380,4760,transferencia,4
+14,carlos paz,30,alimentos,maní salado 200g,3,4875,14625,tarjeta_debito,4
+91,mendiolaza,80,alimentos,helado de frutilla 1l,4,1981,7924,tarjeta_debito,10
+41,alta gracia,81,alimentos,aceitunas verdes 200g,3,2520,7560,transferencia,1
+73,alta gracia,27,alimentos,alfajor simple,4,2502,10008,efectivo,4
+52,rio cuarto,36,alimentos,dulce de leche 400g,4,2559,10236,tarjeta_credito,7
+64,villa maria,35,alimentos,barrita de cereal 30g,4,4430,17720,efectivo,8
+23,rio cuarto,28,alimentos,papas fritas clásicas 100g,1,936,936,tarjeta_credito,9
+30,alta gracia,41,alimentos,aceite de girasol 1l,3,860,2580,efectivo,2
+24,villa maria,64,alimentos,avena instantánea 250g,4,3953,15812,efectivo,9
+87,alta gracia,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,8
+35,mendiolaza,37,alimentos,mermelada de durazno 400g,5,3196,15980,tarjeta_credito,6
+10,cordoba,59,alimentos,chicle menta,5,3612,18060,tarjeta_credito,10
+18,carlos paz,82,alimentos,aceitunas negras 200g,5,2394,11970,tarjeta_debito,7
+45,rio cuarto,46,alimentos,lentejas secas 500g,5,3036,15180,efectivo,7
+55,mendiolaza,23,alimentos,bizcochos salados,1,2380,2380,tarjeta_credito,4
+9,carlos paz,46,alimentos,lentejas secas 500g,4,3036,12144,transferencia,9
+87,alta gracia,61,alimentos,miel pura 250g,4,4982,19928,tarjeta_credito,9
+83,rio cuarto,9,alimentos,yerba mate suave 1kg,3,3878,11634,efectivo,11
+94,mendiolaza,11,alimentos,café molido 250g,5,2053,10265,transferencia,10
+18,carlos paz,55,higiene personal,shampoo 400ml,5,1407,7035,tarjeta_credito,11
+18,carlos paz,41,alimentos,aceite de girasol 1l,2,860,1720,efectivo,12
+74,carlos paz,61,alimentos,miel pura 250g,5,4982,24910,efectivo,4
+77,villa maria,60,alimentos,chupetín,3,4647,13941,transferencia,1
+27,rio cuarto,40,alimentos,helado chocolate 1l,3,1215,3645,tarjeta_debito,7
+24,villa maria,40,alimentos,helado chocolate 1l,3,1215,3645,tarjeta_credito,4
+84,cordoba,45,alimentos,fideos spaghetti 500g,5,745,3725,tarjeta_credito,1
+39,alta gracia,41,alimentos,aceite de girasol 1l,1,860,860,efectivo,3
+33,rio cuarto,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,5
+77,villa maria,24,alimentos,galletitas chocolate,4,1305,5220,tarjeta_credito,12
+37,mendiolaza,73,alimentos,gin 700ml,1,1561,1561,efectivo,12
+15,cordoba,89,alimentos,caldo concentrado verdura,1,1003,1003,efectivo,12
+46,alta gracia,82,alimentos,aceitunas negras 200g,5,2394,11970,tarjeta_credito,2
+83,rio cuarto,71,alimentos,vodka 700ml,3,508,1524,tarjeta_debito,2
+60,alta gracia,93,higiene personal,cepillo de dientes,5,2142,10710,tarjeta_credito,7
+93,alta gracia,47,alimentos,garbanzos 500g,4,2939,11756,tarjeta_credito,6
+16,rio cuarto,87,alimentos,sopa instantánea pollo,4,1679,6716,transferencia,9
+36,mendiolaza,96,limpieza,suavizante 1l,2,4920,9840,efectivo,3
+93,alta gracia,53,limpieza,lavandina 1l,4,1664,6656,tarjeta_credito,5
+25,rio cuarto,11,alimentos,café molido 250g,3,2053,6159,tarjeta_debito,10
+41,alta gracia,62,alimentos,stevia 100 sobres,2,3848,7696,tarjeta_debito,4
+42,alta gracia,74,alimentos,whisky 750ml,1,2953,2953,tarjeta_debito,11
+1,carlos paz,31,alimentos,mix de frutos secos 200g,3,3409,10227,tarjeta_credito,10
+74,carlos paz,27,alimentos,alfajor simple,2,2502,5004,tarjeta_debito,1
+8,carlos paz,55,higiene personal,shampoo 400ml,5,1407,7035,tarjeta_credito,7
+9,carlos paz,68,alimentos,vino blanco 750ml,1,2684,2684,tarjeta_credito,3
+47,alta gracia,50,alimentos,azúcar 1kg,4,727,2908,tarjeta_credito,12
+91,mendiolaza,61,alimentos,miel pura 250g,3,4982,14946,transferencia,10
+94,mendiolaza,38,alimentos,mermelada de frutilla 400g,1,1584,1584,tarjeta_credito,9
+96,cordoba,53,limpieza,lavandina 1l,2,1664,3328,tarjeta_debito,10
+15,cordoba,76,alimentos,pizza congelada muzzarella,5,4286,21430,tarjeta_credito,11
+47,alta gracia,48,alimentos,porotos negros 500g,4,4462,17848,efectivo,7
+26,alta gracia,1,alimentos,coca cola 1.5l,1,2347,2347,efectivo,9
+78,villa maria,97,limpieza,limpiavidrios 500ml,3,872,2616,transferencia,10
+82,alta gracia,31,alimentos,mix de frutos secos 200g,2,3409,6818,tarjeta_credito,6
+47,alta gracia,15,alimentos,leche descremada 1l,5,2538,12690,efectivo,3
+22,alta gracia,63,alimentos,granola 250g,5,4337,21685,tarjeta_debito,4
+38,alta gracia,72,alimentos,ron 700ml,2,3876,7752,efectivo,1
+76,mendiolaza,96,limpieza,suavizante 1l,1,4920,4920,efectivo,4
+70,carlos paz,50,alimentos,azúcar 1kg,4,727,2908,transferencia,12
+3,rio cuarto,67,alimentos,vino tinto malbec 750ml,5,4719,23595,tarjeta_debito,2
+27,rio cuarto,77,alimentos,empanadas congeladas,5,4778,23890,tarjeta_debito,1
+65,alta gracia,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,tarjeta_debito,5
+73,alta gracia,87,alimentos,sopa instantánea pollo,1,1679,1679,tarjeta_credito,5
+45,rio cuarto,46,alimentos,lentejas secas 500g,3,3036,9108,tarjeta_credito,9
+88,villa maria,1,alimentos,coca cola 1.5l,5,2347,11735,tarjeta_debito,6
+23,rio cuarto,70,alimentos,fernet 750ml,1,4061,4061,efectivo,9
+37,mendiolaza,75,alimentos,licor de café 700ml,5,3204,16020,transferencia,1
+4,carlos paz,64,alimentos,avena instantánea 250g,4,3953,15812,tarjeta_debito,12
+100,cordoba,54,higiene personal,jabón de tocador,5,1592,7960,transferencia,5
+13,carlos paz,27,alimentos,alfajor simple,3,2502,7506,transferencia,8
+76,mendiolaza,86,alimentos,jugo en polvo limón,1,4090,4090,efectivo,7
+22,alta gracia,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_credito,1
+37,mendiolaza,89,alimentos,caldo concentrado verdura,5,1003,5015,tarjeta_credito,1
+87,alta gracia,43,alimentos,salsa de tomate 500g,4,887,3548,transferencia,5
+83,rio cuarto,23,alimentos,bizcochos salados,1,2380,2380,tarjeta_debito,5
+49,rio cuarto,61,alimentos,miel pura 250g,4,4982,19928,efectivo,5
+82,alta gracia,75,alimentos,licor de café 700ml,4,3204,12816,tarjeta_credito,5
+59,villa maria,71,alimentos,vodka 700ml,2,508,1016,tarjeta_debito,2
+37,mendiolaza,56,limpieza,papel higiénico x4,4,2532,10128,efectivo,12
+56,rio cuarto,43,alimentos,salsa de tomate 500g,1,887,887,tarjeta_debito,3
+26,alta gracia,97,limpieza,limpiavidrios 500ml,3,872,2616,tarjeta_credito,3
+44,carlos paz,86,alimentos,jugo en polvo limón,1,4090,4090,tarjeta_credito,9
+40,rio cuarto,50,alimentos,azúcar 1kg,2,727,1454,tarjeta_debito,10
+10,cordoba,96,limpieza,suavizante 1l,2,4920,9840,transferencia,10
+35,mendiolaza,18,alimentos,queso rallado 150g,4,3444,13776,transferencia,1
+28,cordoba,1,alimentos,coca cola 1.5l,5,2347,11735,tarjeta_credito,5
+30,alta gracia,8,alimentos,energética nitro 500ml,2,4218,8436,efectivo,8
+59,villa maria,79,alimentos,hamburguesas congeladas x4,1,2420,2420,efectivo,11
+3,rio cuarto,78,alimentos,verduras congeladas mix,4,4289,17156,transferencia,7
+77,villa maria,44,alimentos,arroz largo fino 1kg,5,2979,14895,tarjeta_debito,8
+83,rio cuarto,99,limpieza,esponjas x3,1,2430,2430,efectivo,2
+85,mendiolaza,74,alimentos,whisky 750ml,4,2953,11812,efectivo,12
+61,rio cuarto,24,alimentos,galletitas chocolate,1,1305,1305,efectivo,10
+82,alta gracia,19,alimentos,manteca 200g,2,3251,6502,tarjeta_debito,2
+45,rio cuarto,1,alimentos,coca cola 1.5l,1,2347,2347,tarjeta_credito,5
+68,villa maria,3,alimentos,sprite 1.5l,5,4964,24820,tarjeta_credito,12
+2,carlos paz,36,alimentos,dulce de leche 400g,2,2559,5118,tarjeta_credito,6
+31,villa maria,48,alimentos,porotos negros 500g,3,4462,13386,tarjeta_debito,1
+97,cordoba,86,alimentos,jugo en polvo limón,1,4090,4090,tarjeta_credito,10
+4,carlos paz,8,alimentos,energética nitro 500ml,4,4218,16872,efectivo,11
+55,mendiolaza,50,alimentos,azúcar 1kg,5,727,3635,transferencia,12
+12,alta gracia,46,alimentos,lentejas secas 500g,4,3036,12144,transferencia,1
+79,carlos paz,21,alimentos,pan lactal integral,4,272,1088,efectivo,5
+72,cordoba,43,alimentos,salsa de tomate 500g,4,887,3548,efectivo,11
+59,villa maria,17,alimentos,queso cremoso 500g,5,4834,24170,tarjeta_debito,12
+31,villa maria,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_debito,6
+94,mendiolaza,55,higiene personal,shampoo 400ml,2,1407,2814,transferencia,6
+12,alta gracia,14,alimentos,leche entera 1l,5,1723,8615,tarjeta_debito,10
+84,cordoba,62,alimentos,stevia 100 sobres,4,3848,15392,tarjeta_credito,1
+39,alta gracia,13,alimentos,té verde 20 saquitos,1,2383,2383,tarjeta_credito,7
+6,villa maria,91,higiene personal,desodorante aerosol,3,4690,14070,transferencia,10
+43,mendiolaza,18,alimentos,queso rallado 150g,5,3444,17220,transferencia,9
+63,cordoba,42,alimentos,vinagre de alcohol 500ml,3,1195,3585,transferencia,7
+40,rio cuarto,41,alimentos,aceite de girasol 1l,3,860,2580,transferencia,6
+84,cordoba,1,alimentos,coca cola 1.5l,1,2347,2347,tarjeta_debito,1
+38,alta gracia,77,alimentos,empanadas congeladas,2,4778,9556,tarjeta_debito,3
+76,mendiolaza,6,alimentos,jugo de naranja 1l,5,4170,20850,tarjeta_debito,9
+41,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,transferencia,6
+14,carlos paz,6,alimentos,jugo de naranja 1l,1,4170,4170,tarjeta_debito,3
+42,alta gracia,80,alimentos,helado de frutilla 1l,2,1981,3962,transferencia,6
+23,rio cuarto,15,alimentos,leche descremada 1l,1,2538,2538,tarjeta_credito,1
+51,rio cuarto,13,alimentos,té verde 20 saquitos,2,2383,4766,tarjeta_debito,8
+15,cordoba,58,alimentos,caramelos masticables,3,4752,14256,tarjeta_credito,7
+1,carlos paz,59,alimentos,chicle menta,4,3612,14448,efectivo,1
+82,alta gracia,71,alimentos,vodka 700ml,4,508,2032,tarjeta_credito,5
+26,alta gracia,9,alimentos,yerba mate suave 1kg,5,3878,19390,tarjeta_debito,11
+9,carlos paz,90,higiene personal,toallas húmedas x50,4,2902,11608,tarjeta_credito,11
+24,villa maria,48,alimentos,porotos negros 500g,3,4462,13386,efectivo,5
+74,carlos paz,2,alimentos,pepsi 1.5l,5,4973,24865,efectivo,5
+39,alta gracia,53,limpieza,lavandina 1l,5,1664,8320,tarjeta_debito,1
+18,carlos paz,73,alimentos,gin 700ml,1,1561,1561,tarjeta_credito,8
+14,carlos paz,40,alimentos,helado chocolate 1l,3,1215,3645,transferencia,8
+27,rio cuarto,69,alimentos,sidra 750ml,3,744,2232,efectivo,7
+60,alta gracia,96,limpieza,suavizante 1l,3,4920,14760,tarjeta_credito,9
+100,cordoba,55,higiene personal,shampoo 400ml,1,1407,1407,efectivo,3
+4,carlos paz,72,alimentos,ron 700ml,1,3876,3876,transferencia,3
+25,rio cuarto,89,alimentos,caldo concentrado verdura,3,1003,3009,tarjeta_credito,8
+70,carlos paz,41,alimentos,aceite de girasol 1l,2,860,1720,efectivo,1
+96,cordoba,7,alimentos,jugo de manzana 1l,3,3269,9807,transferencia,11
+98,cordoba,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,5
+43,mendiolaza,78,alimentos,verduras congeladas mix,5,4289,21445,transferencia,2
+40,rio cuarto,43,alimentos,salsa de tomate 500g,5,887,4435,efectivo,3
+77,villa maria,59,alimentos,chicle menta,2,3612,7224,transferencia,9
+76,mendiolaza,76,alimentos,pizza congelada muzzarella,2,4286,8572,efectivo,11
+15,cordoba,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_credito,8
+67,alta gracia,75,alimentos,licor de café 700ml,2,3204,6408,efectivo,9
+2,carlos paz,37,alimentos,mermelada de durazno 400g,2,3196,6392,tarjeta_credito,4
+49,rio cuarto,63,alimentos,granola 250g,3,4337,13011,tarjeta_debito,10
+39,alta gracia,2,alimentos,pepsi 1.5l,3,4973,14919,efectivo,10
+29,alta gracia,56,limpieza,papel higiénico x4,2,2532,5064,tarjeta_credito,1
+60,alta gracia,81,alimentos,aceitunas verdes 200g,2,2520,5040,tarjeta_credito,11
+92,alta gracia,20,alimentos,pan lactal blanco,2,1571,3142,tarjeta_debito,11
+18,carlos paz,78,alimentos,verduras congeladas mix,3,4289,12867,tarjeta_credito,11
+16,rio cuarto,5,alimentos,agua mineral 500ml,2,4777,9554,tarjeta_credito,8
+46,alta gracia,30,alimentos,maní salado 200g,2,4875,9750,transferencia,12
+63,cordoba,31,alimentos,mix de frutos secos 200g,2,3409,6818,efectivo,10
+23,rio cuarto,41,alimentos,aceite de girasol 1l,1,860,860,tarjeta_credito,11
+78,villa maria,94,higiene personal,hilo dental,1,1418,1418,transferencia,9
+30,alta gracia,14,alimentos,leche entera 1l,5,1723,8615,tarjeta_credito,6
+43,mendiolaza,91,higiene personal,desodorante aerosol,3,4690,14070,transferencia,12
+86,cordoba,62,alimentos,stevia 100 sobres,5,3848,19240,efectivo,5
+82,alta gracia,77,alimentos,empanadas congeladas,4,4778,19112,transferencia,12
+61,rio cuarto,100,limpieza,trapo de piso,3,4854,14562,transferencia,11
+63,cordoba,47,alimentos,garbanzos 500g,4,2939,11756,tarjeta_credito,1
+83,rio cuarto,50,alimentos,azúcar 1kg,1,727,727,tarjeta_debito,7
+56,rio cuarto,47,alimentos,garbanzos 500g,2,2939,5878,efectivo,11
+49,rio cuarto,41,alimentos,aceite de girasol 1l,5,860,4300,tarjeta_credito,4
+65,alta gracia,60,alimentos,chupetín,5,4647,23235,transferencia,3
+87,alta gracia,39,alimentos,helado vainilla 1l,1,469,469,tarjeta_debito,5
+22,alta gracia,23,alimentos,bizcochos salados,5,2380,11900,tarjeta_credito,3
+86,cordoba,56,limpieza,papel higiénico x4,1,2532,2532,tarjeta_credito,2
+10,cordoba,27,alimentos,alfajor simple,4,2502,10008,tarjeta_debito,11
+54,alta gracia,55,higiene personal,shampoo 400ml,1,1407,1407,efectivo,12
+75,rio cuarto,51,alimentos,sal fina 500g,1,1745,1745,transferencia,3
+25,rio cuarto,94,higiene personal,hilo dental,3,1418,4254,tarjeta_credito,12
+10,cordoba,48,alimentos,porotos negros 500g,1,4462,4462,efectivo,3
+39,alta gracia,1,alimentos,coca cola 1.5l,5,2347,11735,tarjeta_credito,2
+82,alta gracia,97,limpieza,limpiavidrios 500ml,5,872,4360,tarjeta_credito,10
+66,villa maria,32,alimentos,chocolate amargo 100g,2,2234,4468,tarjeta_debito,1
+49,rio cuarto,93,higiene personal,cepillo de dientes,5,2142,10710,tarjeta_credito,4
+39,alta gracia,21,alimentos,pan lactal integral,4,272,1088,tarjeta_debito,4
+75,rio cuarto,65,alimentos,cerveza rubia 1l,1,2423,2423,efectivo,12
+37,mendiolaza,48,alimentos,porotos negros 500g,3,4462,13386,tarjeta_debito,6
+67,alta gracia,79,alimentos,hamburguesas congeladas x4,3,2420,7260,tarjeta_debito,12
+88,villa maria,40,alimentos,helado chocolate 1l,1,1215,1215,efectivo,6
+77,villa maria,24,alimentos,galletitas chocolate,1,1305,1305,transferencia,4
+18,carlos paz,70,alimentos,fernet 750ml,3,4061,12183,tarjeta_debito,8
+44,carlos paz,75,alimentos,licor de café 700ml,1,3204,3204,efectivo,10
+99,villa maria,7,alimentos,jugo de manzana 1l,3,3269,9807,efectivo,1
+39,alta gracia,64,alimentos,avena instantánea 250g,4,3953,15812,transferencia,1
+14,carlos paz,91,higiene personal,desodorante aerosol,3,4690,14070,transferencia,3
+80,mendiolaza,37,alimentos,mermelada de durazno 400g,3,3196,9588,transferencia,3
+15,cordoba,29,alimentos,papas fritas onduladas 100g,2,1868,3736,transferencia,1
+11,villa maria,71,alimentos,vodka 700ml,1,508,508,efectivo,11
+75,rio cuarto,80,alimentos,helado de frutilla 1l,4,1981,7924,transferencia,10
+71,villa maria,16,alimentos,yogur natural 200g,1,4613,4613,tarjeta_debito,2
+46,alta gracia,10,alimentos,yerba mate intensa 1kg,5,4883,24415,efectivo,4
+55,mendiolaza,41,alimentos,aceite de girasol 1l,1,860,860,tarjeta_debito,10
+13,carlos paz,38,alimentos,mermelada de frutilla 400g,4,1584,6336,tarjeta_debito,12
+34,villa maria,88,alimentos,caldo concentrado carne,3,2570,7710,efectivo,7
+78,villa maria,60,alimentos,chupetín,4,4647,18588,tarjeta_credito,10
+52,rio cuarto,4,alimentos,fanta naranja 1.5l,4,2033,8132,tarjeta_credito,2
+83,rio cuarto,26,alimentos,alfajor triple,3,1001,3003,efectivo,12
+33,rio cuarto,50,alimentos,azúcar 1kg,5,727,3635,tarjeta_credito,12
+40,rio cuarto,70,alimentos,fernet 750ml,2,4061,8122,efectivo,8
+81,carlos paz,26,alimentos,alfajor triple,3,1001,3003,transferencia,9
+51,rio cuarto,80,alimentos,helado de frutilla 1l,2,1981,3962,efectivo,6
+85,mendiolaza,82,alimentos,aceitunas negras 200g,2,2394,4788,tarjeta_debito,12
+26,alta gracia,48,alimentos,porotos negros 500g,2,4462,8924,tarjeta_debito,10
+5,cordoba,67,alimentos,vino tinto malbec 750ml,3,4719,14157,tarjeta_debito,5
+57,rio cuarto,20,alimentos,pan lactal blanco,4,1571,6284,tarjeta_credito,7
+2,carlos paz,59,alimentos,chicle menta,2,3612,7224,tarjeta_debito,5
+42,alta gracia,71,alimentos,vodka 700ml,4,508,2032,transferencia,5
+46,alta gracia,54,higiene personal,jabón de tocador,3,1592,4776,transferencia,2
+99,villa maria,30,alimentos,maní salado 200g,3,4875,14625,tarjeta_debito,8
+100,cordoba,82,alimentos,aceitunas negras 200g,1,2394,2394,efectivo,1
+50,carlos paz,90,higiene personal,toallas húmedas x50,4,2902,11608,transferencia,12
+74,carlos paz,4,alimentos,fanta naranja 1.5l,2,2033,4066,efectivo,6
+44,carlos paz,8,alimentos,energética nitro 500ml,5,4218,21090,tarjeta_debito,9
+54,alta gracia,87,alimentos,sopa instantánea pollo,4,1679,6716,tarjeta_credito,2
+31,villa maria,95,higiene personal,mascarilla capilar,5,1581,7905,tarjeta_debito,6
+97,cordoba,2,alimentos,pepsi 1.5l,5,4973,24865,efectivo,4
+81,carlos paz,86,alimentos,jugo en polvo limón,4,4090,16360,efectivo,8
+49,rio cuarto,90,higiene personal,toallas húmedas x50,5,2902,14510,transferencia,7
+24,villa maria,22,alimentos,medialunas de manteca,4,2069,8276,efectivo,4
+63,cordoba,35,alimentos,barrita de cereal 30g,1,4430,4430,efectivo,8
+46,alta gracia,90,higiene personal,toallas húmedas x50,1,2902,2902,efectivo,3
+51,rio cuarto,26,alimentos,alfajor triple,2,1001,2002,tarjeta_credito,12
+81,carlos paz,18,alimentos,queso rallado 150g,2,3444,6888,tarjeta_debito,11
+84,cordoba,87,alimentos,sopa instantánea pollo,1,1679,1679,transferencia,6
+82,alta gracia,89,alimentos,caldo concentrado verdura,3,1003,3009,tarjeta_credito,1
+67,alta gracia,30,alimentos,maní salado 200g,4,4875,19500,tarjeta_debito,5
+76,mendiolaza,6,alimentos,jugo de naranja 1l,1,4170,4170,transferencia,12
+91,mendiolaza,47,alimentos,garbanzos 500g,1,2939,2939,tarjeta_credito,7
+14,carlos paz,98,limpieza,desengrasante 500ml,4,2843,11372,efectivo,1
+27,rio cuarto,44,alimentos,arroz largo fino 1kg,4,2979,11916,transferencia,9
+2,carlos paz,43,alimentos,salsa de tomate 500g,2,887,1774,transferencia,4
+40,rio cuarto,98,limpieza,desengrasante 500ml,5,2843,14215,tarjeta_credito,10
+60,alta gracia,68,alimentos,vino blanco 750ml,4,2684,10736,efectivo,3
+42,alta gracia,22,alimentos,medialunas de manteca,1,2069,2069,tarjeta_debito,11
+59,villa maria,50,alimentos,azúcar 1kg,4,727,2908,tarjeta_credito,3
+54,alta gracia,58,alimentos,caramelos masticables,1,4752,4752,transferencia,11
+73,alta gracia,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_credito,2
+57,rio cuarto,78,alimentos,verduras congeladas mix,3,4289,12867,transferencia,9
+20,rio cuarto,7,alimentos,jugo de manzana 1l,1,3269,3269,tarjeta_credito,9
+22,alta gracia,20,alimentos,pan lactal blanco,4,1571,6284,transferencia,8
+49,rio cuarto,75,alimentos,licor de café 700ml,2,3204,6408,transferencia,3
+68,villa maria,25,alimentos,galletitas vainilla,4,4015,16060,tarjeta_debito,10
+87,alta gracia,36,alimentos,dulce de leche 400g,5,2559,12795,transferencia,11
+64,villa maria,46,alimentos,lentejas secas 500g,1,3036,3036,transferencia,5
+46,alta gracia,41,alimentos,aceite de girasol 1l,4,860,3440,transferencia,1
+16,rio cuarto,80,alimentos,helado de frutilla 1l,4,1981,7924,tarjeta_debito,4
+46,alta gracia,20,alimentos,pan lactal blanco,1,1571,1571,transferencia,11
+87,alta gracia,64,alimentos,avena instantánea 250g,5,3953,19765,transferencia,5
+15,cordoba,30,alimentos,maní salado 200g,5,4875,24375,transferencia,10
+9,carlos paz,28,alimentos,papas fritas clásicas 100g,2,936,1872,efectivo,3
+10,cordoba,49,alimentos,harina de trigo 1kg,5,2512,12560,tarjeta_debito,11
+65,alta gracia,7,alimentos,jugo de manzana 1l,1,3269,3269,tarjeta_credito,10
+96,cordoba,31,alimentos,mix de frutos secos 200g,5,3409,17045,efectivo,6
+68,villa maria,4,alimentos,fanta naranja 1.5l,5,2033,10165,tarjeta_debito,5
+73,alta gracia,18,alimentos,queso rallado 150g,3,3444,10332,transferencia,12
+71,villa maria,29,alimentos,papas fritas onduladas 100g,1,1868,1868,transferencia,4
+72,cordoba,85,alimentos,jugo en polvo naranja,4,1856,7424,tarjeta_credito,6
+4,carlos paz,12,alimentos,té negro 20 saquitos,3,570,1710,tarjeta_credito,8
+39,alta gracia,85,alimentos,jugo en polvo naranja,1,1856,1856,tarjeta_credito,3
+8,carlos paz,24,alimentos,galletitas chocolate,2,1305,2610,efectivo,6
+93,alta gracia,31,alimentos,mix de frutos secos 200g,5,3409,17045,tarjeta_credito,5
+1,carlos paz,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_debito,2
+21,alta gracia,4,alimentos,fanta naranja 1.5l,4,2033,8132,transferencia,9
+81,carlos paz,63,alimentos,granola 250g,2,4337,8674,tarjeta_credito,3
+21,alta gracia,20,alimentos,pan lactal blanco,3,1571,4713,efectivo,12
+23,rio cuarto,44,alimentos,arroz largo fino 1kg,2,2979,5958,tarjeta_debito,7
+46,alta gracia,5,alimentos,agua mineral 500ml,3,4777,14331,efectivo,11
+32,mendiolaza,30,alimentos,maní salado 200g,5,4875,24375,transferencia,7
+82,alta gracia,23,alimentos,bizcochos salados,5,2380,11900,tarjeta_debito,9
+42,alta gracia,76,alimentos,pizza congelada muzzarella,2,4286,8572,transferencia,8
+75,rio cuarto,24,alimentos,galletitas chocolate,2,1305,2610,efectivo,8
+29,alta gracia,74,alimentos,whisky 750ml,4,2953,11812,tarjeta_credito,4
+26,alta gracia,72,alimentos,ron 700ml,1,3876,3876,tarjeta_debito,5
+66,villa maria,95,higiene personal,mascarilla capilar,4,1581,6324,tarjeta_debito,10
+85,mendiolaza,1,alimentos,coca cola 1.5l,5,2347,11735,tarjeta_credito,6
+82,alta gracia,26,alimentos,alfajor triple,5,1001,5005,tarjeta_credito,2
+48,cordoba,43,alimentos,salsa de tomate 500g,1,887,887,tarjeta_debito,11
+73,alta gracia,72,alimentos,ron 700ml,2,3876,7752,transferencia,8
+28,cordoba,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_credito,12
+88,villa maria,22,alimentos,medialunas de manteca,1,2069,2069,tarjeta_debito,8
+26,alta gracia,43,alimentos,salsa de tomate 500g,2,887,1774,tarjeta_credito,6
+64,villa maria,37,alimentos,mermelada de durazno 400g,3,3196,9588,tarjeta_debito,1
+42,alta gracia,68,alimentos,vino blanco 750ml,1,2684,2684,efectivo,11
+89,rio cuarto,86,alimentos,jugo en polvo limón,5,4090,20450,tarjeta_debito,11
+40,rio cuarto,18,alimentos,queso rallado 150g,1,3444,3444,tarjeta_credito,8
+70,carlos paz,67,alimentos,vino tinto malbec 750ml,1,4719,4719,tarjeta_credito,3
+32,mendiolaza,26,alimentos,alfajor triple,2,1001,2002,tarjeta_debito,5
+92,alta gracia,13,alimentos,té verde 20 saquitos,2,2383,4766,efectivo,1
+44,carlos paz,66,alimentos,cerveza negra 1l,1,1533,1533,efectivo,1
+72,cordoba,82,alimentos,aceitunas negras 200g,1,2394,2394,transferencia,9
+80,mendiolaza,44,alimentos,arroz largo fino 1kg,4,2979,11916,tarjeta_credito,11
+27,rio cuarto,97,limpieza,limpiavidrios 500ml,1,872,872,tarjeta_credito,9
+1,carlos paz,31,alimentos,mix de frutos secos 200g,3,3409,10227,efectivo,11
+83,rio cuarto,43,alimentos,salsa de tomate 500g,1,887,887,transferencia,3
+83,rio cuarto,53,limpieza,lavandina 1l,1,1664,1664,tarjeta_debito,2
+82,alta gracia,76,alimentos,pizza congelada muzzarella,4,4286,17144,tarjeta_credito,9
+11,villa maria,88,alimentos,caldo concentrado carne,2,2570,5140,tarjeta_credito,5
+33,rio cuarto,38,alimentos,mermelada de frutilla 400g,3,1584,4752,transferencia,10
+69,rio cuarto,77,alimentos,empanadas congeladas,2,4778,9556,efectivo,5
+50,carlos paz,80,alimentos,helado de frutilla 1l,4,1981,7924,tarjeta_credito,10
+8,carlos paz,6,alimentos,jugo de naranja 1l,4,4170,16680,tarjeta_credito,10
+10,cordoba,98,limpieza,desengrasante 500ml,2,2843,5686,transferencia,1
+79,carlos paz,80,alimentos,helado de frutilla 1l,2,1981,3962,tarjeta_debito,10
+94,mendiolaza,57,limpieza,servilletas x100,2,4520,9040,efectivo,4
+78,villa maria,54,higiene personal,jabón de tocador,5,1592,7960,transferencia,5
+4,carlos paz,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_credito,7
+3,rio cuarto,93,higiene personal,cepillo de dientes,2,2142,4284,tarjeta_debito,10
+79,carlos paz,82,alimentos,aceitunas negras 200g,5,2394,11970,transferencia,10
+22,alta gracia,61,alimentos,miel pura 250g,2,4982,9964,tarjeta_credito,12
+34,villa maria,91,higiene personal,desodorante aerosol,2,4690,9380,tarjeta_credito,10
+86,cordoba,82,alimentos,aceitunas negras 200g,5,2394,11970,efectivo,9
+65,alta gracia,26,alimentos,alfajor triple,2,1001,2002,efectivo,2
+51,rio cuarto,41,alimentos,aceite de girasol 1l,2,860,1720,efectivo,6
+11,villa maria,84,alimentos,queso azul 150g,5,1645,8225,tarjeta_debito,8
+83,rio cuarto,82,alimentos,aceitunas negras 200g,3,2394,7182,tarjeta_debito,10
+4,carlos paz,6,alimentos,jugo de naranja 1l,3,4170,12510,efectivo,5
+48,cordoba,21,alimentos,pan lactal integral,5,272,1360,transferencia,7
+88,villa maria,57,limpieza,servilletas x100,2,4520,9040,tarjeta_credito,12
+83,rio cuarto,30,alimentos,maní salado 200g,4,4875,19500,tarjeta_credito,6
+62,carlos paz,29,alimentos,papas fritas onduladas 100g,4,1868,7472,tarjeta_debito,5
+19,mendiolaza,37,alimentos,mermelada de durazno 400g,5,3196,15980,transferencia,9
+70,carlos paz,22,alimentos,medialunas de manteca,4,2069,8276,tarjeta_debito,11
+38,alta gracia,12,alimentos,té negro 20 saquitos,1,570,570,tarjeta_credito,12
+66,villa maria,87,alimentos,sopa instantánea pollo,3,1679,5037,transferencia,12
+23,rio cuarto,54,higiene personal,jabón de tocador,5,1592,7960,efectivo,4
+5,cordoba,96,limpieza,suavizante 1l,2,4920,9840,tarjeta_credito,11
+38,alta gracia,99,limpieza,esponjas x3,4,2430,9720,efectivo,10
+57,rio cuarto,20,alimentos,pan lactal blanco,5,1571,7855,tarjeta_debito,8
+54,alta gracia,73,alimentos,gin 700ml,5,1561,7805,tarjeta_credito,3
+49,rio cuarto,26,alimentos,alfajor triple,4,1001,4004,tarjeta_debito,10
+62,carlos paz,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,tarjeta_credito,9
+1,carlos paz,13,alimentos,té verde 20 saquitos,4,2383,9532,tarjeta_credito,7
+93,alta gracia,92,higiene personal,crema dental 90g,3,2512,7536,efectivo,2
+5,cordoba,44,alimentos,arroz largo fino 1kg,3,2979,8937,efectivo,4
+54,alta gracia,1,alimentos,coca cola 1.5l,2,2347,4694,efectivo,9
+49,rio cuarto,23,alimentos,bizcochos salados,3,2380,7140,tarjeta_debito,7
+95,rio cuarto,15,alimentos,leche descremada 1l,4,2538,10152,transferencia,1
+27,rio cuarto,98,limpieza,desengrasante 500ml,4,2843,11372,transferencia,8
+22,alta gracia,33,alimentos,chocolate con leche 100g,3,1255,3765,efectivo,7
+14,carlos paz,57,limpieza,servilletas x100,1,4520,4520,transferencia,11
+71,villa maria,6,alimentos,jugo de naranja 1l,2,4170,8340,tarjeta_debito,5
+82,alta gracia,21,alimentos,pan lactal integral,3,272,816,tarjeta_credito,6
+69,rio cuarto,46,alimentos,lentejas secas 500g,3,3036,9108,tarjeta_debito,4
+8,carlos paz,96,limpieza,suavizante 1l,2,4920,9840,tarjeta_debito,11
+36,mendiolaza,5,alimentos,agua mineral 500ml,4,4777,19108,efectivo,1
+29,alta gracia,11,alimentos,café molido 250g,1,2053,2053,tarjeta_credito,6
+37,mendiolaza,10,alimentos,yerba mate intensa 1kg,4,4883,19532,transferencia,5
+54,alta gracia,77,alimentos,empanadas congeladas,1,4778,4778,tarjeta_debito,9
+96,cordoba,80,alimentos,helado de frutilla 1l,5,1981,9905,efectivo,6
+52,rio cuarto,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_debito,3
+19,mendiolaza,80,alimentos,helado de frutilla 1l,3,1981,5943,transferencia,3
+9,carlos paz,24,alimentos,galletitas chocolate,1,1305,1305,tarjeta_debito,5
+61,rio cuarto,44,alimentos,arroz largo fino 1kg,3,2979,8937,tarjeta_debito,11
+77,villa maria,15,alimentos,leche descremada 1l,3,2538,7614,efectivo,4
+36,mendiolaza,9,alimentos,yerba mate suave 1kg,4,3878,15512,tarjeta_debito,10
+19,mendiolaza,27,alimentos,alfajor simple,3,2502,7506,transferencia,12
+69,rio cuarto,54,higiene personal,jabón de tocador,2,1592,3184,tarjeta_credito,8
+1,carlos paz,31,alimentos,mix de frutos secos 200g,1,3409,3409,transferencia,7
+70,carlos paz,46,alimentos,lentejas secas 500g,3,3036,9108,transferencia,10
+84,cordoba,100,limpieza,trapo de piso,1,4854,4854,tarjeta_credito,2
+50,carlos paz,23,alimentos,bizcochos salados,1,2380,2380,efectivo,11
+23,rio cuarto,12,alimentos,té negro 20 saquitos,5,570,2850,transferencia,9
+56,rio cuarto,70,alimentos,fernet 750ml,1,4061,4061,tarjeta_credito,3
+40,rio cuarto,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_debito,7
+41,alta gracia,46,alimentos,lentejas secas 500g,2,3036,6072,transferencia,1
+22,alta gracia,59,alimentos,chicle menta,4,3612,14448,efectivo,3
+57,rio cuarto,81,alimentos,aceitunas verdes 200g,3,2520,7560,efectivo,2
+67,alta gracia,85,alimentos,jugo en polvo naranja,4,1856,7424,efectivo,8
+49,rio cuarto,81,alimentos,aceitunas verdes 200g,2,2520,5040,tarjeta_debito,5
+53,mendiolaza,52,limpieza,detergente líquido 750ml,4,2582,10328,tarjeta_debito,11
+79,carlos paz,84,alimentos,queso azul 150g,2,1645,3290,transferencia,5
+22,alta gracia,12,alimentos,té negro 20 saquitos,1,570,570,efectivo,6
+27,rio cuarto,36,alimentos,dulce de leche 400g,3,2559,7677,tarjeta_debito,10
+1,carlos paz,99,limpieza,esponjas x3,4,2430,9720,efectivo,10
+16,rio cuarto,21,alimentos,pan lactal integral,2,272,544,tarjeta_credito,8
+29,alta gracia,98,limpieza,desengrasante 500ml,2,2843,5686,tarjeta_debito,6
+49,rio cuarto,89,alimentos,caldo concentrado verdura,5,1003,5015,transferencia,7
+67,alta gracia,38,alimentos,mermelada de frutilla 400g,3,1584,4752,tarjeta_credito,12
+2,carlos paz,45,alimentos,fideos spaghetti 500g,3,745,2235,tarjeta_debito,8
+98,cordoba,33,alimentos,chocolate con leche 100g,3,1255,3765,tarjeta_debito,4
+71,villa maria,37,alimentos,mermelada de durazno 400g,5,3196,15980,transferencia,6
+85,mendiolaza,83,alimentos,queso untable 190g,4,1830,7320,tarjeta_credito,4
+42,alta gracia,31,alimentos,mix de frutos secos 200g,1,3409,3409,tarjeta_debito,10
+46,alta gracia,76,alimentos,pizza congelada muzzarella,3,4286,12858,transferencia,2
+33,rio cuarto,16,alimentos,yogur natural 200g,4,4613,18452,efectivo,12
+65,alta gracia,79,alimentos,hamburguesas congeladas x4,5,2420,12100,tarjeta_debito,3
+30,alta gracia,79,alimentos,hamburguesas congeladas x4,5,2420,12100,efectivo,7
+56,rio cuarto,44,alimentos,arroz largo fino 1kg,3,2979,8937,efectivo,10
+7,rio cuarto,72,alimentos,ron 700ml,4,3876,15504,efectivo,8
+45,rio cuarto,27,alimentos,alfajor simple,2,2502,5004,tarjeta_debito,12
+89,rio cuarto,42,alimentos,vinagre de alcohol 500ml,4,1195,4780,efectivo,10
+48,cordoba,68,alimentos,vino blanco 750ml,3,2684,8052,tarjeta_debito,11
+22,alta gracia,77,alimentos,empanadas congeladas,5,4778,23890,transferencia,4
+40,rio cuarto,55,higiene personal,shampoo 400ml,4,1407,5628,tarjeta_credito,6
+76,mendiolaza,64,alimentos,avena instantánea 250g,1,3953,3953,tarjeta_debito,3
+53,mendiolaza,59,alimentos,chicle menta,4,3612,14448,efectivo,8
+61,rio cuarto,18,alimentos,queso rallado 150g,3,3444,10332,transferencia,3
+72,cordoba,70,alimentos,fernet 750ml,5,4061,20305,efectivo,3
+98,cordoba,42,alimentos,vinagre de alcohol 500ml,5,1195,5975,tarjeta_debito,12
+63,cordoba,97,limpieza,limpiavidrios 500ml,3,872,2616,transferencia,4
+12,alta gracia,64,alimentos,avena instantánea 250g,5,3953,19765,tarjeta_credito,5
+80,mendiolaza,89,alimentos,caldo concentrado verdura,4,1003,4012,tarjeta_debito,9
+48,cordoba,43,alimentos,salsa de tomate 500g,1,887,887,efectivo,6
+23,rio cuarto,11,alimentos,café molido 250g,5,2053,10265,tarjeta_debito,5
+8,carlos paz,27,alimentos,alfajor simple,1,2502,2502,tarjeta_debito,4
+42,alta gracia,84,alimentos,queso azul 150g,1,1645,1645,efectivo,6
+62,carlos paz,59,alimentos,chicle menta,1,3612,3612,tarjeta_debito,6
+92,alta gracia,14,alimentos,leche entera 1l,1,1723,1723,tarjeta_credito,6
+85,mendiolaza,75,alimentos,licor de café 700ml,5,3204,16020,efectivo,8
+82,alta gracia,94,higiene personal,hilo dental,2,1418,2836,tarjeta_credito,11
+95,rio cuarto,71,alimentos,vodka 700ml,4,508,2032,tarjeta_credito,6
+96,cordoba,87,alimentos,sopa instantánea pollo,5,1679,8395,tarjeta_credito,5
+33,rio cuarto,68,alimentos,vino blanco 750ml,5,2684,13420,efectivo,10
+89,rio cuarto,27,alimentos,alfajor simple,4,2502,10008,efectivo,12
+93,alta gracia,51,alimentos,sal fina 500g,5,1745,8725,efectivo,12
+50,carlos paz,86,alimentos,jugo en polvo limón,5,4090,20450,tarjeta_debito,4
+36,mendiolaza,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_credito,9
+35,mendiolaza,1,alimentos,coca cola 1.5l,1,2347,2347,transferencia,11
+91,mendiolaza,71,alimentos,vodka 700ml,1,508,508,tarjeta_debito,10
+27,rio cuarto,96,limpieza,suavizante 1l,4,4920,19680,transferencia,5
+22,alta gracia,18,alimentos,queso rallado 150g,3,3444,10332,efectivo,12
+91,mendiolaza,60,alimentos,chupetín,2,4647,9294,tarjeta_credito,5
+77,villa maria,70,alimentos,fernet 750ml,2,4061,8122,tarjeta_credito,2
+7,rio cuarto,51,alimentos,sal fina 500g,1,1745,1745,transferencia,7
+40,rio cuarto,58,alimentos,caramelos masticables,4,4752,19008,tarjeta_debito,9
+80,mendiolaza,82,alimentos,aceitunas negras 200g,5,2394,11970,tarjeta_debito,3
+9,carlos paz,47,alimentos,garbanzos 500g,2,2939,5878,tarjeta_credito,8
+15,cordoba,81,alimentos,aceitunas verdes 200g,5,2520,12600,efectivo,10
+85,mendiolaza,64,alimentos,avena instantánea 250g,4,3953,15812,tarjeta_debito,3
+26,alta gracia,84,alimentos,queso azul 150g,3,1645,4935,tarjeta_debito,9
+81,carlos paz,78,alimentos,verduras congeladas mix,5,4289,21445,efectivo,6
+54,alta gracia,39,alimentos,helado vainilla 1l,2,469,938,efectivo,8
+82,alta gracia,90,higiene personal,toallas húmedas x50,3,2902,8706,tarjeta_debito,11
+27,rio cuarto,6,alimentos,jugo de naranja 1l,2,4170,8340,efectivo,11
+1,carlos paz,10,alimentos,yerba mate intensa 1kg,2,4883,9766,transferencia,8
+81,carlos paz,14,alimentos,leche entera 1l,1,1723,1723,transferencia,7
+97,cordoba,92,higiene personal,crema dental 90g,1,2512,2512,efectivo,4
+79,carlos paz,50,alimentos,azúcar 1kg,5,727,3635,tarjeta_debito,7
+92,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,efectivo,6
+47,alta gracia,41,alimentos,aceite de girasol 1l,5,860,4300,transferencia,3
+58,rio cuarto,64,alimentos,avena instantánea 250g,3,3953,11859,efectivo,1
+26,alta gracia,78,alimentos,verduras congeladas mix,5,4289,21445,efectivo,9
+43,mendiolaza,78,alimentos,verduras congeladas mix,3,4289,12867,transferencia,9
+47,alta gracia,2,alimentos,pepsi 1.5l,1,4973,4973,tarjeta_credito,6
+30,alta gracia,65,alimentos,cerveza rubia 1l,1,2423,2423,efectivo,1
+44,carlos paz,89,alimentos,caldo concentrado verdura,2,1003,2006,tarjeta_credito,4
+3,rio cuarto,55,higiene personal,shampoo 400ml,2,1407,2814,transferencia,10
+75,rio cuarto,31,alimentos,mix de frutos secos 200g,4,3409,13636,tarjeta_debito,12
+78,villa maria,63,alimentos,granola 250g,2,4337,8674,tarjeta_credito,9
+99,villa maria,5,alimentos,agua mineral 500ml,2,4777,9554,efectivo,12
+50,carlos paz,9,alimentos,yerba mate suave 1kg,5,3878,19390,efectivo,3
+39,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,efectivo,9
+69,rio cuarto,70,alimentos,fernet 750ml,4,4061,16244,transferencia,6
+6,villa maria,22,alimentos,medialunas de manteca,5,2069,10345,transferencia,6
+37,mendiolaza,74,alimentos,whisky 750ml,4,2953,11812,efectivo,6
+12,alta gracia,39,alimentos,helado vainilla 1l,3,469,1407,transferencia,10
+30,alta gracia,44,alimentos,arroz largo fino 1kg,5,2979,14895,tarjeta_credito,4
+47,alta gracia,94,higiene personal,hilo dental,1,1418,1418,tarjeta_credito,12
+15,cordoba,16,alimentos,yogur natural 200g,3,4613,13839,tarjeta_credito,7
+68,villa maria,44,alimentos,arroz largo fino 1kg,4,2979,11916,efectivo,8
+89,rio cuarto,11,alimentos,café molido 250g,4,2053,8212,transferencia,2
+68,villa maria,20,alimentos,pan lactal blanco,5,1571,7855,tarjeta_debito,3
+78,villa maria,35,alimentos,barrita de cereal 30g,5,4430,22150,efectivo,8
+13,carlos paz,94,higiene personal,hilo dental,5,1418,7090,transferencia,8
+37,mendiolaza,46,alimentos,lentejas secas 500g,5,3036,15180,tarjeta_debito,3
+60,alta gracia,13,alimentos,té verde 20 saquitos,3,2383,7149,efectivo,10
+46,alta gracia,62,alimentos,stevia 100 sobres,5,3848,19240,efectivo,6
+2,carlos paz,11,alimentos,café molido 250g,2,2053,4106,efectivo,8
+43,mendiolaza,17,alimentos,queso cremoso 500g,5,4834,24170,transferencia,9
+8,carlos paz,16,alimentos,yogur natural 200g,3,4613,13839,tarjeta_debito,3
+64,villa maria,45,alimentos,fideos spaghetti 500g,2,745,1490,tarjeta_credito,10
+84,cordoba,91,higiene personal,desodorante aerosol,1,4690,4690,efectivo,11
+66,villa maria,70,alimentos,fernet 750ml,5,4061,20305,efectivo,3
+96,cordoba,45,alimentos,fideos spaghetti 500g,3,745,2235,transferencia,10
+84,cordoba,80,alimentos,helado de frutilla 1l,4,1981,7924,tarjeta_credito,5
+35,mendiolaza,9,alimentos,yerba mate suave 1kg,4,3878,15512,efectivo,1
+22,alta gracia,28,alimentos,papas fritas clásicas 100g,2,936,1872,transferencia,8
+41,alta gracia,52,limpieza,detergente líquido 750ml,5,2582,12910,tarjeta_credito,8
+78,villa maria,44,alimentos,arroz largo fino 1kg,2,2979,5958,tarjeta_credito,10
+85,mendiolaza,40,alimentos,helado chocolate 1l,2,1215,2430,tarjeta_credito,5
+90,rio cuarto,73,alimentos,gin 700ml,4,1561,6244,transferencia,12
+60,alta gracia,26,alimentos,alfajor triple,1,1001,1001,tarjeta_debito,8
+39,alta gracia,9,alimentos,yerba mate suave 1kg,3,3878,11634,transferencia,7
+67,alta gracia,26,alimentos,alfajor triple,3,1001,3003,efectivo,11
+19,mendiolaza,89,alimentos,caldo concentrado verdura,2,1003,2006,tarjeta_debito,1
+30,alta gracia,16,alimentos,yogur natural 200g,4,4613,18452,tarjeta_credito,8
+84,cordoba,20,alimentos,pan lactal blanco,2,1571,3142,transferencia,7
+25,rio cuarto,34,alimentos,turrón 50g,3,503,1509,tarjeta_credito,5
+27,rio cuarto,1,alimentos,coca cola 1.5l,4,2347,9388,tarjeta_debito,2
+84,cordoba,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,7
+87,alta gracia,91,higiene personal,desodorante aerosol,2,4690,9380,efectivo,5
+40,rio cuarto,88,alimentos,caldo concentrado carne,1,2570,2570,efectivo,5
+41,alta gracia,69,alimentos,sidra 750ml,2,744,1488,efectivo,10
+57,rio cuarto,80,alimentos,helado de frutilla 1l,3,1981,5943,efectivo,1
+89,rio cuarto,51,alimentos,sal fina 500g,2,1745,3490,tarjeta_debito,7
+58,rio cuarto,72,alimentos,ron 700ml,3,3876,11628,tarjeta_debito,10
+62,carlos paz,50,alimentos,azúcar 1kg,2,727,1454,tarjeta_debito,7
+92,alta gracia,34,alimentos,turrón 50g,5,503,2515,transferencia,2
+36,mendiolaza,9,alimentos,yerba mate suave 1kg,4,3878,15512,transferencia,11
+81,carlos paz,12,alimentos,té negro 20 saquitos,4,570,2280,transferencia,3
+25,rio cuarto,69,alimentos,sidra 750ml,2,744,1488,tarjeta_debito,10
+10,cordoba,98,limpieza,desengrasante 500ml,5,2843,14215,efectivo,12
+96,cordoba,63,alimentos,granola 250g,2,4337,8674,tarjeta_debito,10
+53,mendiolaza,65,alimentos,cerveza rubia 1l,2,2423,4846,tarjeta_credito,7
+80,mendiolaza,92,higiene personal,crema dental 90g,1,2512,2512,tarjeta_credito,4
+8,carlos paz,98,limpieza,desengrasante 500ml,1,2843,2843,transferencia,3
+55,mendiolaza,83,alimentos,queso untable 190g,3,1830,5490,tarjeta_credito,1
+48,cordoba,45,alimentos,fideos spaghetti 500g,1,745,745,tarjeta_credito,12
+69,rio cuarto,46,alimentos,lentejas secas 500g,1,3036,3036,tarjeta_credito,3
+14,carlos paz,64,alimentos,avena instantánea 250g,3,3953,11859,transferencia,12
+77,villa maria,92,higiene personal,crema dental 90g,2,2512,5024,transferencia,12
+50,carlos paz,93,higiene personal,cepillo de dientes,1,2142,2142,tarjeta_debito,7
+51,rio cuarto,60,alimentos,chupetín,4,4647,18588,efectivo,11
+72,cordoba,20,alimentos,pan lactal blanco,1,1571,1571,tarjeta_debito,1
+91,mendiolaza,30,alimentos,maní salado 200g,1,4875,4875,transferencia,10
+2,carlos paz,35,alimentos,barrita de cereal 30g,4,4430,17720,efectivo,11
+79,carlos paz,55,higiene personal,shampoo 400ml,1,1407,1407,tarjeta_credito,2
+49,rio cuarto,92,higiene personal,crema dental 90g,5,2512,12560,tarjeta_debito,5
+19,mendiolaza,79,alimentos,hamburguesas congeladas x4,2,2420,4840,transferencia,3
+83,rio cuarto,14,alimentos,leche entera 1l,3,1723,5169,tarjeta_debito,11
+23,rio cuarto,62,alimentos,stevia 100 sobres,1,3848,3848,tarjeta_debito,3
+13,carlos paz,23,alimentos,bizcochos salados,5,2380,11900,transferencia,6
+17,villa maria,41,alimentos,aceite de girasol 1l,5,860,4300,efectivo,3
+17,villa maria,74,alimentos,whisky 750ml,5,2953,14765,tarjeta_credito,10
+1,carlos paz,83,alimentos,queso untable 190g,2,1830,3660,tarjeta_debito,12
+97,cordoba,17,alimentos,queso cremoso 500g,2,4834,9668,efectivo,5
+46,alta gracia,11,alimentos,café molido 250g,5,2053,10265,transferencia,10
+35,mendiolaza,54,higiene personal,jabón de tocador,1,1592,1592,transferencia,6
+82,alta gracia,10,alimentos,yerba mate intensa 1kg,5,4883,24415,tarjeta_credito,1
+39,alta gracia,74,alimentos,whisky 750ml,3,2953,8859,tarjeta_debito,10
+15,cordoba,48,alimentos,porotos negros 500g,4,4462,17848,efectivo,4
+42,alta gracia,23,alimentos,bizcochos salados,2,2380,4760,tarjeta_debito,1
+33,rio cuarto,64,alimentos,avena instantánea 250g,4,3953,15812,tarjeta_credito,5
+54,alta gracia,96,limpieza,suavizante 1l,4,4920,19680,tarjeta_debito,5
+72,cordoba,20,alimentos,pan lactal blanco,4,1571,6284,transferencia,4
+84,cordoba,41,alimentos,aceite de girasol 1l,3,860,2580,transferencia,10
+68,villa maria,25,alimentos,galletitas vainilla,1,4015,4015,tarjeta_debito,1
+48,cordoba,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,efectivo,6
+77,villa maria,21,alimentos,pan lactal integral,3,272,816,tarjeta_debito,3
+44,carlos paz,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,7
+65,alta gracia,64,alimentos,avena instantánea 250g,3,3953,11859,tarjeta_debito,12
+21,alta gracia,52,limpieza,detergente líquido 750ml,5,2582,12910,efectivo,10
+4,carlos paz,26,alimentos,alfajor triple,4,1001,4004,efectivo,5
+13,carlos paz,11,alimentos,café molido 250g,5,2053,10265,tarjeta_debito,2
+19,mendiolaza,51,alimentos,sal fina 500g,1,1745,1745,efectivo,12
+91,mendiolaza,53,limpieza,lavandina 1l,4,1664,6656,tarjeta_debito,10
+3,rio cuarto,100,limpieza,trapo de piso,5,4854,24270,tarjeta_debito,12
+21,alta gracia,39,alimentos,helado vainilla 1l,2,469,938,tarjeta_debito,6
+30,alta gracia,92,higiene personal,crema dental 90g,3,2512,7536,efectivo,12
+14,carlos paz,20,alimentos,pan lactal blanco,5,1571,7855,transferencia,3
+50,carlos paz,100,limpieza,trapo de piso,2,4854,9708,transferencia,8
+78,villa maria,43,alimentos,salsa de tomate 500g,4,887,3548,tarjeta_credito,8
+30,alta gracia,80,alimentos,helado de frutilla 1l,3,1981,5943,tarjeta_credito,2
+90,rio cuarto,39,alimentos,helado vainilla 1l,5,469,2345,efectivo,10
+34,villa maria,71,alimentos,vodka 700ml,2,508,1016,transferencia,4
+77,villa maria,40,alimentos,helado chocolate 1l,3,1215,3645,tarjeta_debito,5
+32,mendiolaza,88,alimentos,caldo concentrado carne,1,2570,2570,tarjeta_debito,6
+72,cordoba,74,alimentos,whisky 750ml,1,2953,2953,efectivo,1
+36,mendiolaza,27,alimentos,alfajor simple,4,2502,10008,efectivo,7
+71,villa maria,38,alimentos,mermelada de frutilla 400g,1,1584,1584,efectivo,7
+26,alta gracia,53,limpieza,lavandina 1l,4,1664,6656,efectivo,7
+1,carlos paz,72,alimentos,ron 700ml,1,3876,3876,tarjeta_credito,1
+20,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,efectivo,8
+61,rio cuarto,45,alimentos,fideos spaghetti 500g,4,745,2980,tarjeta_debito,1
+82,alta gracia,48,alimentos,porotos negros 500g,2,4462,8924,efectivo,3
+8,carlos paz,66,alimentos,cerveza negra 1l,4,1533,6132,transferencia,12
+70,carlos paz,16,alimentos,yogur natural 200g,5,4613,23065,efectivo,6
+40,rio cuarto,56,limpieza,papel higiénico x4,2,2532,5064,efectivo,7
+89,rio cuarto,64,alimentos,avena instantánea 250g,5,3953,19765,tarjeta_debito,11
+76,mendiolaza,57,limpieza,servilletas x100,2,4520,9040,tarjeta_debito,7
+47,alta gracia,37,alimentos,mermelada de durazno 400g,3,3196,9588,transferencia,12
+74,carlos paz,52,limpieza,detergente líquido 750ml,4,2582,10328,tarjeta_credito,2
+79,carlos paz,83,alimentos,queso untable 190g,2,1830,3660,efectivo,9
+71,villa maria,6,alimentos,jugo de naranja 1l,1,4170,4170,transferencia,2
+89,rio cuarto,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_credito,5
+86,cordoba,56,limpieza,papel higiénico x4,4,2532,10128,transferencia,11
+82,alta gracia,11,alimentos,café molido 250g,2,2053,4106,tarjeta_debito,7
+61,rio cuarto,22,alimentos,medialunas de manteca,2,2069,4138,transferencia,6
+99,villa maria,99,limpieza,esponjas x3,3,2430,7290,tarjeta_debito,8
+21,alta gracia,66,alimentos,cerveza negra 1l,3,1533,4599,tarjeta_debito,5
+83,rio cuarto,99,limpieza,esponjas x3,5,2430,12150,tarjeta_debito,12
+94,mendiolaza,58,alimentos,caramelos masticables,1,4752,4752,efectivo,9
+99,villa maria,74,alimentos,whisky 750ml,1,2953,2953,transferencia,9
+95,rio cuarto,72,alimentos,ron 700ml,3,3876,11628,tarjeta_credito,12
+71,villa maria,71,alimentos,vodka 700ml,5,508,2540,efectivo,2
+43,mendiolaza,73,alimentos,gin 700ml,3,1561,4683,tarjeta_debito,2
+48,cordoba,97,limpieza,limpiavidrios 500ml,3,872,2616,efectivo,8
+20,rio cuarto,13,alimentos,té verde 20 saquitos,1,2383,2383,transferencia,8
+42,alta gracia,6,alimentos,jugo de naranja 1l,5,4170,20850,transferencia,10
+63,cordoba,17,alimentos,queso cremoso 500g,5,4834,24170,efectivo,6
+63,cordoba,26,alimentos,alfajor triple,1,1001,1001,efectivo,3
+29,alta gracia,15,alimentos,leche descremada 1l,4,2538,10152,efectivo,10
+51,rio cuarto,87,alimentos,sopa instantánea pollo,3,1679,5037,tarjeta_debito,1
+40,rio cuarto,10,alimentos,yerba mate intensa 1kg,5,4883,24415,efectivo,3
+39,alta gracia,8,alimentos,energética nitro 500ml,4,4218,16872,efectivo,11
+61,rio cuarto,55,higiene personal,shampoo 400ml,1,1407,1407,tarjeta_debito,9
+81,carlos paz,40,alimentos,helado chocolate 1l,1,1215,1215,tarjeta_debito,11
+79,carlos paz,14,alimentos,leche entera 1l,4,1723,6892,tarjeta_debito,11
+98,cordoba,7,alimentos,jugo de manzana 1l,5,3269,16345,tarjeta_credito,7
+38,alta gracia,17,alimentos,queso cremoso 500g,5,4834,24170,efectivo,8
+26,alta gracia,47,alimentos,garbanzos 500g,5,2939,14695,transferencia,7
+42,alta gracia,52,limpieza,detergente líquido 750ml,5,2582,12910,transferencia,10
+93,alta gracia,98,limpieza,desengrasante 500ml,2,2843,5686,transferencia,7
+49,rio cuarto,43,alimentos,salsa de tomate 500g,5,887,4435,efectivo,10
+72,cordoba,73,alimentos,gin 700ml,2,1561,3122,tarjeta_credito,4
+61,rio cuarto,21,alimentos,pan lactal integral,5,272,1360,transferencia,1
+62,carlos paz,83,alimentos,queso untable 190g,4,1830,7320,transferencia,10
+98,cordoba,33,alimentos,chocolate con leche 100g,1,1255,1255,tarjeta_credito,8
+9,carlos paz,11,alimentos,café molido 250g,2,2053,4106,transferencia,1
+49,rio cuarto,62,alimentos,stevia 100 sobres,1,3848,3848,tarjeta_debito,12
+58,rio cuarto,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_debito,8
+84,cordoba,52,limpieza,detergente líquido 750ml,1,2582,2582,tarjeta_credito,5
+86,cordoba,41,alimentos,aceite de girasol 1l,1,860,860,efectivo,2
+73,alta gracia,16,alimentos,yogur natural 200g,1,4613,4613,efectivo,2
+43,mendiolaza,88,alimentos,caldo concentrado carne,3,2570,7710,transferencia,6
+22,alta gracia,6,alimentos,jugo de naranja 1l,5,4170,20850,transferencia,7
+49,rio cuarto,45,alimentos,fideos spaghetti 500g,3,745,2235,efectivo,12
+8,carlos paz,68,alimentos,vino blanco 750ml,5,2684,13420,tarjeta_debito,5
+29,alta gracia,87,alimentos,sopa instantánea pollo,5,1679,8395,efectivo,10
+43,mendiolaza,18,alimentos,queso rallado 150g,1,3444,3444,transferencia,12
+50,carlos paz,80,alimentos,helado de frutilla 1l,1,1981,1981,efectivo,3
+60,alta gracia,1,alimentos,coca cola 1.5l,4,2347,9388,tarjeta_credito,12
+34,villa maria,45,alimentos,fideos spaghetti 500g,5,745,3725,tarjeta_credito,7
+81,carlos paz,68,alimentos,vino blanco 750ml,5,2684,13420,transferencia,12
+31,villa maria,72,alimentos,ron 700ml,5,3876,19380,tarjeta_debito,7
+81,carlos paz,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_credito,12
+86,cordoba,65,alimentos,cerveza rubia 1l,2,2423,4846,efectivo,1
+94,mendiolaza,70,alimentos,fernet 750ml,1,4061,4061,transferencia,10
+3,rio cuarto,60,alimentos,chupetín,2,4647,9294,tarjeta_credito,10
+21,alta gracia,82,alimentos,aceitunas negras 200g,2,2394,4788,tarjeta_credito,2
+22,alta gracia,65,alimentos,cerveza rubia 1l,3,2423,7269,efectivo,5
+94,mendiolaza,1,alimentos,coca cola 1.5l,3,2347,7041,efectivo,9
+62,carlos paz,48,alimentos,porotos negros 500g,1,4462,4462,transferencia,7
+56,rio cuarto,19,alimentos,manteca 200g,1,3251,3251,tarjeta_credito,2
+13,carlos paz,89,alimentos,caldo concentrado verdura,2,1003,2006,tarjeta_credito,6
+3,rio cuarto,77,alimentos,empanadas congeladas,1,4778,4778,efectivo,6
+14,carlos paz,72,alimentos,ron 700ml,4,3876,15504,tarjeta_debito,9
+28,cordoba,30,alimentos,maní salado 200g,4,4875,19500,transferencia,8
+3,rio cuarto,73,alimentos,gin 700ml,4,1561,6244,tarjeta_debito,5
+16,rio cuarto,9,alimentos,yerba mate suave 1kg,3,3878,11634,transferencia,6
+45,rio cuarto,54,higiene personal,jabón de tocador,1,1592,1592,tarjeta_credito,7
+53,mendiolaza,61,alimentos,miel pura 250g,4,4982,19928,tarjeta_debito,10
+57,rio cuarto,88,alimentos,caldo concentrado carne,3,2570,7710,tarjeta_credito,6
+65,alta gracia,31,alimentos,mix de frutos secos 200g,5,3409,17045,transferencia,10
+69,rio cuarto,29,alimentos,papas fritas onduladas 100g,3,1868,5604,tarjeta_credito,12
+44,carlos paz,68,alimentos,vino blanco 750ml,4,2684,10736,tarjeta_debito,6
+81,carlos paz,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,9
+4,carlos paz,20,alimentos,pan lactal blanco,5,1571,7855,transferencia,10
+80,mendiolaza,29,alimentos,papas fritas onduladas 100g,5,1868,9340,tarjeta_debito,7
+77,villa maria,98,limpieza,desengrasante 500ml,2,2843,5686,efectivo,9
+47,alta gracia,95,higiene personal,mascarilla capilar,1,1581,1581,transferencia,3
+92,alta gracia,90,higiene personal,toallas húmedas x50,3,2902,8706,transferencia,2
+12,alta gracia,90,higiene personal,toallas húmedas x50,5,2902,14510,transferencia,6
+34,villa maria,96,limpieza,suavizante 1l,3,4920,14760,tarjeta_debito,4
+33,rio cuarto,27,alimentos,alfajor simple,5,2502,12510,tarjeta_debito,6
+81,carlos paz,48,alimentos,porotos negros 500g,5,4462,22310,tarjeta_credito,7
+59,villa maria,8,alimentos,energética nitro 500ml,1,4218,4218,tarjeta_credito,8
+37,mendiolaza,49,alimentos,harina de trigo 1kg,5,2512,12560,efectivo,3
+52,rio cuarto,53,limpieza,lavandina 1l,4,1664,6656,tarjeta_debito,3
+77,villa maria,42,alimentos,vinagre de alcohol 500ml,2,1195,2390,tarjeta_credito,5
+82,alta gracia,56,limpieza,papel higiénico x4,2,2532,5064,tarjeta_credito,6
+27,rio cuarto,65,alimentos,cerveza rubia 1l,3,2423,7269,tarjeta_credito,2
+8,carlos paz,55,higiene personal,shampoo 400ml,5,1407,7035,tarjeta_debito,9
+21,alta gracia,72,alimentos,ron 700ml,5,3876,19380,efectivo,9
+39,alta gracia,16,alimentos,yogur natural 200g,3,4613,13839,tarjeta_debito,11
+30,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,tarjeta_credito,4
+55,mendiolaza,75,alimentos,licor de café 700ml,4,3204,12816,tarjeta_credito,8
+75,rio cuarto,54,higiene personal,jabón de tocador,1,1592,1592,tarjeta_credito,8
+66,villa maria,11,alimentos,café molido 250g,4,2053,8212,efectivo,6
+65,alta gracia,13,alimentos,té verde 20 saquitos,5,2383,11915,transferencia,9
+68,villa maria,62,alimentos,stevia 100 sobres,3,3848,11544,transferencia,4
+51,rio cuarto,5,alimentos,agua mineral 500ml,2,4777,9554,tarjeta_debito,10
+46,alta gracia,30,alimentos,maní salado 200g,3,4875,14625,tarjeta_credito,12
+66,villa maria,38,alimentos,mermelada de frutilla 400g,4,1584,6336,efectivo,10
+84,cordoba,71,alimentos,vodka 700ml,5,508,2540,tarjeta_credito,1
+16,rio cuarto,32,alimentos,chocolate amargo 100g,1,2234,2234,transferencia,3
+49,rio cuarto,45,alimentos,fideos spaghetti 500g,3,745,2235,tarjeta_debito,8
+56,rio cuarto,18,alimentos,queso rallado 150g,4,3444,13776,tarjeta_credito,6
+65,alta gracia,11,alimentos,café molido 250g,5,2053,10265,tarjeta_debito,9
+68,villa maria,36,alimentos,dulce de leche 400g,2,2559,5118,efectivo,7
+13,carlos paz,70,alimentos,fernet 750ml,1,4061,4061,efectivo,9
+55,mendiolaza,100,limpieza,trapo de piso,1,4854,4854,transferencia,3
+97,cordoba,3,alimentos,sprite 1.5l,2,4964,9928,transferencia,11
+54,alta gracia,37,alimentos,mermelada de durazno 400g,3,3196,9588,efectivo,8
+53,mendiolaza,82,alimentos,aceitunas negras 200g,5,2394,11970,efectivo,1
+36,mendiolaza,86,alimentos,jugo en polvo limón,4,4090,16360,efectivo,4
+47,alta gracia,16,alimentos,yogur natural 200g,2,4613,9226,efectivo,9
+78,villa maria,76,alimentos,pizza congelada muzzarella,4,4286,17144,transferencia,3
+94,mendiolaza,14,alimentos,leche entera 1l,4,1723,6892,transferencia,6
+11,villa maria,36,alimentos,dulce de leche 400g,3,2559,7677,tarjeta_credito,1
+23,rio cuarto,10,alimentos,yerba mate intensa 1kg,5,4883,24415,efectivo,2
+11,villa maria,85,alimentos,jugo en polvo naranja,1,1856,1856,tarjeta_debito,9
+21,alta gracia,20,alimentos,pan lactal blanco,4,1571,6284,efectivo,1
+75,rio cuarto,24,alimentos,galletitas chocolate,2,1305,2610,transferencia,7
+4,carlos paz,17,alimentos,queso cremoso 500g,1,4834,4834,tarjeta_debito,9
+72,cordoba,81,alimentos,aceitunas verdes 200g,1,2520,2520,transferencia,7
+62,carlos paz,84,alimentos,queso azul 150g,4,1645,6580,transferencia,10
+21,alta gracia,79,alimentos,hamburguesas congeladas x4,1,2420,2420,transferencia,1
+94,mendiolaza,55,higiene personal,shampoo 400ml,4,1407,5628,tarjeta_debito,2
+77,villa maria,48,alimentos,porotos negros 500g,2,4462,8924,tarjeta_credito,1
+54,alta gracia,68,alimentos,vino blanco 750ml,1,2684,2684,efectivo,7
+64,villa maria,68,alimentos,vino blanco 750ml,4,2684,10736,tarjeta_credito,8
+19,mendiolaza,21,alimentos,pan lactal integral,1,272,272,transferencia,7
+80,mendiolaza,31,alimentos,mix de frutos secos 200g,2,3409,6818,efectivo,2
+37,mendiolaza,46,alimentos,lentejas secas 500g,3,3036,9108,transferencia,11
+39,alta gracia,31,alimentos,mix de frutos secos 200g,2,3409,6818,efectivo,1
+59,villa maria,28,alimentos,papas fritas clásicas 100g,4,936,3744,transferencia,5
+48,cordoba,46,alimentos,lentejas secas 500g,4,3036,12144,tarjeta_credito,4
+67,alta gracia,64,alimentos,avena instantánea 250g,4,3953,15812,tarjeta_debito,9
+11,villa maria,34,alimentos,turrón 50g,4,503,2012,tarjeta_debito,7
+25,rio cuarto,38,alimentos,mermelada de frutilla 400g,1,1584,1584,tarjeta_debito,12
+41,alta gracia,51,alimentos,sal fina 500g,5,1745,8725,tarjeta_debito,2
+8,carlos paz,36,alimentos,dulce de leche 400g,1,2559,2559,efectivo,7
+99,villa maria,78,alimentos,verduras congeladas mix,3,4289,12867,tarjeta_debito,12
+88,villa maria,66,alimentos,cerveza negra 1l,4,1533,6132,transferencia,5
+8,carlos paz,59,alimentos,chicle menta,4,3612,14448,transferencia,10
+48,cordoba,100,limpieza,trapo de piso,5,4854,24270,tarjeta_credito,5
+8,carlos paz,65,alimentos,cerveza rubia 1l,5,2423,12115,tarjeta_debito,5
+2,carlos paz,10,alimentos,yerba mate intensa 1kg,2,4883,9766,tarjeta_debito,11
+17,villa maria,36,alimentos,dulce de leche 400g,2,2559,5118,tarjeta_debito,12
+82,alta gracia,90,higiene personal,toallas húmedas x50,3,2902,8706,transferencia,3
+89,rio cuarto,49,alimentos,harina de trigo 1kg,5,2512,12560,efectivo,5
+15,cordoba,82,alimentos,aceitunas negras 200g,2,2394,4788,tarjeta_debito,9
+21,alta gracia,50,alimentos,azúcar 1kg,2,727,1454,transferencia,8
+33,rio cuarto,6,alimentos,jugo de naranja 1l,1,4170,4170,tarjeta_debito,2
+32,mendiolaza,46,alimentos,lentejas secas 500g,5,3036,15180,efectivo,1
+16,rio cuarto,10,alimentos,yerba mate intensa 1kg,3,4883,14649,transferencia,8
+37,mendiolaza,47,alimentos,garbanzos 500g,4,2939,11756,transferencia,10
+41,alta gracia,98,limpieza,desengrasante 500ml,2,2843,5686,tarjeta_credito,6
+54,alta gracia,61,alimentos,miel pura 250g,5,4982,24910,tarjeta_credito,4
+87,alta gracia,62,alimentos,stevia 100 sobres,1,3848,3848,tarjeta_debito,10
+40,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,efectivo,1
+31,villa maria,34,alimentos,turrón 50g,5,503,2515,efectivo,1
+85,mendiolaza,28,alimentos,papas fritas clásicas 100g,5,936,4680,tarjeta_debito,1
+39,alta gracia,25,alimentos,galletitas vainilla,5,4015,20075,tarjeta_debito,2
+90,rio cuarto,94,higiene personal,hilo dental,3,1418,4254,efectivo,12
+45,rio cuarto,78,alimentos,verduras congeladas mix,2,4289,8578,efectivo,2
+61,rio cuarto,61,alimentos,miel pura 250g,1,4982,4982,efectivo,10
+19,mendiolaza,28,alimentos,papas fritas clásicas 100g,5,936,4680,transferencia,5
+52,rio cuarto,36,alimentos,dulce de leche 400g,1,2559,2559,transferencia,4
+82,alta gracia,29,alimentos,papas fritas onduladas 100g,5,1868,9340,tarjeta_credito,4
+93,alta gracia,55,higiene personal,shampoo 400ml,1,1407,1407,tarjeta_debito,8
+43,mendiolaza,49,alimentos,harina de trigo 1kg,1,2512,2512,efectivo,6
+14,carlos paz,87,alimentos,sopa instantánea pollo,1,1679,1679,tarjeta_debito,3
+89,rio cuarto,5,alimentos,agua mineral 500ml,4,4777,19108,transferencia,8
+60,alta gracia,41,alimentos,aceite de girasol 1l,3,860,2580,transferencia,7
+33,rio cuarto,66,alimentos,cerveza negra 1l,3,1533,4599,tarjeta_debito,9
+15,cordoba,41,alimentos,aceite de girasol 1l,5,860,4300,transferencia,12
+25,rio cuarto,84,alimentos,queso azul 150g,4,1645,6580,tarjeta_credito,6
+76,mendiolaza,56,limpieza,papel higiénico x4,2,2532,5064,efectivo,7
+88,villa maria,75,alimentos,licor de café 700ml,5,3204,16020,tarjeta_debito,4
+72,cordoba,26,alimentos,alfajor triple,4,1001,4004,tarjeta_debito,1
+46,alta gracia,8,alimentos,energética nitro 500ml,3,4218,12654,efectivo,10
+74,carlos paz,54,higiene personal,jabón de tocador,4,1592,6368,tarjeta_credito,7
+18,carlos paz,38,alimentos,mermelada de frutilla 400g,1,1584,1584,tarjeta_debito,11
+13,carlos paz,93,higiene personal,cepillo de dientes,3,2142,6426,tarjeta_credito,11
+1,carlos paz,49,alimentos,harina de trigo 1kg,2,2512,5024,efectivo,5
+84,cordoba,23,alimentos,bizcochos salados,2,2380,4760,efectivo,12
+2,carlos paz,56,limpieza,papel higiénico x4,1,2532,2532,transferencia,1
+36,mendiolaza,20,alimentos,pan lactal blanco,1,1571,1571,transferencia,2
+17,villa maria,5,alimentos,agua mineral 500ml,2,4777,9554,tarjeta_credito,8
+19,mendiolaza,75,alimentos,licor de café 700ml,2,3204,6408,tarjeta_debito,4
+71,villa maria,49,alimentos,harina de trigo 1kg,3,2512,7536,efectivo,2
+75,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,tarjeta_debito,4
+83,rio cuarto,28,alimentos,papas fritas clásicas 100g,2,936,1872,transferencia,10
+31,villa maria,21,alimentos,pan lactal integral,3,272,816,tarjeta_credito,9
+3,rio cuarto,71,alimentos,vodka 700ml,3,508,1524,tarjeta_debito,6
+41,alta gracia,71,alimentos,vodka 700ml,3,508,1524,transferencia,12
+6,villa maria,77,alimentos,empanadas congeladas,3,4778,14334,tarjeta_credito,12
+10,cordoba,71,alimentos,vodka 700ml,4,508,2032,transferencia,11
+22,alta gracia,79,alimentos,hamburguesas congeladas x4,2,2420,4840,transferencia,4
+29,alta gracia,7,alimentos,jugo de manzana 1l,5,3269,16345,tarjeta_debito,2
+46,alta gracia,49,alimentos,harina de trigo 1kg,4,2512,10048,tarjeta_debito,10
+16,rio cuarto,44,alimentos,arroz largo fino 1kg,2,2979,5958,tarjeta_debito,11
+23,rio cuarto,37,alimentos,mermelada de durazno 400g,3,3196,9588,efectivo,6
+41,alta gracia,45,alimentos,fideos spaghetti 500g,3,745,2235,tarjeta_debito,7
+30,alta gracia,84,alimentos,queso azul 150g,5,1645,8225,tarjeta_credito,11
+1,carlos paz,73,alimentos,gin 700ml,5,1561,7805,transferencia,3
+94,mendiolaza,71,alimentos,vodka 700ml,1,508,508,tarjeta_credito,9
+91,mendiolaza,80,alimentos,helado de frutilla 1l,4,1981,7924,tarjeta_credito,1
+48,cordoba,44,alimentos,arroz largo fino 1kg,4,2979,11916,transferencia,11
+97,cordoba,25,alimentos,galletitas vainilla,4,4015,16060,tarjeta_credito,3
+7,rio cuarto,77,alimentos,empanadas congeladas,4,4778,19112,transferencia,6
+24,villa maria,26,alimentos,alfajor triple,1,1001,1001,tarjeta_credito,3
+96,cordoba,14,alimentos,leche entera 1l,2,1723,3446,transferencia,5
+96,cordoba,63,alimentos,granola 250g,2,4337,8674,tarjeta_debito,5
+15,cordoba,28,alimentos,papas fritas clásicas 100g,3,936,2808,tarjeta_debito,4
+31,villa maria,16,alimentos,yogur natural 200g,3,4613,13839,transferencia,9
+57,rio cuarto,13,alimentos,té verde 20 saquitos,1,2383,2383,tarjeta_credito,5
+76,mendiolaza,97,limpieza,limpiavidrios 500ml,5,872,4360,tarjeta_debito,4
+93,alta gracia,29,alimentos,papas fritas onduladas 100g,3,1868,5604,efectivo,5
+50,carlos paz,23,alimentos,bizcochos salados,3,2380,7140,efectivo,12
+1,carlos paz,65,alimentos,cerveza rubia 1l,1,2423,2423,tarjeta_credito,2
+6,villa maria,37,alimentos,mermelada de durazno 400g,3,3196,9588,transferencia,4
+17,villa maria,64,alimentos,avena instantánea 250g,3,3953,11859,tarjeta_debito,5
+9,carlos paz,9,alimentos,yerba mate suave 1kg,3,3878,11634,tarjeta_credito,12
+51,rio cuarto,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_debito,12
+99,villa maria,89,alimentos,caldo concentrado verdura,3,1003,3009,tarjeta_debito,3
+27,rio cuarto,38,alimentos,mermelada de frutilla 400g,1,1584,1584,efectivo,2
+93,alta gracia,64,alimentos,avena instantánea 250g,2,3953,7906,tarjeta_debito,7
+88,villa maria,52,limpieza,detergente líquido 750ml,5,2582,12910,transferencia,4
+97,cordoba,45,alimentos,fideos spaghetti 500g,3,745,2235,transferencia,5
+61,rio cuarto,92,higiene personal,crema dental 90g,3,2512,7536,tarjeta_credito,5
+89,rio cuarto,88,alimentos,caldo concentrado carne,3,2570,7710,transferencia,9
+12,alta gracia,11,alimentos,café molido 250g,3,2053,6159,efectivo,3
+84,cordoba,9,alimentos,yerba mate suave 1kg,5,3878,19390,tarjeta_credito,3
+39,alta gracia,94,higiene personal,hilo dental,2,1418,2836,transferencia,5
+77,villa maria,62,alimentos,stevia 100 sobres,4,3848,15392,efectivo,10
+1,carlos paz,43,alimentos,salsa de tomate 500g,2,887,1774,tarjeta_debito,2
+27,rio cuarto,66,alimentos,cerveza negra 1l,2,1533,3066,efectivo,3
+28,cordoba,7,alimentos,jugo de manzana 1l,2,3269,6538,tarjeta_credito,5
+14,carlos paz,3,alimentos,sprite 1.5l,4,4964,19856,transferencia,12
+36,mendiolaza,55,higiene personal,shampoo 400ml,2,1407,2814,efectivo,3
+74,carlos paz,13,alimentos,té verde 20 saquitos,3,2383,7149,efectivo,10
+39,alta gracia,98,limpieza,desengrasante 500ml,4,2843,11372,tarjeta_debito,8
+72,cordoba,74,alimentos,whisky 750ml,2,2953,5906,tarjeta_credito,6
+58,rio cuarto,49,alimentos,harina de trigo 1kg,2,2512,5024,tarjeta_debito,12
+92,alta gracia,38,alimentos,mermelada de frutilla 400g,4,1584,6336,efectivo,4
+17,villa maria,20,alimentos,pan lactal blanco,3,1571,4713,transferencia,5
+26,alta gracia,58,alimentos,caramelos masticables,4,4752,19008,efectivo,2
+33,rio cuarto,43,alimentos,salsa de tomate 500g,1,887,887,tarjeta_debito,10
+92,alta gracia,92,higiene personal,crema dental 90g,2,2512,5024,efectivo,7
+100,cordoba,80,alimentos,helado de frutilla 1l,4,1981,7924,transferencia,11
+57,rio cuarto,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_debito,8
+19,mendiolaza,82,alimentos,aceitunas negras 200g,3,2394,7182,tarjeta_debito,10
+2,carlos paz,19,alimentos,manteca 200g,4,3251,13004,tarjeta_credito,12
+54,alta gracia,11,alimentos,café molido 250g,2,2053,4106,tarjeta_credito,4
+82,alta gracia,12,alimentos,té negro 20 saquitos,2,570,1140,tarjeta_debito,1
+52,rio cuarto,83,alimentos,queso untable 190g,2,1830,3660,efectivo,5
+96,cordoba,27,alimentos,alfajor simple,1,2502,2502,efectivo,1
+34,villa maria,90,higiene personal,toallas húmedas x50,4,2902,11608,tarjeta_credito,7
+23,rio cuarto,50,alimentos,azúcar 1kg,2,727,1454,tarjeta_credito,5
+62,carlos paz,52,limpieza,detergente líquido 750ml,5,2582,12910,efectivo,4
+9,carlos paz,1,alimentos,coca cola 1.5l,4,2347,9388,transferencia,4
+82,alta gracia,68,alimentos,vino blanco 750ml,4,2684,10736,tarjeta_debito,5
+35,mendiolaza,4,alimentos,fanta naranja 1.5l,1,2033,2033,tarjeta_credito,1
+64,villa maria,78,alimentos,verduras congeladas mix,4,4289,17156,tarjeta_credito,8
+67,alta gracia,93,higiene personal,cepillo de dientes,5,2142,10710,tarjeta_debito,12
+46,alta gracia,23,alimentos,bizcochos salados,3,2380,7140,tarjeta_credito,5
+71,villa maria,6,alimentos,jugo de naranja 1l,4,4170,16680,efectivo,8
+72,cordoba,39,alimentos,helado vainilla 1l,1,469,469,transferencia,5
+23,rio cuarto,2,alimentos,pepsi 1.5l,4,4973,19892,transferencia,9
+32,mendiolaza,55,higiene personal,shampoo 400ml,4,1407,5628,tarjeta_credito,7
+6,villa maria,73,alimentos,gin 700ml,1,1561,1561,tarjeta_credito,3
+90,rio cuarto,43,alimentos,salsa de tomate 500g,4,887,3548,transferencia,3
+72,cordoba,12,alimentos,té negro 20 saquitos,2,570,1140,tarjeta_debito,6
+46,alta gracia,43,alimentos,salsa de tomate 500g,5,887,4435,efectivo,2
+61,rio cuarto,56,limpieza,papel higiénico x4,5,2532,12660,tarjeta_credito,5
+31,villa maria,47,alimentos,garbanzos 500g,2,2939,5878,efectivo,7
+96,cordoba,40,alimentos,helado chocolate 1l,4,1215,4860,tarjeta_credito,10
+89,rio cuarto,46,alimentos,lentejas secas 500g,3,3036,9108,tarjeta_credito,8
+70,carlos paz,9,alimentos,yerba mate suave 1kg,4,3878,15512,tarjeta_credito,6
+69,rio cuarto,14,alimentos,leche entera 1l,3,1723,5169,efectivo,7
+49,rio cuarto,32,alimentos,chocolate amargo 100g,2,2234,4468,tarjeta_credito,10
+44,carlos paz,65,alimentos,cerveza rubia 1l,5,2423,12115,tarjeta_credito,10
+7,rio cuarto,94,higiene personal,hilo dental,5,1418,7090,tarjeta_debito,5
+33,rio cuarto,35,alimentos,barrita de cereal 30g,2,4430,8860,transferencia,2
+75,rio cuarto,12,alimentos,té negro 20 saquitos,1,570,570,efectivo,10
+10,cordoba,43,alimentos,salsa de tomate 500g,3,887,2661,transferencia,2
+60,alta gracia,23,alimentos,bizcochos salados,4,2380,9520,tarjeta_credito,10
+53,mendiolaza,61,alimentos,miel pura 250g,5,4982,24910,tarjeta_credito,4
+53,mendiolaza,52,limpieza,detergente líquido 750ml,5,2582,12910,tarjeta_credito,6
+45,rio cuarto,28,alimentos,papas fritas clásicas 100g,3,936,2808,efectivo,4
+70,carlos paz,56,limpieza,papel higiénico x4,4,2532,10128,tarjeta_credito,10
+29,alta gracia,13,alimentos,té verde 20 saquitos,5,2383,11915,tarjeta_debito,4
+47,alta gracia,36,alimentos,dulce de leche 400g,3,2559,7677,tarjeta_credito,8
+47,alta gracia,59,alimentos,chicle menta,4,3612,14448,efectivo,3
+73,alta gracia,54,higiene personal,jabón de tocador,5,1592,7960,transferencia,5
+47,alta gracia,64,alimentos,avena instantánea 250g,1,3953,3953,efectivo,6
+99,villa maria,65,alimentos,cerveza rubia 1l,2,2423,4846,tarjeta_debito,12
+9,carlos paz,6,alimentos,jugo de naranja 1l,3,4170,12510,transferencia,8
+81,carlos paz,10,alimentos,yerba mate intensa 1kg,4,4883,19532,tarjeta_debito,1
+34,villa maria,49,alimentos,harina de trigo 1kg,4,2512,10048,tarjeta_credito,5
+52,rio cuarto,22,alimentos,medialunas de manteca,3,2069,6207,tarjeta_debito,4
+27,rio cuarto,82,alimentos,aceitunas negras 200g,1,2394,2394,tarjeta_credito,5
+88,villa maria,59,alimentos,chicle menta,1,3612,3612,tarjeta_credito,5
+6,villa maria,7,alimentos,jugo de manzana 1l,3,3269,9807,transferencia,6
+100,cordoba,9,alimentos,yerba mate suave 1kg,3,3878,11634,transferencia,6
+22,alta gracia,16,alimentos,yogur natural 200g,5,4613,23065,efectivo,8
+40,rio cuarto,16,alimentos,yogur natural 200g,3,4613,13839,transferencia,11
+96,cordoba,96,limpieza,suavizante 1l,2,4920,9840,tarjeta_debito,4
+85,mendiolaza,80,alimentos,helado de frutilla 1l,3,1981,5943,tarjeta_debito,7
+49,rio cuarto,41,alimentos,aceite de girasol 1l,5,860,4300,transferencia,8
+97,cordoba,23,alimentos,bizcochos salados,4,2380,9520,transferencia,7
+64,villa maria,54,higiene personal,jabón de tocador,2,1592,3184,transferencia,7
+8,carlos paz,72,alimentos,ron 700ml,1,3876,3876,efectivo,9
+66,villa maria,79,alimentos,hamburguesas congeladas x4,2,2420,4840,efectivo,1
+64,villa maria,42,alimentos,vinagre de alcohol 500ml,1,1195,1195,transferencia,11
+72,cordoba,8,alimentos,energética nitro 500ml,5,4218,21090,tarjeta_debito,6
+73,alta gracia,25,alimentos,galletitas vainilla,4,4015,16060,tarjeta_credito,12
+87,alta gracia,19,alimentos,manteca 200g,2,3251,6502,efectivo,3
+89,rio cuarto,1,alimentos,coca cola 1.5l,3,2347,7041,efectivo,8
+87,alta gracia,24,alimentos,galletitas chocolate,2,1305,2610,transferencia,8
+74,carlos paz,9,alimentos,yerba mate suave 1kg,5,3878,19390,transferencia,6
+12,alta gracia,67,alimentos,vino tinto malbec 750ml,4,4719,18876,transferencia,8
+90,rio cuarto,57,limpieza,servilletas x100,3,4520,13560,tarjeta_credito,1
+24,villa maria,9,alimentos,yerba mate suave 1kg,2,3878,7756,efectivo,12
+14,carlos paz,37,alimentos,mermelada de durazno 400g,2,3196,6392,efectivo,6
+67,alta gracia,32,alimentos,chocolate amargo 100g,5,2234,11170,tarjeta_debito,12
+3,rio cuarto,41,alimentos,aceite de girasol 1l,3,860,2580,transferencia,10
+53,mendiolaza,34,alimentos,turrón 50g,1,503,503,tarjeta_credito,1
+77,villa maria,16,alimentos,yogur natural 200g,1,4613,4613,tarjeta_debito,8
+23,rio cuarto,96,limpieza,suavizante 1l,1,4920,4920,tarjeta_debito,8
+15,cordoba,52,limpieza,detergente líquido 750ml,2,2582,5164,tarjeta_credito,9
+23,rio cuarto,23,alimentos,bizcochos salados,2,2380,4760,tarjeta_debito,11
+9,carlos paz,57,limpieza,servilletas x100,4,4520,18080,tarjeta_debito,9
+86,cordoba,60,alimentos,chupetín,1,4647,4647,transferencia,11
+53,mendiolaza,86,alimentos,jugo en polvo limón,2,4090,8180,transferencia,10
+48,cordoba,97,limpieza,limpiavidrios 500ml,2,872,1744,efectivo,6
+44,carlos paz,73,alimentos,gin 700ml,1,1561,1561,transferencia,7
+50,carlos paz,17,alimentos,queso cremoso 500g,4,4834,19336,tarjeta_debito,12
+52,rio cuarto,38,alimentos,mermelada de frutilla 400g,4,1584,6336,efectivo,1
+54,alta gracia,29,alimentos,papas fritas onduladas 100g,2,1868,3736,efectivo,7
+40,rio cuarto,19,alimentos,manteca 200g,2,3251,6502,efectivo,5
+60,alta gracia,5,alimentos,agua mineral 500ml,2,4777,9554,tarjeta_debito,8
+57,rio cuarto,57,limpieza,servilletas x100,4,4520,18080,tarjeta_credito,8
+47,alta gracia,34,alimentos,turrón 50g,4,503,2012,tarjeta_credito,12
+60,alta gracia,23,alimentos,bizcochos salados,1,2380,2380,transferencia,6
+49,rio cuarto,90,higiene personal,toallas húmedas x50,2,2902,5804,tarjeta_debito,7
+56,rio cuarto,20,alimentos,pan lactal blanco,2,1571,3142,transferencia,11
+44,carlos paz,9,alimentos,yerba mate suave 1kg,3,3878,11634,efectivo,6
+88,villa maria,60,alimentos,chupetín,5,4647,23235,tarjeta_credito,8
+62,carlos paz,100,limpieza,trapo de piso,3,4854,14562,tarjeta_credito,1
+63,cordoba,14,alimentos,leche entera 1l,2,1723,3446,tarjeta_credito,11
+37,mendiolaza,59,alimentos,chicle menta,1,3612,3612,tarjeta_credito,3
+31,villa maria,34,alimentos,turrón 50g,4,503,2012,transferencia,4
+77,villa maria,97,limpieza,limpiavidrios 500ml,5,872,4360,transferencia,9
+63,cordoba,3,alimentos,sprite 1.5l,2,4964,9928,transferencia,9
+23,rio cuarto,58,alimentos,caramelos masticables,1,4752,4752,tarjeta_credito,7
+62,carlos paz,53,limpieza,lavandina 1l,2,1664,3328,efectivo,9
+18,carlos paz,21,alimentos,pan lactal integral,4,272,1088,tarjeta_debito,3
+14,carlos paz,57,limpieza,servilletas x100,5,4520,22600,transferencia,6
+96,cordoba,65,alimentos,cerveza rubia 1l,3,2423,7269,tarjeta_credito,9
+99,villa maria,97,limpieza,limpiavidrios 500ml,1,872,872,tarjeta_credito,12
+42,alta gracia,45,alimentos,fideos spaghetti 500g,3,745,2235,transferencia,12
+48,cordoba,34,alimentos,turrón 50g,1,503,503,tarjeta_debito,1
+65,alta gracia,92,higiene personal,crema dental 90g,1,2512,2512,efectivo,3
+85,mendiolaza,56,limpieza,papel higiénico x4,3,2532,7596,tarjeta_debito,1
+45,rio cuarto,61,alimentos,miel pura 250g,4,4982,19928,transferencia,5
+92,alta gracia,98,limpieza,desengrasante 500ml,1,2843,2843,tarjeta_credito,11
+46,alta gracia,70,alimentos,fernet 750ml,2,4061,8122,efectivo,9
+12,alta gracia,42,alimentos,vinagre de alcohol 500ml,2,1195,2390,transferencia,6
+76,mendiolaza,51,alimentos,sal fina 500g,5,1745,8725,efectivo,1
+40,rio cuarto,71,alimentos,vodka 700ml,2,508,1016,efectivo,6
+49,rio cuarto,62,alimentos,stevia 100 sobres,1,3848,3848,transferencia,3
+67,alta gracia,86,alimentos,jugo en polvo limón,1,4090,4090,transferencia,9
+64,villa maria,46,alimentos,lentejas secas 500g,4,3036,12144,efectivo,1
+19,mendiolaza,49,alimentos,harina de trigo 1kg,2,2512,5024,tarjeta_credito,10
+68,villa maria,33,alimentos,chocolate con leche 100g,3,1255,3765,transferencia,12
+52,rio cuarto,100,limpieza,trapo de piso,5,4854,24270,tarjeta_credito,4
+63,cordoba,56,limpieza,papel higiénico x4,4,2532,10128,tarjeta_credito,9
+10,cordoba,20,alimentos,pan lactal blanco,3,1571,4713,tarjeta_debito,4
+61,rio cuarto,91,higiene personal,desodorante aerosol,5,4690,23450,tarjeta_debito,3
+15,cordoba,2,alimentos,pepsi 1.5l,2,4973,9946,efectivo,4
+9,carlos paz,24,alimentos,galletitas chocolate,2,1305,2610,efectivo,9
+49,rio cuarto,38,alimentos,mermelada de frutilla 400g,5,1584,7920,tarjeta_debito,8
+84,cordoba,61,alimentos,miel pura 250g,1,4982,4982,tarjeta_debito,3
+15,cordoba,64,alimentos,avena instantánea 250g,1,3953,3953,tarjeta_debito,12
+74,carlos paz,100,limpieza,trapo de piso,3,4854,14562,tarjeta_debito,8
+71,villa maria,94,higiene personal,hilo dental,5,1418,7090,tarjeta_credito,6
+65,alta gracia,13,alimentos,té verde 20 saquitos,5,2383,11915,tarjeta_credito,1
+40,rio cuarto,78,alimentos,verduras congeladas mix,2,4289,8578,tarjeta_debito,1
+90,rio cuarto,5,alimentos,agua mineral 500ml,2,4777,9554,transferencia,7
+87,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,efectivo,2
+69,rio cuarto,91,higiene personal,desodorante aerosol,3,4690,14070,transferencia,1
+68,villa maria,4,alimentos,fanta naranja 1.5l,5,2033,10165,tarjeta_credito,9
+100,cordoba,43,alimentos,salsa de tomate 500g,3,887,2661,tarjeta_debito,10
+36,mendiolaza,79,alimentos,hamburguesas congeladas x4,3,2420,7260,tarjeta_credito,11
+94,mendiolaza,50,alimentos,azúcar 1kg,1,727,727,efectivo,11
+4,carlos paz,97,limpieza,limpiavidrios 500ml,3,872,2616,tarjeta_credito,5
+50,carlos paz,54,higiene personal,jabón de tocador,4,1592,6368,tarjeta_credito,8
+53,mendiolaza,82,alimentos,aceitunas negras 200g,5,2394,11970,transferencia,6
+62,carlos paz,85,alimentos,jugo en polvo naranja,2,1856,3712,transferencia,11
+80,mendiolaza,92,higiene personal,crema dental 90g,4,2512,10048,transferencia,9
+71,villa maria,5,alimentos,agua mineral 500ml,1,4777,4777,tarjeta_debito,1
+99,villa maria,7,alimentos,jugo de manzana 1l,4,3269,13076,tarjeta_debito,9
+99,villa maria,44,alimentos,arroz largo fino 1kg,2,2979,5958,efectivo,2
+96,cordoba,76,alimentos,pizza congelada muzzarella,3,4286,12858,tarjeta_credito,4
+43,mendiolaza,10,alimentos,yerba mate intensa 1kg,3,4883,14649,tarjeta_credito,9
+14,carlos paz,70,alimentos,fernet 750ml,2,4061,8122,tarjeta_debito,1
+12,alta gracia,48,alimentos,porotos negros 500g,3,4462,13386,tarjeta_credito,9
+34,villa maria,87,alimentos,sopa instantánea pollo,2,1679,3358,tarjeta_debito,11
+74,carlos paz,52,limpieza,detergente líquido 750ml,1,2582,2582,tarjeta_debito,3
+30,alta gracia,10,alimentos,yerba mate intensa 1kg,2,4883,9766,tarjeta_debito,3
+33,rio cuarto,73,alimentos,gin 700ml,2,1561,3122,tarjeta_debito,1
+33,rio cuarto,48,alimentos,porotos negros 500g,3,4462,13386,tarjeta_debito,12
+39,alta gracia,7,alimentos,jugo de manzana 1l,2,3269,6538,transferencia,2
+26,alta gracia,22,alimentos,medialunas de manteca,5,2069,10345,tarjeta_credito,11
+83,rio cuarto,22,alimentos,medialunas de manteca,1,2069,2069,efectivo,1
+20,rio cuarto,69,alimentos,sidra 750ml,3,744,2232,tarjeta_debito,10
+60,alta gracia,92,higiene personal,crema dental 90g,3,2512,7536,transferencia,5
+50,carlos paz,36,alimentos,dulce de leche 400g,2,2559,5118,transferencia,7
+72,cordoba,66,alimentos,cerveza negra 1l,5,1533,7665,transferencia,8
+18,carlos paz,13,alimentos,té verde 20 saquitos,4,2383,9532,efectivo,1
+19,mendiolaza,82,alimentos,aceitunas negras 200g,3,2394,7182,efectivo,4
+40,rio cuarto,42,alimentos,vinagre de alcohol 500ml,5,1195,5975,efectivo,6
+5,cordoba,56,limpieza,papel higiénico x4,3,2532,7596,efectivo,9
+98,cordoba,63,alimentos,granola 250g,4,4337,17348,efectivo,4
+58,rio cuarto,90,higiene personal,toallas húmedas x50,2,2902,5804,transferencia,10
+32,mendiolaza,43,alimentos,salsa de tomate 500g,5,887,4435,tarjeta_credito,2
+81,carlos paz,98,limpieza,desengrasante 500ml,1,2843,2843,transferencia,10
+83,rio cuarto,28,alimentos,papas fritas clásicas 100g,5,936,4680,tarjeta_credito,2
+89,rio cuarto,31,alimentos,mix de frutos secos 200g,4,3409,13636,tarjeta_debito,2
+54,alta gracia,59,alimentos,chicle menta,1,3612,3612,tarjeta_credito,2
+72,cordoba,86,alimentos,jugo en polvo limón,2,4090,8180,tarjeta_debito,4
+19,mendiolaza,11,alimentos,café molido 250g,1,2053,2053,tarjeta_debito,7
+11,villa maria,70,alimentos,fernet 750ml,5,4061,20305,transferencia,7
+2,carlos paz,50,alimentos,azúcar 1kg,4,727,2908,efectivo,10
+36,mendiolaza,96,limpieza,suavizante 1l,3,4920,14760,tarjeta_credito,12
+51,rio cuarto,7,alimentos,jugo de manzana 1l,2,3269,6538,efectivo,7
+77,villa maria,5,alimentos,agua mineral 500ml,5,4777,23885,tarjeta_credito,4
+19,mendiolaza,44,alimentos,arroz largo fino 1kg,3,2979,8937,efectivo,12
+89,rio cuarto,23,alimentos,bizcochos salados,1,2380,2380,tarjeta_credito,2
+91,mendiolaza,84,alimentos,queso azul 150g,3,1645,4935,transferencia,12
+93,alta gracia,61,alimentos,miel pura 250g,3,4982,14946,efectivo,1
+28,cordoba,36,alimentos,dulce de leche 400g,4,2559,10236,tarjeta_debito,8
+21,alta gracia,35,alimentos,barrita de cereal 30g,5,4430,22150,tarjeta_credito,2
+52,rio cuarto,70,alimentos,fernet 750ml,1,4061,4061,tarjeta_credito,3
+2,carlos paz,92,higiene personal,crema dental 90g,5,2512,12560,tarjeta_debito,2
+44,carlos paz,17,alimentos,queso cremoso 500g,1,4834,4834,transferencia,12
+9,carlos paz,77,alimentos,empanadas congeladas,3,4778,14334,efectivo,10
+97,cordoba,29,alimentos,papas fritas onduladas 100g,3,1868,5604,tarjeta_debito,2
+21,alta gracia,57,limpieza,servilletas x100,4,4520,18080,transferencia,9
+46,alta gracia,66,alimentos,cerveza negra 1l,5,1533,7665,transferencia,11
+87,alta gracia,73,alimentos,gin 700ml,3,1561,4683,efectivo,5
+35,mendiolaza,75,alimentos,licor de café 700ml,1,3204,3204,tarjeta_debito,2
+43,mendiolaza,39,alimentos,helado vainilla 1l,4,469,1876,tarjeta_credito,6
+84,cordoba,41,alimentos,aceite de girasol 1l,1,860,860,tarjeta_debito,6
+78,villa maria,61,alimentos,miel pura 250g,2,4982,9964,efectivo,1
+74,carlos paz,60,alimentos,chupetín,5,4647,23235,efectivo,6
+42,alta gracia,2,alimentos,pepsi 1.5l,2,4973,9946,efectivo,7
+22,alta gracia,35,alimentos,barrita de cereal 30g,4,4430,17720,tarjeta_debito,9
+85,mendiolaza,84,alimentos,queso azul 150g,5,1645,8225,tarjeta_debito,7
+61,rio cuarto,41,alimentos,aceite de girasol 1l,4,860,3440,tarjeta_debito,1
+4,carlos paz,66,alimentos,cerveza negra 1l,3,1533,4599,transferencia,6
+93,alta gracia,13,alimentos,té verde 20 saquitos,3,2383,7149,tarjeta_credito,9
+62,carlos paz,14,alimentos,leche entera 1l,3,1723,5169,tarjeta_credito,8
+77,villa maria,43,alimentos,salsa de tomate 500g,4,887,3548,efectivo,10
+59,villa maria,64,alimentos,avena instantánea 250g,1,3953,3953,transferencia,8
+59,villa maria,71,alimentos,vodka 700ml,3,508,1524,efectivo,6
+3,rio cuarto,78,alimentos,verduras congeladas mix,5,4289,21445,tarjeta_debito,10
+72,cordoba,14,alimentos,leche entera 1l,2,1723,3446,transferencia,4
+69,rio cuarto,26,alimentos,alfajor triple,4,1001,4004,tarjeta_credito,1
+99,villa maria,89,alimentos,caldo concentrado verdura,5,1003,5015,tarjeta_credito,8
+6,villa maria,65,alimentos,cerveza rubia 1l,3,2423,7269,transferencia,12
+73,alta gracia,32,alimentos,chocolate amargo 100g,3,2234,6702,efectivo,10
+96,cordoba,2,alimentos,pepsi 1.5l,2,4973,9946,efectivo,5
+54,alta gracia,83,alimentos,queso untable 190g,2,1830,3660,transferencia,11
+25,rio cuarto,56,limpieza,papel higiénico x4,1,2532,2532,efectivo,12
+86,cordoba,56,limpieza,papel higiénico x4,4,2532,10128,transferencia,1
+77,villa maria,35,alimentos,barrita de cereal 30g,5,4430,22150,tarjeta_debito,8
+97,cordoba,76,alimentos,pizza congelada muzzarella,2,4286,8572,tarjeta_debito,11
+41,alta gracia,53,limpieza,lavandina 1l,3,1664,4992,tarjeta_credito,9
+62,carlos paz,61,alimentos,miel pura 250g,2,4982,9964,transferencia,2
+56,rio cuarto,23,alimentos,bizcochos salados,3,2380,7140,efectivo,4
+37,mendiolaza,40,alimentos,helado chocolate 1l,2,1215,2430,transferencia,5
+66,villa maria,71,alimentos,vodka 700ml,1,508,508,tarjeta_debito,7
+48,cordoba,12,alimentos,té negro 20 saquitos,2,570,1140,tarjeta_debito,1
+67,alta gracia,36,alimentos,dulce de leche 400g,5,2559,12795,tarjeta_credito,3
+98,cordoba,59,alimentos,chicle menta,1,3612,3612,transferencia,5
+11,villa maria,94,higiene personal,hilo dental,4,1418,5672,transferencia,4
+40,rio cuarto,33,alimentos,chocolate con leche 100g,5,1255,6275,tarjeta_debito,8
+54,alta gracia,66,alimentos,cerveza negra 1l,5,1533,7665,efectivo,7
+7,rio cuarto,45,alimentos,fideos spaghetti 500g,5,745,3725,efectivo,12
+20,rio cuarto,43,alimentos,salsa de tomate 500g,1,887,887,tarjeta_debito,11
+7,rio cuarto,40,alimentos,helado chocolate 1l,5,1215,6075,transferencia,8

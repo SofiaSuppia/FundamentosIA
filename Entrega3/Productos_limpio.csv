@@ -1,0 +1,131 @@
+id_producto,nombre_producto,categoria,precio_unitario,contenido
+1,coca cola 1.5l,alimentos,2347,1.5l
+2,pepsi 1.5l,alimentos,4973,1.5l
+3,sprite 1.5l,alimentos,4964,1.5l
+4,fanta naranja 1.5l,alimentos,2033,1.5l
+5,agua mineral 500ml,alimentos,4777,500ml
+6,jugo de naranja 1l,alimentos,4170,1l
+7,jugo de manzana 1l,alimentos,3269,1l
+8,energetica nitro 500ml,alimentos,4218,500ml
+9,yerba mate suave 1kg,alimentos,3878,1kg
+10,yerba mate intensa 1kg,alimentos,4883,1kg
+11,cafe molido 250g,alimentos,2053,250g
+12,te negro 20 saquitos,alimentos,570,20 saquitos
+13,te verde 20 saquitos,alimentos,2383,20 saquitos
+14,leche entera 1l,alimentos,1723,1l
+15,leche descremada 1l,alimentos,2538,1l
+16,yogur natural 200g,alimentos,4613,200g
+17,queso cremoso 500g,alimentos,4834,500g
+18,queso rallado 150g,alimentos,3444,150g
+19,manteca 200g,alimentos,3251,200g
+20,pan lactal blanco,alimentos,1571,
+21,pan lactal integral,alimentos,272,
+22,medialunas de manteca,alimentos,2069,
+23,bizcochos salados,alimentos,2380,
+24,galletitas chocolate,alimentos,1305,
+25,galletitas vainilla,alimentos,4015,
+26,alfajor triple,alimentos,1001,
+27,alfajor simple,alimentos,2502,
+28,papas fritas clasicas 100g,alimentos,936,100g
+29,papas fritas onduladas 100g,alimentos,1868,100g
+30,mani salado 200g,alimentos,4875,200g
+31,mix de frutos secos 200g,alimentos,3409,200g
+32,chocolate amargo 100g,alimentos,2234,100g
+33,chocolate con leche 100g,alimentos,1255,100g
+34,turron 50g,alimentos,503,50g
+35,barrita de cereal 30g,alimentos,4430,30g
+36,dulce de leche 400g,alimentos,2559,400g
+37,mermelada de durazno 400g,alimentos,3196,400g
+38,mermelada de frutilla 400g,alimentos,1584,400g
+39,helado vainilla 1l,alimentos,469,1l
+40,helado chocolate 1l,alimentos,1215,1l
+41,aceite de girasol 1l,alimentos,860,1l
+42,vinagre de alcohol 500ml,alimentos,1195,500ml
+43,salsa de tomate 500g,alimentos,887,500g
+44,arroz largo fino 1kg,alimentos,2979,1kg
+45,fideos spaghetti 500g,alimentos,745,500g
+46,lentejas secas 500g,alimentos,3036,500g
+47,garbanzos 500g,alimentos,2939,500g
+48,porotos negros 500g,alimentos,4462,500g
+49,harina de trigo 1kg,alimentos,2512,1kg
+50,azucar 1kg,alimentos,727,1kg
+51,sal fina 500g,alimentos,1745,500g
+52,detergente liquido 750ml,limpieza,2582,750ml
+53,lavandina 1l,limpieza,1664,1l
+54,jabon de tocador,higiene personal,1592,
+55,shampoo 400ml,higiene personal,1407,400ml
+56,papel higienico x4,limpieza,2532,x4
+57,servilletas x100,limpieza,4520,x100
+58,caramelos masticables,alimentos,4752,
+59,chicle menta,alimentos,3612,
+60,chupetin,alimentos,4647,
+61,miel pura 250g,alimentos,4982,250g
+62,stevia 100 sobres,alimentos,3848,100 sobres
+63,granola 250g,alimentos,4337,250g
+64,avena instantanea 250g,alimentos,3953,250g
+65,cerveza rubia 1l,alimentos,2423,1l
+66,cerveza negra 1l,alimentos,1533,1l
+67,vino tinto malbec 750ml,alimentos,4719,750ml
+68,vino blanco 750ml,alimentos,2684,750ml
+69,sidra 750ml,alimentos,744,750ml
+70,fernet 750ml,alimentos,4061,750ml
+71,vodka 700ml,alimentos,508,700ml
+72,ron 700ml,alimentos,3876,700ml
+73,gin 700ml,alimentos,1561,700ml
+74,whisky 750ml,alimentos,2953,750ml
+75,licor de cafe 700ml,alimentos,3204,700ml
+76,pizza congelada muzzarella,alimentos,4286,
+77,empanadas congeladas,alimentos,4778,
+78,verduras congeladas mix,alimentos,4289,
+79,hamburguesas congeladas x4,alimentos,2420,x4
+80,helado de frutilla 1l,alimentos,1981,1l
+81,aceitunas verdes 200g,alimentos,2520,200g
+82,aceitunas negras 200g,alimentos,2394,200g
+83,queso untable 190g,alimentos,1830,190g
+84,queso azul 150g,alimentos,1645,150g
+85,jugo en polvo naranja,alimentos,1856,
+86,jugo en polvo limon,alimentos,4090,
+87,sopa instantanea pollo,alimentos,1679,
+88,caldo concentrado carne,alimentos,2570,
+89,caldo concentrado verdura,alimentos,1003,
+90,toallas humedas x50,higiene personal,2902,x50
+91,desodorante aerosol,higiene personal,4690,
+92,crema dental 90g,higiene personal,2512,90g
+93,cepillo de dientes,higiene personal,2142,
+94,hilo dental,higiene personal,1418,
+95,mascarilla capilar,higiene personal,1581,
+96,suavizante 1l,limpieza,4920,1l
+97,limpiavidrios 500ml,limpieza,872,500ml
+98,desengrasante 500ml,limpieza,2843,500ml
+99,esponjas x3,limpieza,2430,x3
+100,trapo de piso,limpieza,4854,
+101,mayonesa 500g,alimentos,1200,500g
+102,ketchup 400g,alimentos,1500,400g
+103,mostaza 250g,alimentos,800,250g
+104,sal gruesa 1kg,alimentos,900,1kg
+105,pimienta negra 50g,alimentos,1100,50g
+106,oregano 25g,alimentos,600,25g
+107,pan de hamburguesa x4,alimentos,1800,x4
+108,pan de pancho x6,alimentos,1600,x6
+109,tostadas de arroz 150g,alimentos,1300,150g
+110,carne picada 1kg,alimentos,6500,1kg
+111,milanesa de soja x4,alimentos,3200,x4
+112,filet de merluza 1kg,alimentos,7800,1kg
+113,lechuga criolla 1kg,alimentos,2500,1kg
+114,tomate perita 1kg,alimentos,2200,1kg
+115,zanahoria 1kg,alimentos,1100,1kg
+116,cebolla 1kg,alimentos,1300,1kg
+117,detergente en polvo 800g,limpieza,2100,800g
+118,cera para pisos 900ml,limpieza,3500,900ml
+119,insecticida aerosol 360ml,limpieza,4200,360ml
+120,bolsas de residuos x10,limpieza,1500,x10
+121,guantes de limpieza,limpieza,1200,
+122,jabon liquido repuesto 900ml,higiene personal,2800,900ml
+123,crema corporal 400ml,higiene personal,5500,400ml
+124,protector solar fps50 200ml,higiene personal,9500,200ml
+125,alcohol en gel 250ml,higiene personal,1800,250ml
+126,panuelos descartables x6,higiene personal,900,x6
+127,algodon 100g,higiene personal,1400,100g
+128,hisopos x100,higiene personal,1100,x100
+129,enjuague bucal 500ml,higiene personal,3800,500ml
+130,maquina de afeitar x3,higiene personal,2600,x3
